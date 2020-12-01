@@ -50,7 +50,7 @@ name: "v-face-section"
 
 <style scoped>
 .face_section{
-  margin-top: 80px;
+  margin-top: 30px;
   background-color: #f5f7fa;
   padding-top: 60px;
   padding-bottom: 60px;

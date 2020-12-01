@@ -3,7 +3,9 @@
     <trading-vue
         :data="this.$data"
         title-txt="USD/BTC"
-        :width="950"
+        :width="width"
+        :color-back="colors.colorBack"
+        :color-grid="colors.colorGrid" :color-text="colors.colorText"
     />
   </div>
 </template>
@@ -25,7 +27,14 @@ export default {
         [ 1551135600000, 29.9, 33, 21.3, 21.8, 74 ],
         [ 1551139200000, 21.7, 25.9, 18, 24,  140 ],
         [ 1551142800000, 24.1, 24.1, 24, 24.1, 29 ]
-      ]
+      ],
+      width: 980,
+      height: window.innerHeight,
+      colors: {
+        colorBack: '#fff',
+        colorGrid: '#eee',
+        colorText: '#222',
+      }
     }
   }
 }

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <!--        col-2 logo-->
-        <div class="col-1">
+        <div class="col-2">
           <v-logo/>
         </div>
         <!--        col-6 navbar-->
@@ -19,7 +19,7 @@
           </nav>
         </div>
         <!--        col-4 auth-->
-        <div class="col-4 auth_block">
+        <div class="col-3 auth_block">
           <ul class="auth">
             <li><router-link to="/login" class="btn btn_blue">Sign in</router-link></li>
             <li><router-link to="/register" class="btn">Create Account</router-link></li>
@@ -43,13 +43,13 @@ export default {
 
 <style scoped>
 .header{
-  padding: 8px;
+  padding: 15px;
   z-index: 999;
   background: #fff;
 }
 .header > .container{
   border-bottom: 1px solid #efecec;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 .navigation_block > nav{
   height: 100%;

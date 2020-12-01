@@ -61,6 +61,11 @@ export default new Router({
         {
             path: '/press',
             component: () => import('./components/Guest/press')
+        },
+            //    account routes
+        {
+            path: '/account/trade',
+            component: () => import('./components/Account/trade')
         }
     ]
 })

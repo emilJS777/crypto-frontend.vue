@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
 <!--        col-2 logo-->
-        <div class="col-1">
+        <div class="col-2">
           <v-logo/>
         </div>
 <!--        col-6 navbar-->
@@ -96,20 +96,19 @@
                     <router-link to="/press">Press</router-link>
                     <span class="text_greey">Buy, sell, earn and exchange crypto anywhere and anytime.</span>
                   </li>
-                  <li>
-                    CEX.IO logo guidelines
-                    <span class="text_greey">Buy, sell, earn and exchange crypto anywhere and anytime.</span>
-                  </li>
                 </ul>
               </li>
               <li>
                 <router-link to="/affiliate-program">AFFILIATE PROGRAM</router-link>
               </li>
+              <li class="new">
+                <router-link to="/account/trade">ACCOUNT TRADE</router-link>
+              </li>
             </ul>
           </nav>
         </div>
 <!--        col-4 auth-->
-        <div class="col-4 auth_block">
+        <div class="col-3 auth_block">
           <ul class="auth">
             <li><router-link to="/login" class="btn btn_blue">Sign in</router-link></li>
             <li><router-link to="/register" class="btn">Create Account</router-link></li>
@@ -133,7 +132,7 @@
 
 <style scoped>
   .header{
-    padding: 8px;
+    padding: 12px;
     position: fixed;
     top: 0;
     left: 0;
@@ -162,6 +161,16 @@
     font-size: 13px;
     position: relative;
     color: #4a4b4b;
+  }
+  li.new:before{
+    content: 'NEW';
+    position: absolute;
+    font-size: 6px;
+    padding: 2px 3px;
+    color: #fff;
+    top: -3px;
+    right: -23px;
+    background-color: #42a5a5;
   }
   .navigation > ul > li > a{
     color: inherit;
@@ -240,6 +249,9 @@
   .auth_block > .auth > li{
     display: inline-block;
     margin-left: 15px;
+  }
+  .auth_block > .auth > li:first-child > a{
+    border-radius: 0 !important;
   }
   .auth_block > .auth > li:last-child{
     background-color: #033d6b;

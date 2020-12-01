@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-2 heading_exchanger">
-      <h2 class="heading_darkBlue">BTC/USD</h2>
+      <h2>BTC/USD</h2>
     </div>
     <div class="col-10 infos_block">
       <div class="info_block">
@@ -31,17 +31,24 @@ export default {
 </script>
 
 <style scoped>
+  h2{
+    color: #c7c7c7;
+    font-size: 40px;
+    font-style: italic;
+  }
   .infos_block{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .info_block {
-  text-align: center;
+  text-align: right;
     line-height: 1.2;
+    font-style: italic;
   }
+  .info_block > span{}
   .info_block > p{
     font-weight: bold;
-    color: #4a4b4b;
-    font-size: 13px;
+    color: #244848;
+    font-size: 16px;
   }
 </style>

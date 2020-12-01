@@ -22,11 +22,26 @@
 <script>
 export default {
   name: "v-top-currency-menu",
-  props: ["currency"]
+  data(){
+    return{
+      currency:[
+        {currencyTag: "BTC/USD", price: '18958.3'},
+        {currencyTag: "BTC/USD", price: '18958.3'},
+        {currencyTag: "BTC/USD", price: '18958.3'},
+        {currencyTag: "BTC/USD", price: '18958.3'},
+        {currencyTag: "BTC/USD", price: '18958.3'},
+        {currencyTag: "BTC/USD", price: '18958.3'},
+        {currencyTag: "BTC/USD", price: '18958.3'},
+        {currencyTag: "BTC/USD", price: '18958.3'},
+        {currencyTag: "BTC/USD", price: '18958.3'}
+      ]
+    }
+  }
 }
 </script>
 
 <style scoped>
+
   .navigation > ul{
     display: table;
     margin: 0 auto;
@@ -37,12 +52,12 @@ export default {
     text-align: center;
     background-color: #ece8e8;
     padding: 1px 8px;
-    border: 2px ;
+    border: 2px;
     transition: .2s;
     border-radius: 2px;
   }
   .navigation > ul > li:hover, .navigation > ul > li.active{
-    border-bottom: solid #3da78d;
+    border-bottom: 4px solid #42a5a5;
     color: #4a4b4b;
   }
   .navigation > ul > li > p{

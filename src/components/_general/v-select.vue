@@ -1,6 +1,8 @@
 <template>
   <select name=""  class="form-control custom-select">
-    <option v-for="(item, index) in priceTag" :key="index" >{{item}}</option>
+    <option v-for="(item, index) in priceTag" :key="index" >
+      {{item}}
+    </option>
   </select>
 </template>
 

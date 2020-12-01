@@ -109,6 +109,11 @@ export default {
 </script>
 
 <style scoped>
+  button:last-child{
+    background: #fff !important;
+    color: #afa3a3 !important;
+    border: 1px solid #dcdcdc;
+  }
   .search_block{
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;

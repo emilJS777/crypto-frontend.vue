@@ -5,8 +5,7 @@
 
     <v-header-min/>
 
-    <v-top-currency-menu
-        :currency="currency"/>
+    <v-top-currency-menu/>
 
     <div class="container-fluid mt-5">
 
@@ -45,7 +44,10 @@
         <v-sign-up/>
       </div>
     </div>
+<!--    footer menu-->
     <v-footer-menu/>
+<!--    modal window-->
+    <v-modal-window/>
   </div>
 </template>
 
@@ -63,6 +65,7 @@ import VTradeHistoryTable from "@/components/Guest/spotTrading/v-trade-history-t
 import VBottomDescription from "@/components/Guest/spotTrading/v-bottom-description";
 import VFooterMenu from "@/components/_general/v-footer-menu";
 import VSignUp from "@/components/Guest/spotTrading/v-sign-up";
+import VModalWindow from "@/components/Guest/spotTrading/v-modal-window";
 export default {
   name: "index",
   data(){
@@ -95,21 +98,11 @@ export default {
         {date: "18-09-2019", type: "Sell", amountBTC: "0.589001", price: "17200", total: "501"},
         {date: "18-09-2019", type: "Sell", amountBTC: "0.589001", price: "17200", total: "501"},
         {date: "18-09-2019", type: "Sell", amountBTC: "0.589001", price: "17200", total: "501"}
-      ],
-      currency:[
-        {currencyTag: "BTC/USD", price: '18958.3'},
-        {currencyTag: "BTC/USD", price: '18958.3'},
-        {currencyTag: "BTC/USD", price: '18958.3'},
-        {currencyTag: "BTC/USD", price: '18958.3'},
-        {currencyTag: "BTC/USD", price: '18958.3'},
-        {currencyTag: "BTC/USD", price: '18958.3'},
-        {currencyTag: "BTC/USD", price: '18958.3'},
-        {currencyTag: "BTC/USD", price: '18958.3'},
-        {currencyTag: "BTC/USD", price: '18958.3'}
       ]
     }
   },
   components:{
+    VModalWindow,
     VSignUp,
     VFooterMenu,
     VBottomDescription,
