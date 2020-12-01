@@ -252,9 +252,12 @@
   }
   .auth_block > .auth > li:first-child > a{
     border-radius: 0 !important;
+    background-color: #fff !important;
+    color: #444 !important;
+    border: 1px solid #42a5a5;
   }
   .auth_block > .auth > li:last-child{
-    background-color: #033d6b;
+    background-color: #42a5a5;
   }
 
 </style>
