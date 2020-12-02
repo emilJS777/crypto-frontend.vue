@@ -8,7 +8,9 @@
         <li v-bind:class="this.active === 'trade' ? 'active' : ''">
           <router-link to="/account/trade">TRADES</router-link>
         </li>
-        <li><a href="#">FINANCE</a></li>
+        <li v-bind:class="this.active === 'finance' ? 'active' : ''">
+          <router-link to="/account/finance">FINANCE</router-link>
+        </li>
         <li><a href="#">MAPS</a></li>
         <li><a href="#">AFFILIATE</a></li>
         <li><a href="#">MARGIN TRADING</a></li>

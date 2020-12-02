@@ -1,0 +1,82 @@
+<template>
+  <div class="switch_content container mt-5">
+    <div class="row">
+        <div class="col-12">
+          <div class="buttons_block">
+            <button
+                v-bind:class="switchElem === 0 ? 'active':''"
+                @click="show(0)">
+              Balance
+            </button>
+            <button
+                v-bind:class="switchElem === 1 ? 'active':''"
+                @click="show(1)">
+              Transactions
+            </button>
+            <button
+                v-bind:class="switchElem === 2 ? 'active':''"
+                @click="show(2)">
+              Payments
+            </button>
+          </div>
+        </div>
+        <div class="col-12 pt-5 content">
+          <v-balance v-if="switchElem === 0"/>
+          <div class="transactions" v-if="switchElem === 1">
+            <h3 class="heading_darkBlue">sdsdsd sdsdfdsf</h3>
+          </div>
+        </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import {switchFunction} from "@/components/_mixins/switch";
+import VBalance from "./switchable-pages/v-balance";
+export default {
+  name: "v-switch-content",
+  components: {VBalance},
+  mixins: [switchFunction]
+}
+</script>
+
+<style scoped>
+  .buttons_block{
+    display: table;
+  }
+  .buttons_block > button{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 15px;
+    background-color: #eae9e9;
+    border: 1px solid #eae9e9;
+    color: #75797c;
+    font-weight: bold;
+    border-radius: 1px;
+    padding-top: 5px;
+    transition: .3s;
+    font-size: 16px;
+  }
+  .buttons_block > button:first-child{
+    margin: 0;
+  }
+  .buttons_block > button:focus{
+    outline: 0;
+  }
+  .buttons_block > button.active{
+    color: #0b364f;
+    background-color: #f6f6f6;
+    border-top: 1px solid #1d345d;
+  }
+  .buttons_block > button:hover{
+    background-color: #f6f6f6;
+  }
+  .content{
+    background-color: #f6f6f6;
+    margin-top: -8px;
+    padding-bottom: 30px;
+  }
+  .switch_content > div > div:first-child{
+    padding-left: 0;
+  }
+</style>
