@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div id="trade">
     <v-header active="trade"/>
     <v-sub-header/>
@@ -88,15 +87,8 @@ export default {
       ]
     }
   }
-=======
-$END$
-</template>
-
-<script>
-export default {
-name: "index"
->>>>>>> bc66ec71009bdf06fff6fdf074e8a8da72927394
 }
+
 </script>
 
 <style scoped>

@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div id="account_header">
     <nav>
       <ul class="menu">
@@ -44,24 +43,16 @@
       </ul>
     </nav>
   </div>
-=======
-$END$
->>>>>>> bc66ec71009bdf06fff6fdf074e8a8da72927394
 </template>
 
 <script>
 export default {
-<<<<<<< HEAD
   name: "v-header",
   props:['active']
-=======
-name: "v-header"
->>>>>>> bc66ec71009bdf06fff6fdf074e8a8da72927394
 }
 </script>
 
 <style scoped>
-<<<<<<< HEAD
   #account_header{
     background-color: #06283c;
     padding: 15px;
@@ -154,7 +145,4 @@ name: "v-header"
     color: #fff;
     background-color: #42a5a5;
   }
-=======
-
->>>>>>> bc66ec71009bdf06fff6fdf074e8a8da72927394
 </style>
