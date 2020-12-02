@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="sub_header container-fluid">
     <div class="row">
       <div class="purse col-6">
@@ -35,6 +36,9 @@
       </div>
     </div>
   </div>
+=======
+$END$
+>>>>>>> bc66ec71009bdf06fff6fdf074e8a8da72927394
 </template>
 
 <script>
@@ -44,6 +48,7 @@ name: "v-sub-header"
 </script>
 
 <style scoped>
+<<<<<<< HEAD
   .sub_header{
     padding: 15px 20px;
     background-color: #ece9e9;
@@ -108,4 +113,7 @@ name: "v-sub-header"
   .deposit_withdraw_block > ul > li:last-child:hover{
     background-color: #04365d;
   }
+=======
+
+>>>>>>> bc66ec71009bdf06fff6fdf074e8a8da72927394
 </style>
