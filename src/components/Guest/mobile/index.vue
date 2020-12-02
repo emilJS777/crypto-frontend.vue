@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  import VHeader from "@/components/_general/v-header";
+  import VHeader from "../_general/v-header";
   import VFaceSection from "@/components/Guest/mobile/v-face-section";
   import VFaqSection from "@/components/Guest/mobile/v-faq-section";
   import VSliderSection from "@/components/Guest/mobile/v-slider-section";

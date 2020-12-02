@@ -11,7 +11,7 @@
 
 <script>
 
-  import VHeader from "@/components/_general/v-header";
+  import VHeader from "../_general/v-header";
   import VFaceSection from "./v-face-section";
   import VFooterMenu from "@/components/_general/v-footer-menu";
   import VCalculateEarnings from "./v-calculate-earnings";

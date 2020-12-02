@@ -34,12 +34,12 @@ name: "v-our-history",
         {
           title: 'k7 in the registred UK',
           desc: 'A marketplace for customers who want to instantly buy/sell cryptocurrencies, trade crypto assets, or exchange them for fiat money.',
-          imgUrl: 'https://cdn.cfo.com/content/uploads/2019/12/GettyImages-930264196.jpg'
+          imgUrl: 'https://www.aljazeera.com/wp-content/uploads/2020/11/2020-11-24T133928Z_788862449_RC2P9K9XL48K_RTRMADP_3_CRYPTO-CURRENCIES.jpg?resize=1200%2C630'
         },
         {
           title: 'k7 in the registred UK',
           desc: 'A marketplace for customers who want to instantly buy/sell cryptocurrencies, trade crypto assets, or exchange them for fiat money.',
-          imgUrl: 'https://cdn.cfo.com/content/uploads/2019/12/GettyImages-930264196.jpg'
+          imgUrl: 'https://www.aljazeera.com/wp-content/uploads/2020/11/2020-11-24T133928Z_788862449_RC2P9K9XL48K_RTRMADP_3_CRYPTO-CURRENCIES.jpg?resize=1200%2C630'
         }
       ]
     }

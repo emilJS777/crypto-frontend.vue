@@ -54,7 +54,7 @@
 <script>
 // <!--  connecteds-->
 import VUpperCurrencyLayer from "../../_general/v-upper-currency-layer";
-import VHeaderMin from "../../_general/v-header-min";
+import VHeaderMin from "../_general/v-header-min";
 import VTopCurrencyMenu from "./v-top-currency-menu";
 import VLeftCurrencySelectBar from "./v-left-currency-select-bar";
 import VRightPricingInformacionLastDay from "./v-right-pricing-informacion-last-day";

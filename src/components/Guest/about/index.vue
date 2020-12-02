@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import VHeader from "@/components/_general/v-header";
+import VHeader from "../_general/v-header";
 import VHeading from "./v-heading";
 import VImgInfoSection from "@/components/Guest/about/v-img-info-section";
 import VAboutUs from "@/components/Guest/home/v-about-us-section";

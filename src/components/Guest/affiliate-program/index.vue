@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import VHeader from "@/components/_general/v-header";
+import VHeader from "../_general/v-header";
 import VFaceSection from "@/components/Guest/affiliate-program/v-face-section";
 import VRecommendationsAndRewards from "@/components/Guest/affiliate-program/v-recommendations-and-rewards";
 import VFooterMenu from "@/components/_general/v-footer-menu";

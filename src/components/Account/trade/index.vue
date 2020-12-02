@@ -1,6 +1,6 @@
 <template>
   <div id="trade">
-    <v-header/>
+    <v-header active="trade"/>
     <v-sub-header/>
     <v-top-currency-menu/>
     <div class="container-fluid mt-4">

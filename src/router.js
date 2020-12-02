@@ -66,6 +66,10 @@ export default new Router({
         {
             path: '/account/trade',
             component: () => import('./components/Account/trade')
+        },
+        {
+            path: '/account/buysell',
+            component: () => import('./components/Account/buysell')
         }
     ]
 })

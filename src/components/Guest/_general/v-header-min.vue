@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import vLogo from "./v-logo"
+import vLogo from "../../_general/v-logo"
 
 export default {
   name: "v-header",

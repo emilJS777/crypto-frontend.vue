@@ -2,8 +2,12 @@
   <div id="account_header">
     <nav>
       <ul class="menu">
-        <li class="active"><a href="#">CHANGES</a></li>
-        <li><a href="#">TRADES</a></li>
+        <li v-bind:class="this.active === 'buysell' ? 'active' : ''">
+          <router-link to="/account/buysell">BUY/SELL</router-link>
+        </li>
+        <li v-bind:class="this.active === 'trade' ? 'active' : ''">
+          <router-link to="/account/trade">TRADES</router-link>
+        </li>
         <li><a href="#">FINANCE</a></li>
         <li><a href="#">MAPS</a></li>
         <li><a href="#">AFFILIATE</a></li>
@@ -43,7 +47,8 @@
 
 <script>
 export default {
-name: "v-header"
+  name: "v-header",
+  props:['active']
 }
 </script>
 

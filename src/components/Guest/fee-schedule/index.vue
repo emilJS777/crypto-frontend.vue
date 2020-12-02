@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import VHeaderMin from "../../_general/v-header-min";
+  import VHeaderMin from "../_general/v-header-min";
   import VUpperCurrencyLayer from "@/components/_general/v-upper-currency-layer";
   import VContent from "./v-tab-content";
   import VFooterMenu from "@/components/_general/v-footer-menu";

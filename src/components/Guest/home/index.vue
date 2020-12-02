@@ -1,4 +1,4 @@
-<template>
+s<template>
   <div id="guest">
     <v-header/>
     <v-face-section/>
@@ -14,7 +14,7 @@
 
 <script>
 
-import vHeader from "../../_general/v-header"
+import vHeader from "../_general/v-header"
 import vFaceSection from "./v-face-section"
 import vTopCryptoSection from "./v-top-crypto-section"
 import vBuyCryptoSection from "./v-buy-crypto-section"

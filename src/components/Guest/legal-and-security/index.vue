@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import VHeader from "@/components/_general/v-header";
+import VHeader from "../_general/v-header";
 import VLegalAndSecurityDocuments from "@/components/Guest/legal-and-security/v-legal-and-security-documents";
 import VFooterMenu from "@/components/_general/v-footer-menu";
 import VLicensesAndCertificates from "@/components/Guest/legal-and-security/v-licenses-and-certificates";

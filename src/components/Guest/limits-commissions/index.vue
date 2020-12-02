@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import VHeader from "@/components/_general/v-header";
+import VHeader from "../_general/v-header";
 import VTotalAccountLimits from "@/components/Guest/limits-commissions/v-total-account-limits";
 import VLimitsAndCommissions from "@/components/Guest/limits-commissions/v-limits-and-commissions";
 import VFooterMenu from "@/components/_general/v-footer-menu";

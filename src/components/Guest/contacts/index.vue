@@ -9,7 +9,7 @@
 
 <script>
 import VUpperSection from "@/components/Guest/contacts/v-upper-section";
-import VHeader from "@/components/_general/v-header";
+import VHeader from "../_general/v-header";
 import VBottomSection from "@/components/Guest/contacts/v-bottom-section";
 import VFooterMenu from "@/components/_general/v-footer-menu";
 export default {
