@@ -159,7 +159,7 @@ button:focus{
   outline: 0;
 }
 .content {
-  background-color: #f1eeee;
+  background-color: #eae9e9;
   padding: 5px;
   position: relative;
 }

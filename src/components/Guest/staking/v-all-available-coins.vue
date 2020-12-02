@@ -13,7 +13,7 @@
           </div>
           <div class="row table_body">
             <div class="col-2">
-              <img :src="require('@/assets/icons/bitcoin.png')" alt="">
+              <i class="cf cf-btc"></i>
               <p>Bitcoin</p>
             </div>
             <div class="col-2"><p class="plus">1-4%</p></div>
@@ -26,8 +26,8 @@
           </div>
           <div class="row table_body">
             <div class="col-2">
-              <img :src="require('@/assets/icons/bitcoin.png')" alt="">
-              <p>Bitcoin</p>
+              <i class="cf cf-ltc"></i>
+              <p>Litecoin</p>
             </div>
             <div class="col-2"><p class="plus">1-4%</p></div>
             <div class="col-3"><p class="heading_darkBlue">10 ADA</p></div>
@@ -39,8 +39,8 @@
           </div>
           <div class="row table_body">
             <div class="col-2">
-              <img :src="require('@/assets/icons/bitcoin.png')" alt="">
-              <p>Bitcoin</p>
+              <i class="cf cf-eth"></i>
+              <p>Etherun</p>
             </div>
             <div class="col-2"><p class="plus">1-4%</p></div>
             <div class="col-3"><p class="heading_darkBlue">10 ADA</p></div>
@@ -52,7 +52,7 @@
           </div>
           <div class="row table_body">
             <div class="col-2">
-              <img :src="require('@/assets/icons/bitcoin.png')" alt="">
+              <i class="cf cf-xrp"></i>
               <p>Bitcoin</p>
             </div>
             <div class="col-2"><p class="plus">1-4%</p></div>
@@ -110,10 +110,11 @@ export default {
 .table_body > div:last-child{
   text-align: right;
 }
-.table_body > div > img{
-  width: 26px;
-  height: 26px;
+.table_body > div > i{
   margin-right: 10px;
+  font-size: 25px;
+  vertical-align: middle;
+  color: #079494;
 }
 .table_body > div > *{
   display: inline-block;
@@ -125,8 +126,9 @@ export default {
   line-height: 2;
   vertical-align: center;
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   transition: .2s;
+  font-weight: bold;
 }
 .table_body > div > p:hover{
   color: #42a5a5;

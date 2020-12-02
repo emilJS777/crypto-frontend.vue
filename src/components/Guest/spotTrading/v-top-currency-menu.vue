@@ -50,7 +50,7 @@ export default {
     display: inline-block;
     margin-left: 15px;
     text-align: center;
-    background-color: #ece8e8;
+    background-color: #eae9e9;
     padding: 1px 8px;
     border: 2px;
     transition: .2s;

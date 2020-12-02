@@ -36,7 +36,7 @@ name: "v-logo"
 
   }
   span:last-child{
-    margin-left: 0px;
+    margin-left: 0;
     @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
       font-family: 'Syne Mono', monospace;
   }

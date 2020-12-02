@@ -10,15 +10,15 @@
       </div>
       <div class="info_block">
         <span class="text_greey text_small">Daily change:</span>
-        <p>$ 17794.5</p>
+        <p><i class="cf cf-ltc"></i> 17794.5</p>
       </div>
       <div class="info_block">
         <span class="text_greey text_small">Today's open:</span>
-        <p>$ 16761.0</p>
+        <p><i class="cf cf-eth"></i> 16761.0</p>
       </div>
       <div class="info_block">
         <span class="text_greey text_small">24h volume:</span>
-        <p>&#x0e3f; 451.16242817</p>
+        <p><i class="cf cf-btc"></i> 451.16242817</p>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@ export default {
   .info_block > span{}
   .info_block > p{
     font-weight: bold;
-    color: #244848;
+    color: #6d767f;
     font-size: 16px;
   }
 </style>

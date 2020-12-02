@@ -5,6 +5,7 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import './assets/cryptofont-1.2.0/cryptofont.css'
 
 Vue.config.productionTip = false
 

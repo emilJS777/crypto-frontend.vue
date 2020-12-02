@@ -12,7 +12,8 @@
           </div>
           <div class="row table_body">
             <div class="col-3">
-              <img :src="require('@/assets/icons/bitcoin.png')" alt="">
+<!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
+              <i class="cf cf-btc"></i>
               <p>Bitcoin</p>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>
@@ -21,7 +22,8 @@
           </div>
           <div class="row table_body">
             <div class="col-3">
-              <img :src="require('@/assets/icons/bitcoin.png')" alt="">
+<!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
+              <i class="cf cf-ltc"></i>
               <p>Litecoin</p>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>
@@ -30,8 +32,9 @@
           </div>
           <div class="row table_body">
             <div class="col-3">
-              <img :src="require('@/assets/icons/bitcoin.png')" alt="">
-              <p>Bitcoin</p>
+<!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
+              <i class="cf cf-xrp"></i>
+              <p>Ripple</p>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>
             <div class="col-3"><p class="minus">-0.45%</p></div>
@@ -39,8 +42,9 @@
           </div>
           <div class="row table_body">
             <div class="col-3">
-              <img :src="require('@/assets/icons/bitcoin.png')" alt="">
-              <p>Bitcoin</p>
+<!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
+              <i class="cf cf-btc"></i>
+              <p>Bitcoin CASH</p>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>
             <div class="col-3"><p class="plus">+0.45%</p></div>
@@ -60,6 +64,7 @@ export default {
 </script>
 
 <style scoped>
+
   .top_crypto{
     background-color: #fff;
     padding-top: 80px;
@@ -86,8 +91,9 @@ export default {
     text-align: right;
   }
   .table_body > div{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-weight: bold;
   }
   .table_body > div:first-child{
     text-align: left;
@@ -95,9 +101,13 @@ export default {
   .table_body > div:last-child{
     text-align: right;
   }
-  .table_body > div > img{
-    width: 26px;
-    height: 26px;
+  .table_body > div:nth-child(2){
+    color: #8298a5;
+  }
+  .table_body > div > i{
+    color: #079494;
+    font-size: 30px;
+    vertical-align: middle;
     margin-right: 10px;
   }
   .table_body > div > *{
@@ -107,7 +117,7 @@ export default {
     line-height: 2;
     vertical-align: center;
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
     transition: .2s;
   }
   .table_body > div:first-child > p{

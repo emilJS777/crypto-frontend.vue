@@ -7,13 +7,13 @@
             <span>$ 0.00</span>
           </li>
           <li>
-            <span>E 0.00</span>
+            <span><i class="cf cf-eth"></i> 0.00000</span>
           </li>
           <li>
-            <span>B 0.00000</span>
+            <span><i class="cf cf-btc"></i> 0.00000</span>
           </li>
           <li>
-            <span>EL 0.00000</span>
+            <span><i class="cf cf-ltc"></i> 0.00000</span>
           </li>
         </ul>
       </div>
@@ -44,9 +44,13 @@ name: "v-sub-header"
 </script>
 
 <style scoped>
+  i{
+    font-size: 14px;
+    vertical-align: middle;
+  }
   .sub_header{
     padding: 15px 20px;
-    background-color: #ece9e9;
+    background-color: #eae9e9;
     margin-bottom: 10px;
   }
   .sub_header > div > div > ul > li{
