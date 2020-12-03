@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  node-app:
+    container_name: crypto-frontend
+    command: npm run serve
+    build: .
+    image: dregistry.k7-clan.com/k7.crypto.web.frontend:latest
+    ports:
+      - '8080:8080'
+    networks:
+      - frontend
+    environment:
+      - VIRTUAL_HOST=crypto.k7-clan.com
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_HOST=crypto.k7-clan.com
+      - LETSENCRYPT_EMAIL=info@k7-clan.com
+      - ASPNETCORE_ENVIRONMENT=Release
+
+networks:
+  frontend:
+    external:
+      name: internal-proxy
