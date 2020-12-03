@@ -10,7 +10,7 @@
       </div>
       <div class="info_block">
         <span class="text_greey text_small">Daily change:</span>
-        <p><i class="cf cf-ltc"></i> 17794.5</p>
+        <p>€ 17794.5</p>
       </div>
       <div class="info_block">
         <span class="text_greey text_small">Today's open:</span>

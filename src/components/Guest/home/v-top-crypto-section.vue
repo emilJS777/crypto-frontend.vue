@@ -43,7 +43,7 @@
           <div class="row table_body">
             <div class="col-3">
 <!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
-              <i class="cf cf-btc"></i>
+              <i class="cf cf-bch"></i>
               <p>Bitcoin CASH</p>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>

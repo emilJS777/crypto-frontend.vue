@@ -7,7 +7,7 @@
             <span>$ 0.00</span>
           </li>
           <li>
-            <span><i class="cf cf-eth"></i> 0.00000</span>
+            <span>€ 0.00</span>
           </li>
           <li>
             <span><i class="cf cf-btc"></i> 0.00000</span>

@@ -22,9 +22,7 @@
         </div>
         <div class="col-12 pt-5 content">
           <v-balance v-if="switchElem === 0"/>
-          <div class="transactions" v-if="switchElem === 1">
-            <h3 class="heading_darkBlue">sdsdsd sdsdfdsf</h3>
-          </div>
+          <v-transactions v-if="switchElem === 1"/>
         </div>
     </div>
   </div>
@@ -33,9 +31,10 @@
 <script>
 import {switchFunction} from "@/components/_mixins/switch";
 import VBalance from "./switchable-pages/v-balance";
+import VTransactions from "./switchable-pages/v-transactions";
 export default {
   name: "v-switch-content",
-  components: {VBalance},
+  components: {VTransactions, VBalance},
   mixins: [switchFunction]
 }
 </script>
@@ -55,7 +54,8 @@ export default {
     border-radius: 1px;
     padding-top: 5px;
     transition: .3s;
-    font-size: 16px;
+    font-size: 15px;
+    letter-spacing: 1px;
   }
   .buttons_block > button:first-child{
     margin: 0;

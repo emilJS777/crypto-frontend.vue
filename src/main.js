@@ -2,10 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+//bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
+// crypto fonts
 import './assets/cryptofont-1.2.0/cryptofont.css'
+
 
 Vue.config.productionTip = false
 

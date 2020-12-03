@@ -4,22 +4,22 @@
     <div class="trade_history_table">
       <table class="table">
         <thead class="">
-        <tr>
-          <th scope="col">Date</th>
-          <th scope="col">Type</th>
-          <th scope="col">Amount BTC</th>
-          <th scope="col">Price</th>
-          <th scope="col">Total</th>
-        </tr>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Type</th>
+            <th scope="col">Amount BTC</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+          </tr>
         </thead>
         <tbody>
-        <tr v-for="(item, index) in tradeHistory" :key="index">
-          <td>{{ item.date }}</td>
-          <td>{{ item.type }}</td>
-          <td>{{ item.amountBTC }}</td>
-          <td>{{ item.price }}</td>
-          <td>{{ item.total }}</td>
-        </tr>
+          <tr v-for="(item, index) in tradeHistory" :key="index">
+            <td>{{ item.date }}</td>
+            <td>{{ item.type }}</td>
+            <td>{{ item.amountBTC }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.total }}</td>
+          </tr>
         </tbody>
       </table>
     </div>

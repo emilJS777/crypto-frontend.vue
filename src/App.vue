@@ -13,6 +13,7 @@
 </script>
 
 <style>
+
    *{
      margin: 0;
      padding: 0;
@@ -101,5 +102,37 @@
    .VueCarousel-dot[aria-selected=true]{
      background-color: #42a5a5 !important;
    }
-
+/*  style with datepicker */
+   .datepicker_block input{
+     font-size: 14px !important;
+     color: #445f5f;
+     font-style: italic;
+     border: 0 !important;
+     line-height: 2 !important;
+     padding: 1px !important;
+     background-color: initial;
+     height: 100% !important;
+     cursor: pointer;
+   }
+   .datepicker_block span{
+     display: none;
+   }
+   .datepicker_block span::after,
+   .datepicker_block span::before{
+     background-color: #42a5a5 !important;
+   }
+   .datepicker_block .start-date > .calendar-cell__content,
+   .datepicker_block .end-date > .calendar-cell__content{
+     background-color: #42a5a5 !important;
+   }
+   .datepicker_block label{
+     color: #a7a6a6 !important;
+     font-size: 12px !important;
+     top: -8px !important;
+   }
+   .datepicker_block .mdrp-root,
+   .datepicker_block .mdrp__activator,
+   .datepicker_block .activator-wrapper{
+     height: 100%;
+   }
 </style>
