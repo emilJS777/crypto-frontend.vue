@@ -2,6 +2,14 @@
   <div class="transactions mt-1 container-fluid">
 <!--    table options-->
     <div class="row table_options_block">
+      <div class="col-2 datepicker_block">
+        <v-md-date-range-picker
+            start-date="2020-01-01"
+            end-date="2020-12-12"
+            max-year="2030"
+            min-year="2010"
+            show-year-select/>
+      </div>
       <div class="col-2">
         <select class="form-control custom-select">
           <option value="1"><span>all curencyes</span></option>
@@ -17,14 +25,6 @@
           <option value="3"><span>Trade</span></option>
           <option value="3"><span>Margin Trade</span></option>
         </select>
-      </div>
-      <div class="col-4 datepicker_block">
-        <v-md-date-range-picker
-        start-date="2020-01-01"
-        end-date="2020-12-12"
-        max-year="2030"
-        min-year="2010"
-        show-year-select/>
       </div>
     </div>
 <!--    table-->
@@ -82,12 +82,13 @@ name: "v-transactions",
   .table_options_block select, .table_options_block select option{
     font-style: italic;
     font-size: 14px;
+    background-color: #f6f6f6;
   }
   table{
     text-align: center;
   }
   table th{
-    color: #354954;
+    color: #797777;
     font-size: 14px;
   }
   table tbody{

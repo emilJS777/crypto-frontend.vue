@@ -129,8 +129,15 @@ name: "v-balance",
         {title: "USDT", balance: '0.000000', orders: "0.000000", total: '0.000000'},
         {title: "ADA", balance: '0.000000', orders: "0.000000", total: '0.000000'},
         {title: "USDC", balance: '0.000000', orders: "0.000000", total: '0.000000'},
-        {title: "NEO", balance: '0.000000', orders: "0.000000", total: '0.000000'}
-
+        {title: "NEO", balance: '0.000000', orders: "0.000000", total: '0.000000'},
+        {title: "BAT", balance: '0.000000', orders: "0.000000", total: '0.000000'},
+        {title: "XTZ", balance: '0.000000', orders: "0.000000", total: '0.000000'},
+        {title: "WABI", balance: '0.000000', orders: "0.000000", total: '0.000000'},
+        {title: "MATIC", balance: '0.000000', orders: "0.000000", total: '0.000000'},
+        {title: "LINK", balance: '0.000000', orders: "0.000000", total: '0.000000'},
+        {title: "ZRX", balance: '0.000000', orders: "0.000000", total: '0.000000'},
+        {title: "GNT", balance: '0.000000', orders: "0.000000", total: '0.000000'},
+        {title: "ZIL", balance: '0.000000', orders: "0.000000", total: '0.000000'}
       ]
     }
   }

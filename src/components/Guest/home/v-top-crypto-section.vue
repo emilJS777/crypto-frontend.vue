@@ -12,9 +12,8 @@
           </div>
           <div class="row table_body">
             <div class="col-3">
-<!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
               <i class="cf cf-btc"></i>
-              <p>Bitcoin</p>
+              <router-link to="/spot-trading">Bitcoin</router-link>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>
             <div class="col-3"><p class="minus">-0.45%</p></div>
@@ -22,9 +21,8 @@
           </div>
           <div class="row table_body">
             <div class="col-3">
-<!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
               <i class="cf cf-ltc"></i>
-              <p>Litecoin</p>
+              <router-link to="/spot-trading">Litecoin</router-link>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>
             <div class="col-3"><p class="plus">+0.45%</p></div>
@@ -32,9 +30,8 @@
           </div>
           <div class="row table_body">
             <div class="col-3">
-<!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
               <i class="cf cf-xrp"></i>
-              <p>Ripple</p>
+              <router-link to="/spot-trading">Ripple</router-link>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>
             <div class="col-3"><p class="minus">-0.45%</p></div>
@@ -42,9 +39,8 @@
           </div>
           <div class="row table_body">
             <div class="col-3">
-<!--              <img :src="require('@/assets/icons/bitcoin.png')" alt="">-->
               <i class="cf cf-bch"></i>
-              <p>Bitcoin CASH</p>
+              <router-link to="/spot-trading">Bitcoin CASH</router-link>
             </div>
             <div class="col-3"><p>USD 15260.7</p></div>
             <div class="col-3"><p class="plus">+0.45%</p></div>
@@ -119,6 +115,9 @@ export default {
     margin: 0;
     font-size: 14px;
     transition: .2s;
+  }
+  .table_body > div > a{
+    color: inherit;
   }
   .table_body > div:first-child > p{
     cursor: pointer;

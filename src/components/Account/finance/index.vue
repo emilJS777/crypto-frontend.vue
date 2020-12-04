@@ -3,6 +3,7 @@
     <v-header active="finance"/>
     <v-sub-header/>
     <v-switch-content/>
+    <v-footer-menu/>
   </div>
 </template>
 
@@ -10,9 +11,10 @@
 import VHeader from "../_general/v-header";
 import VSubHeader from "../_general/v-sub-header";
 import VSwitchContent from "./v-switch-content";
+import VFooterMenu from "../../_general/v-footer-menu";
 export default {
   name: "index",
-  components: {VSwitchContent, VSubHeader, VHeader}
+  components: {VFooterMenu, VSwitchContent, VSubHeader, VHeader}
 }
 </script>
 

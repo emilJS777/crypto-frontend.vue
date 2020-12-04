@@ -74,6 +74,10 @@ export default new Router({
         {
             path: '/account/finance',
             component: () => import('./components/Account/finance')
+        },
+        {
+            path: '/account/cards',
+            component: () => import('./components/Account/cards')
         }
     ]
 })

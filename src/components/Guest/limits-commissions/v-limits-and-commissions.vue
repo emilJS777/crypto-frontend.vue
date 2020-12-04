@@ -75,7 +75,7 @@
                   <div class="row table_body"
                   v-for="(tb, index) in cryptocurrencies" :key="index">
                     <div class="col-3">
-                      <img :src="require('@/assets/icons/bitcoin.png')" alt="">
+                      <i class="cf cf-btc"></i>
                       <p>{{ tb.currency }}</p>
                     </div>
                     <div class="col-3">
@@ -186,6 +186,9 @@ export default {
     width: 25px;
     height: auto;
     margin-right: 10px;
+  }
+  .table_body > div > i{
+    margin-right: 15px;
   }
   .table_body > div > *{
     display: inline-block;

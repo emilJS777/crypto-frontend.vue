@@ -11,10 +11,11 @@
         <li v-bind:class="this.active === 'finance' ? 'active' : ''">
           <router-link to="/account/finance">FINANCE</router-link>
         </li>
-        <li><a href="#">MAPS</a></li>
-        <li><a href="#">AFFILIATE</a></li>
-        <li><a href="#">MARGIN TRADING</a></li>
-        <li><a href="#">STAKING</a></li>
+        <li v-bind:class="this.active === 'cards' ? 'active' : ''">
+          <router-link to="/account/cards">CARDS</router-link>
+        </li>
+        <li><router-link to="/affiliate-program">AFFILIATE</router-link></li>
+        <li><router-link to="/staking">STAKING</router-link></li>
       </ul>
       <ul class="right_menu">
         <li>

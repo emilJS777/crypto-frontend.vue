@@ -18,11 +18,27 @@
                 @click="show(2)">
               Payments
             </button>
+            <button
+                v-bind:class="switchElem === 3 ? 'active':''"
+                @click="show(3)">
+              Archived orders
+            </button>
+            <button
+                v-bind:class="switchElem === 4 ? 'active':''"
+                @click="show(4)">
+              Margin trading
+            </button>
+            <button>
+              <router-link to="/limits-commissions">Limit and Commisions</router-link>
+            </button>
           </div>
         </div>
         <div class="col-12 pt-5 content">
           <v-balance v-if="switchElem === 0"/>
           <v-transactions v-if="switchElem === 1"/>
+          <v-payments v-if="switchElem === 2"/>
+          <v-archived-orders v-if="switchElem === 3"/>
+          <v-margin-trading v-if="switchElem === 4"/>
         </div>
     </div>
   </div>
@@ -32,9 +48,12 @@
 import {switchFunction} from "@/components/_mixins/switch";
 import VBalance from "./switchable-pages/v-balance";
 import VTransactions from "./switchable-pages/v-transactions";
+import VPayments from "./switchable-pages/v-payments";
+import VArchivedOrders from "./switchable-pages/v-archived-orders";
+import VMarginTrading from "./switchable-pages/v-margin-trading";
 export default {
   name: "v-switch-content",
-  components: {VTransactions, VBalance},
+  components: {VMarginTrading, VArchivedOrders, VTransactions, VPayments, VBalance},
   mixins: [switchFunction]
 }
 </script>
@@ -75,8 +94,12 @@ export default {
     background-color: #f6f6f6;
     margin-top: -8px;
     padding-bottom: 30px;
+    min-height: 500px;
   }
   .switch_content > div > div:first-child{
     padding-left: 0;
+  }
+  .buttons_block > button > a{
+    color: inherit;
   }
 </style>

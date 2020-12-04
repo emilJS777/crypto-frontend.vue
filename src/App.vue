@@ -121,6 +121,9 @@
    .datepicker_block span::before{
      background-color: #42a5a5 !important;
    }
+   .datepicker_block span::before{
+     display: none;
+   }
    .datepicker_block .start-date > .calendar-cell__content,
    .datepicker_block .end-date > .calendar-cell__content{
      background-color: #42a5a5 !important;
