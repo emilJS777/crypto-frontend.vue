@@ -33,9 +33,9 @@ export default {
   data(){
     return{
       cardsInfo:[
-        {title: 'Buy crypto witch a card', description: '12Own Crypto in minutes using your card'},
-        {title: 'Buy crypto witch a card', description: '3Own Crypto in minutes using your card'},
-        {title: 'Buy crypto witch a card', description: 'Own Crypto in minutes using your card'},
+        {title: 'Cheaper GBP deposits', description: '50% off for GBP deposits with the UK-issued cards'},
+        {title: 'Margin trading', description: 'Trade with leverage as high as 100x'},
+        {title: 'K7.Crypto Staking', description: 'Earn by simply holding coins on K7.Crypto'},
         {title: 'Buy crypto witch a card', description: 'Own Crypto in minutes using your card'}
       ]
     }
@@ -67,8 +67,9 @@ export default {
     margin-top: -10px;
   }
   .bottom_section > div > div > div > h5{
-    font-weight: bold;
+    font-weight: initial;
     font-size: 18px;
+    letter-spacing: 1px;
   }
   .bottom_section > div > div > div > p{}
   .bottom_section > div > div > div > a{
@@ -91,14 +92,25 @@ export default {
   .bottom_section > div > div > div::before{
     content: '';
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     bottom: 0;
     right: 0;
-    background-image: url('~@/assets/img/creditcards.png');
     background-repeat: no-repeat;
-    background-size: 90px 90px;
+    background-size: 55px 55px;
     opacity: .8;
+  }
+  .bottom_section > div > div:nth-child(1) > div::before{
+    background-image: url('https://pngimage.net/wp-content/uploads/2018/05/deposit-png-3.png');
+  }
+  .bottom_section > div > div:nth-child(2) > div::before{
+    background-image: url('https://www.filepicker.io/api/file/oZfpAf1DQu6PEgrxmr5g');
+  }
+  .bottom_section > div > div:nth-child(3) > div::before{
+    background-image: url('https://kyivstar.net.ua/wp-content/uploads/2015/06/bonusy_kyivstar.png');
+  }
+  .bottom_section > div > div:nth-child(4) > div::before{
+    background-image: url('https://pngimg.com/uploads/credit_card/credit_card_PNG58.png');
   }
 
 </style>
