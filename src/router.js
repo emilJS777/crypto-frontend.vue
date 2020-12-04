@@ -78,6 +78,10 @@ export default new Router({
         {
             path: '/account/cards',
             component: () => import('./components/Account/cards')
+        },
+        {
+            path: '/account/profile',
+            component: () => import('./components/Account/profile')
         }
     ]
 })

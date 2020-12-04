@@ -26,7 +26,7 @@
           <div>
             <ul>
               <li>
-                <a href="#">Profil</a>
+                <router-link to="/account/profile">Profil</router-link>
               </li>
               <li>
                 <a href="#">Account</a>

@@ -176,7 +176,7 @@ button:focus{
   opacity: .1;
 }
 .switch_btn_active{
-  background-color: #f1f0f0;
+  background-color: #eae9e9;
 
   color: #222;
 }
