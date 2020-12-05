@@ -1,6 +1,6 @@
 <template>
   <div class="profile container-fluid">
-    <h5 class="heading_lightBlue mt-3">Profile information</h5>
+    <h6 class="heading_lightBlue mt-3">Profile information</h6>
     <div class="row">
       <form action="">
         <div class="form_block">
@@ -27,7 +27,7 @@
         </div>
       </form>
     </div>
-    <h5 class="heading_lightBlue mt-5">Change Password</h5>
+    <h6 class="heading_lightBlue mt-5">Change Password</h6>
     <div class="row mt-3">
       <form action="">
         <div class="form_block">
@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style scoped>
-  h5{
+  h6{
     font-weight: initial;
     letter-spacing: 2px;
   }

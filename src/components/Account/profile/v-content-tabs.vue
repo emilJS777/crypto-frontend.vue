@@ -14,10 +14,23 @@
               @click="show(1)">
             Upload
           </button>
+          <button
+              v-bind:class="switchElem === 2 ? 'active':''"
+              @click="show(2)">
+            Security
+          </button>
+          <button
+              v-bind:class="switchElem === 3 ? 'active':''"
+              @click="show(3)">
+            Api
+          </button>
         </div>
       </div>
       <div class="col-12 pt-5 content">
         <v-profile v-if="switchElem === 0"/>
+        <v-upload v-if="switchElem === 1"/>
+        <v-security v-if="switchElem === 2"/>
+        <v-api v-if="switchElem === 3 "/>
       </div>
     </div>
   </div>
@@ -26,9 +39,12 @@
 <script>
 import {switchFunction} from "@/components/_mixins/switch";
 import VProfile from "./switchable-tabs/v-profile";
+import VUpload from "./switchable-tabs/v-upload";
+import VSecurity from "./switchable-tabs/v-security";
+import VApi from "./switchable-tabs/v-api";
 export default {
 name: "v-content-tabs",
-  components: {VProfile},
+  components: {VApi, VSecurity, VUpload, VProfile},
   mixins: [switchFunction]
 }
 </script>
