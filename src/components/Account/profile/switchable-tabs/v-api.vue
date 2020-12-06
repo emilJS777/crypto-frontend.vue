@@ -41,6 +41,29 @@
 
       </form>
     </div>
+    <div class="row mt-5">
+      <table class="table mt-4">
+        <thead class="">
+        <tr>
+          <th scope="col">User ID		</th>
+          <th scope="col"> Key	</th>
+          <th scope="col">Secret</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>up133935344</td>
+          <td>12uizEiQHQozm7XTM16bqZgFA3w</td>
+          <td>IGleOtetmfAqyjvB9G27cNrdQFA</td>
+          <td>
+            <button class="btn btn_blue">active</button>
+            <button class="btn btn_darkBlue">delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -103,5 +126,28 @@ form .btn_block button{
   margin-right: 5px;
   line-height: 2;
   vertical-align: middle;
+}
+/*table*/
+table th{
+  color: #797777;
+  font-size: 14px;
+}
+table tbody{
+  height: 50px;
+  overflow: hidden;
+}
+table tbody td button{
+  padding: 0 4px;
+  font-size: 13px;
+  margin-left: 5px;
+}
+table td{
+  color: #4a4b4b;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+}
+table tr:first-child {
+  border: 0 !important;
 }
 </style>

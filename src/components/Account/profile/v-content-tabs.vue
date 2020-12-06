@@ -24,6 +24,11 @@
               @click="show(3)">
             Api
           </button>
+          <button
+              v-bind:class="switchElem === 4 ? 'active':''"
+              @click="show(4)">
+            Mobile K7 Crypto
+          </button>
         </div>
       </div>
       <div class="col-12 pt-5 content">
@@ -31,6 +36,7 @@
         <v-upload v-if="switchElem === 1"/>
         <v-security v-if="switchElem === 2"/>
         <v-api v-if="switchElem === 3 "/>
+        <v-mobile v-if="switchElem === 4 "/>
       </div>
     </div>
   </div>
@@ -42,9 +48,10 @@ import VProfile from "./switchable-tabs/v-profile";
 import VUpload from "./switchable-tabs/v-upload";
 import VSecurity from "./switchable-tabs/v-security";
 import VApi from "./switchable-tabs/v-api";
+import VMobile from "./switchable-tabs/v-mobile";
 export default {
 name: "v-content-tabs",
-  components: {VApi, VSecurity, VUpload, VProfile},
+  components: {VMobile, VApi, VSecurity, VUpload, VProfile},
   mixins: [switchFunction]
 }
 </script>
