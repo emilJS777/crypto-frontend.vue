@@ -82,6 +82,14 @@ export default new Router({
         {
             path: '/account/profile',
             component: () => import('./components/Account/profile')
+        },
+        {
+            path: '/account/account-activity',
+            component: () => import('./components/Account/account-activity')
+        },
+        {
+            path: '/account/social-networks',
+            component: () => import('./components/Account/social-networks')
         }
     ]
 })

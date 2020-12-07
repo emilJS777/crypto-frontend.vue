@@ -36,7 +36,7 @@
       <p class="text_normal text_greey">If you lost your phone, deactivate the app key.</p>
       <div class="col-12">
         <div class="download_app_block mt-5">
-            <h4 class="heading_darkBlue">Download CEX.IO app for free!</h4>
+            <h3>Download CEX.IO app for free!</h3>
           <div class="img_src_block mt-5">
             <a href="#">
               <img :src="require('@/assets/img/download-ios.svg')" alt="">
@@ -105,8 +105,9 @@ table tr:first-child {
   margin: 0 auto;
   text-align: center;
 }
-.download_app_block h4{
+.download_app_block h3{
   font-weight: initial;
+  color: #ccc;
 }
 .img_src_block > a{
   display: inline-block;

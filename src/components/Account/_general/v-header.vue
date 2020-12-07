@@ -29,10 +29,10 @@
                 <router-link to="/account/profile">Profil</router-link>
               </li>
               <li>
-                <a href="#">Account Activity</a>
+                <router-link to="/account/account-activity">Account Activity</router-link>
               </li>
               <li>
-                <a href="#">Social</a>
+                <router-link to="/account/social-networks">Social Newtorks</router-link>
               </li>
               <li>
                 <a href="#">Setting</a>
