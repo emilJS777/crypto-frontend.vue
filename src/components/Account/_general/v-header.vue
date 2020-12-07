@@ -29,7 +29,7 @@
                 <router-link to="/account/profile">Profil</router-link>
               </li>
               <li>
-                <a href="#">Account</a>
+                <a href="#">Account Activity</a>
               </li>
               <li>
                 <a href="#">Social</a>
@@ -116,7 +116,7 @@ export default {
   ul.right_menu > li > div > ul{
     padding: 0;
     background-color: #f1f1f1;
-    width: 100%;
+    width: 110%;
   }
   ul.right_menu > li > div > ul:after {
     content: '';
@@ -133,7 +133,7 @@ export default {
   }
   ul.right_menu > li > div > ul > li{
     color: #0b364f;
-    font-size: 13px;
+    font-size: 10px;
     width: 100%;
     margin: 0;
     padding: 5px 10px;

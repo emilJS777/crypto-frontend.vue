@@ -31,8 +31,7 @@ name: "v-logo"
     font-weight: bold;
     border-top-right-radius: 10px 20px;
     border-bottom-left-radius: 10px 20px;
-  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-    font-family: 'Lobster', cursive;
+    font-style: italic;
 
   }
   span:last-child{
