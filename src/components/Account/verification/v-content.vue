@@ -1,5 +1,5 @@
 <template>
-  <div class="container content mt-5 pt-5">
+  <div class="container-fluid content mt-5 pt-5">
     <div class="row">
       <div class="col-3">
         <v-verification-info-block
@@ -58,5 +58,7 @@ name: "v-content",
 </script>
 
 <style scoped>
-
+.content{
+  padding: 50px;
+}
 </style>

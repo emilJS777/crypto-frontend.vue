@@ -32,6 +32,7 @@ name: "v-logo"
     border-top-right-radius: 10px 20px;
     border-bottom-left-radius: 10px 20px;
     font-style: italic;
+    border: 1px solid #fff;
 
   }
   span:last-child{

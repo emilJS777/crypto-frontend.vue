@@ -94,6 +94,15 @@ export default new Router({
         {
             path: '/account/verification',
             component: () => import('./components/Account/verification')
+        },
+        {
+            path: '/account/verification/identity',
+            component: () => import('./components/Account/verification/identity')
+        }
+        ,
+        {
+            path: '/account/support',
+            component: () => import('./components/Account/support')
         }
     ]
 })

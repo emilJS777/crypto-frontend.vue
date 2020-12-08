@@ -19,7 +19,7 @@
       </ul>
       <ul class="right_menu">
         <li>
-          <a href="#">SUPPORT</a>
+          <router-link to="/account/support">SUPPORT</router-link>
         </li>
         <li>
           UP12355932

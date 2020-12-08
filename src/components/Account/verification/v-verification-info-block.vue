@@ -21,10 +21,10 @@
         </span>
       </div>
       <div>
-        <button class="btn btn_darkBlue"
+        <router-link to="/account/verification/identity" class="btn btn_darkBlue"
         v-if="unlock">
           Start
-        </button>
+        </router-link>
         <img :src="require('@/assets/icons/iconfinder_lock_1814107.png')"
              v-if="!unlock">
       </div>
@@ -85,6 +85,7 @@ name: "v-verification-info-block",
   cursor: pointer;
   z-index: 1;
   transition: .2s;
+  font-size: 20px;
 }
 .get_info:hover{
   background-color: #42a5a5;
@@ -92,10 +93,13 @@ name: "v-verification-info-block",
 .get_info span{
   font-weight: bold;
   color: #033d6b;
-  font-size: small;
+  font-size: 16px;
+}
+.get_info:hover span{
+  color: #fff;
 }
 .img_info{
-  height: 200px;
+  height: 250px;
   position: relative;
   z-index: 0;
 }
@@ -116,7 +120,7 @@ name: "v-verification-info-block",
 }
 .bottom_info{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 5fr 2fr;
   height: 100px;
   font-size: 15px;
   font-style: italic;
@@ -135,7 +139,7 @@ name: "v-verification-info-block",
   height: 50px;
   opacity: .5;
 }
-.bottom_info > div > button:hover{
+.bottom_info > div > a:hover{
   background-color: #ccc !important;
 }
 .description{
@@ -170,6 +174,6 @@ div.hidden{
 }
 
 .description::-webkit-scrollbar-thumb {
-  background-color: #ccc;
+  background-color: #869eb1;
 }
 </style>

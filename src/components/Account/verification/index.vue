@@ -17,5 +17,7 @@ name: "index",
 </script>
 
 <style scoped>
-
+#verification{
+  background-color: #e8e8e8;
+}
 </style>

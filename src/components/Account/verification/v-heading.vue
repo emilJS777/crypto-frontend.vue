@@ -1,7 +1,7 @@
 <template>
   <div class="heading mt-5">
     <h4 class="heading_darkBlue">Verify your Identity</h4>
-    <p class="text_big text_greey">Complete the verification stages below</p>
+    <p class="text_big">Complete the verification stages below</p>
   </div>
 </template>
 
@@ -14,5 +14,10 @@ export default {
 <style scoped>
 .heading{
   text-align: center;
+}
+p{
+  color: #42a5a5;
+  font-style: italic;
+  font-weight: bold;
 }
 </style>
