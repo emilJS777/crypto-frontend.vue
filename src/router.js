@@ -90,6 +90,10 @@ export default new Router({
         {
             path: '/account/social-networks',
             component: () => import('./components/Account/social-networks')
+        },
+        {
+            path: '/account/verification',
+            component: () => import('./components/Account/verification')
         }
     ]
 })

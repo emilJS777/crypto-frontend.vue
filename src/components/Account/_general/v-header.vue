@@ -35,7 +35,7 @@
                 <router-link to="/account/social-networks">Social Newtorks</router-link>
               </li>
               <li>
-                <a href="#">Setting</a>
+                <router-link to="/account/verification">Verification</router-link>
               </li>
               <li>
                 <a href="#">Exit</a>
