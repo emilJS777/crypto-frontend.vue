@@ -1,21 +1,21 @@
 <template>
-  <div id="support">
+  <div id="info">
     <v-header/>
-    <v-collections/>
+    <v-info-section/>
   </div>
 </template>
 
 <script>
-import VHeader from "./v-header";
-import VCollections from "./v-collections";
+import VHeader from "../_general/v-header";
+import VInfoSection from "./v-info-section";
 export default {
 name: "index",
-  components: {VCollections, VHeader}
+  components: {VInfoSection, VHeader}
 }
 </script>
 
 <style scoped>
-#support{
+#info{
   background-color: #f3f3f3;
   padding-bottom: 40px;
 }

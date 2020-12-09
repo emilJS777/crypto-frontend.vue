@@ -98,11 +98,18 @@ export default new Router({
         {
             path: '/account/verification/identity',
             component: () => import('./components/Account/verification/identity')
-        }
-        ,
+        },
         {
             path: '/account/support',
-            component: () => import('./components/Account/support')
+            component: () => import('./components/Account/support/home')
+        },
+        {
+            path: '/account/support/collections',
+            component: () => import('./components/Account/support/collections')
+        },
+        {
+            path: '/account/support/info',
+            component: () => import('./components/Account/support/info')
         }
     ]
 })

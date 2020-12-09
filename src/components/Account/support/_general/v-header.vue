@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import VLogo from "../../_general/v-logo";
+import VLogo from "../../../_general/v-logo";
 export default {
 name: "v-header",
   components: {VLogo}

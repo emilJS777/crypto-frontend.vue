@@ -80,6 +80,7 @@ export default {
   }
   ul > li > a{
     color: inherit;
+    display: block;
   }
   ul{
     display: inline-block;
