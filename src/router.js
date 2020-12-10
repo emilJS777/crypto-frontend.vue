@@ -101,15 +101,15 @@ export default new Router({
         },
         {
             path: '/account/support',
-            component: () => import('./components/Account/support/home')
+            component: () => import('./components/Account/support/collections-menu')
         },
         {
             path: '/account/support/collections',
-            component: () => import('./components/Account/support/collections')
+            component: () => import('./components/Account/support/sub-collections-menu')
         },
         {
-            path: '/account/support/info',
-            component: () => import('./components/Account/support/info')
+            path: '/account/support/edition',
+            component: () => import('./components/Account/support/edition')
         }
     ]
 })

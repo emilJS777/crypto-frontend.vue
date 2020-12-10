@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-10">
-          <router-link to="/account/support/collections" v-for="(item, index) in collections" :key="index">
+          <router-link to="/account/support/collections" v-for="(item, index) in collections" :key="index" >
             <div>
               <div>
                 <img :src=item.icon :title=item.title>
@@ -32,6 +32,7 @@
 export default {
   name: "v-collections",
   props:['collections']
+
 }
 </script>
 
