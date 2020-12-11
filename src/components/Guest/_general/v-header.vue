@@ -161,6 +161,7 @@
     font-size: 13px;
     position: relative;
     color: #4a4b4b;
+    font-weight: 600;
   }
   li.new:before{
     content: 'NEW';
@@ -181,8 +182,8 @@
     content: "\27A4";
     position: absolute;
     right: -13px;
-    top: 0px;
-    font-size: 12px;
+    top: 2px;
+    font-size: 10px;
     transform: rotate(90deg);
     transition: .2s;
   }

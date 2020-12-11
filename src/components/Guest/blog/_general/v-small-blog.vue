@@ -1,6 +1,6 @@
 <template>
   <div class="small_blog mt-2">
-    <a href="#">
+    <router-link to="/blog/certain-blog">
       <div class="blog_img">
         <img src="https://blog.cex.io/wp-content/uploads/2019/05/Digest-B-1080x675.jpg" alt="">
       </div>
@@ -8,7 +8,7 @@
         <h3 class="heading_darkBlue">Media about us — October, 2020</h3>
         <span>by Nadya, K7Crypto Product Team | Nov 10, 2020</span>
       </div>
-    </a>
+    </router-link>
     <div class="description_block">
       <p class="text_big">
         October has been busy with all sorts of events: the

@@ -1,6 +1,6 @@
 <template>
-  <div class="blog_menu col-4 mt-4">
-    <router-link to="/" class="box_shadow">
+  <div class="blog_menu col-4 mt-2 mb-4">
+    <router-link to="/blog/certain-blog" class="box_shadow">
       <div class="img_head">
         <img src="https://blog.cex.io/wp-content/uploads/2020/11/blog-400x250.png" alt="">
         <div class="subheader">

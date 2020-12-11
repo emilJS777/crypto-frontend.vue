@@ -1,5 +1,5 @@
 <template>
-  <div class=" left_sidebar">
+  <div class="sidebar">
     <div class="bitcoin_price_block">
       <a href="#">
         <span>1 BITCOIN</span>
@@ -52,10 +52,10 @@ export default {
 </script>
 
 <style scoped>
-  .left_sidebar{
+  .sidebar{
     padding-top: 20px;
-    border-right: 1px solid #d6d6d6;
-    padding-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     height: 100%;
   }
   .bitcoin_price_block{

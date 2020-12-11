@@ -1,6 +1,6 @@
 <template>
   <div id="geographies">
-    <v-header/>
+    <v-header active="geographies"/>
     <div class="container">
       <div class="row">
         <div class="col-3">
@@ -13,19 +13,23 @@
         </div>
       </div>
     </div>
+    <v-footer-menu/>
   </div>
 </template>
 
 <script>
-import VHeader from "../_general/v-header";
-import VLeftSidebar from "../_general/v-left-sidebar";
-import VSmallBlog from "../_general/v-small-blog";
+import VHeader from "../../_general/v-header";
+import VLeftSidebar from "../../_general/v-sidebar";
+import VSmallBlog from "../../_general/v-small-blog";
+import VFooterMenu from "../../_general/v-footer-menu";
 export default {
   name: "index",
-  components: {VSmallBlog, VLeftSidebar, VHeader}
+  components: {VFooterMenu, VSmallBlog, VLeftSidebar, VHeader}
 }
 </script>
 
 <style scoped>
-
+  .col-3{
+    border-right: 1px solid#d6d6d6;
+  }
 </style>

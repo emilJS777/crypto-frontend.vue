@@ -68,23 +68,27 @@ export default new Router({
         },
         {
             path: '/blog/listings',
-            component: () => import('./components/Guest/blog/listings')
+            component: () => import('./components/Guest/blog/categories/listings')
         },
         {
             path: '/blog/product',
-            component: () => import('./components/Guest/blog/product')
+            component: () => import('./components/Guest/blog/categories/product')
         },
         {
             path: '/blog/leadership',
-            component: () => import('./components/Guest/blog/leadership')
+            component: () => import('./components/Guest/blog/categories/leadership')
         },
         {
             path: '/blog/geographies',
-            component: () => import('./components/Guest/blog/geographies')
+            component: () => import('./components/Guest/blog/categories/geographies')
         },
         {
             path: '/blog/market',
-            component: () => import('./components/Guest/blog/market')
+            component: () => import('./components/Guest/blog/categories/market')
+        },
+        {
+            path: '/blog/certain-blog',
+            component: () => import('./components/Guest/blog/certain-blog')
         },
             //    account routes
         {

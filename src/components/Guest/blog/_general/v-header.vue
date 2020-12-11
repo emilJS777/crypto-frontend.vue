@@ -7,11 +7,11 @@
           </div>
           <div class="col-10 nav_block ">
             <ul>
-              <li><router-link to="/blog/listings">Listing</router-link></li>
-              <li><router-link to="/blog/product">Product</router-link></li>
-              <li><router-link to="/blog/leadership">Leadership</router-link></li>
-              <li><router-link to="/blog/geographies">Geigrafies</router-link></li>
-              <li><router-link to="/blog/market">Market</router-link></li>
+              <li v-bind:class="active === 'listings' ? 'active' : ''"><router-link to="/blog/listings">Listing</router-link></li>
+              <li v-bind:class="active === 'product' ? 'active' : ''"><router-link to="/blog/product">Product</router-link></li>
+              <li v-bind:class="active === 'leadership' ? 'active' : ''"><router-link to="/blog/leadership">Leadership</router-link></li>
+              <li v-bind:class="active === 'geographies' ? 'active' : ''"><router-link to="/blog/geographies">Geographies</router-link></li>
+              <li v-bind:class="active === 'market' ? 'active' : ''"><router-link to="/blog/market">Market</router-link></li>
             </ul>
           </div>
         </div>
@@ -23,7 +23,8 @@
 import VLogo from "../../../_general/v-logo";
 export default {
 name: "v-header",
-  components: {VLogo}
+  components: {VLogo},
+  props: ["active"]
 }
 </script>
 
@@ -32,7 +33,7 @@ name: "v-header",
     width: 100%;
     background-color: #fff;
     padding: 18px;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid #d6d6d6;
   }
   .nav_block{
     display: flex;
@@ -49,8 +50,12 @@ name: "v-header",
     display: inline-block;
     margin-right: 15px;
   }
+  .nav_block > ul > li.active{
+    border-bottom: 2px solid#42a5a5;
+  }
   .nav_block > ul > li >a{
     color: initial;
+    padding: 2px 8px;
   }
   .nav_block > ul > li >a:hover{
     color: #626262;
