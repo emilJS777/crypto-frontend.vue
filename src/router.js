@@ -62,6 +62,30 @@ export default new Router({
             path: '/press',
             component: () => import('./components/Guest/press')
         },
+        {
+            path: '/blog',
+            component: () => import('./components/Guest/blog/home')
+        },
+        {
+            path: '/blog/listings',
+            component: () => import('./components/Guest/blog/listings')
+        },
+        {
+            path: '/blog/product',
+            component: () => import('./components/Guest/blog/product')
+        },
+        {
+            path: '/blog/leadership',
+            component: () => import('./components/Guest/blog/leadership')
+        },
+        {
+            path: '/blog/geographies',
+            component: () => import('./components/Guest/blog/geographies')
+        },
+        {
+            path: '/blog/market',
+            component: () => import('./components/Guest/blog/market')
+        },
             //    account routes
         {
             path: '/account/trade',
