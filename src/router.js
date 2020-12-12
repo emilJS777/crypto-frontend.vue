@@ -90,6 +90,10 @@ export default new Router({
             path: '/blog/certain-blog',
             component: () => import('./components/Guest/blog/certain-blog')
         },
+        {
+            path: '/buy-crypto',
+            component: () => import('./components/Guest/buy-crypto')
+        },
             //    account routes
         {
             path: '/account/trade',

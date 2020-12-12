@@ -5,8 +5,7 @@
         <div class="col-12 grid_menu_block">
           <ul>
             <h5>Services</h5>
-            <li>Buy Bitcoins</li>
-            <li>Buy Ethereum</li>
+            <li><router-link to="/buy-crypto">Buy Crypto</router-link></li>
             <li>Buy DASH</li>
             <li>BTC to USD</li>
             <li>Sell Bitcoin</li>
@@ -85,6 +84,9 @@ name: "v-footer-menu"
     font-size: 15px;
     font-style: italic;
     color: #929090;
+  }
+  .grid_menu_block > ul > li > a{
+    color: #42a5a5;
   }
   .grid_menu_block > ul > li:hover{
     color: #42a5a5;
