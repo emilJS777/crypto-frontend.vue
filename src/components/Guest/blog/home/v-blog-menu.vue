@@ -29,9 +29,8 @@ name: "v-blog-menu"
 </script>
 
 <style scoped>
-  .blog_menu{
+  .blog_menu{}
 
-  }
   .img_head > img{
     width: 100%;
     height: 220px;

@@ -138,6 +138,10 @@ export default new Router({
         {
             path: '/account/support/edition',
             component: () => import('./components/Account/support/edition')
-        }
+        },
+        {
+            path: '/account/deposit-withdraw',
+            component: () => import('./components/Account/deposit-withdraw')
+        },
     ]
 })

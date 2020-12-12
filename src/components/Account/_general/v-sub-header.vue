@@ -20,16 +20,16 @@
       <div class="deposit_withdraw_block col-6">
         <ul>
           <li>
-            <a href="#">
+            <router-link to="/account/deposit-withdraw">
               <span>DEPOSIT</span>
               <img :src="require('@/assets/icons/deposit.svg')" alt="">
-            </a>
+            </router-link>
           </li>
           <li>
-            <a href="#">
+            <router-link to="/account/deposit-withdraw">
               <span>WITHDRAW</span>
               <img :src="require('@/assets/icons/withdraw.svg')" alt="">
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>
