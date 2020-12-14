@@ -94,6 +94,18 @@ export default new Router({
             path: '/buy-crypto',
             component: () => import('./components/Guest/buy-crypto')
         },
+        {
+            path: '/sell-bitcoins',
+            component: () => import('./components/Guest/sell-bitcoins')
+        },
+        {
+            path: '/bitcoin-trading',
+            component: () => import('./components/Guest/bitcoin-trading')
+        },
+        {
+            path: '/bitcoin-calculator',
+            component: () => import('./components/Guest/bitcoin-calculator')
+        },
             //    account routes
         {
             path: '/account/trade',

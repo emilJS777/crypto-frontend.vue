@@ -24,7 +24,7 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <button class="btn btn_blue">Buy Now</button>
+                <router-link to="/buysell" class="btn btn_blue">Buy Now</router-link>
               </div>
             </div>
           </div>
@@ -106,7 +106,9 @@ export default {
     transform: translateY(-50%);
     color: #5d706b;
   }
-
+  a{
+    line-height: 1.7;
+  }
   .we_accept > img{
     width: 65px;
     margin-left: 15px;
