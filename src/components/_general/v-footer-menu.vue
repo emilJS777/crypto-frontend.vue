@@ -13,7 +13,7 @@
           </ul>
           <ul>
             <h5>Information</h5>
-            <li>Buy Bitcoins</li>
+            <li><router-link to="/limits-commissions">Limit and Commissions</router-link></li>
             <li>Buy Ethereum</li>
             <li>Buy DASH</li>
             <li>BTC to USD</li>

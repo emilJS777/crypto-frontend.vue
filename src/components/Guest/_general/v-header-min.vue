@@ -10,11 +10,10 @@
         <div class="col-7 navigation_block">
           <nav class="navigation">
             <ul>
-              <li><a href="#">BUY/SELL</a></li>
-              <li><a href="#">MARKET DATA</a></li>
-              <li><a href="#">MARGIN TRADING</a></li>
-              <li><a href="#">AFFILIATE</a></li>
-              <li><a href="#">STAKING</a></li>
+              <li><router-link to="/buysell">BUY/SELL</router-link></li>
+              <li><router-link to="/spot-trading">MARKET DATA</router-link></li>
+              <li><router-link to="/affiliate-program">AFFILIATE</router-link></li>
+              <li><router-link to="/staking">STAKING</router-link></li>
             </ul>
           </nav>
         </div>
