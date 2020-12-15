@@ -1,22 +1,15 @@
 <template>
-  <div class="container" id="faq">
-    <div class="row justify-content-center">
-      <div class="col-12 mt-5">
-        <h1 class="heading_darkBlue">FAQ</h1>
-        <div class="faq mt-5" v-for="(item, index) in faq" :key="index">
+        <div class="faq mt-5">
           <h3 class="heading_darkBlue question"
-              @click="show(index)"
-              v-bind:class="switchElem === index ? 'minus' : ''">
-            {{item.question}}
+              @click="show"
+              v-bind:class="switchElem ? 'minus' : ''">
+            What is staking coins?
           </h3>
           <p class="text_greey text_big answer "
-          v-if="switchElem === index">
-            {{item.answer}}
+          v-if="switchElem">
+            Put simply, staking is holding funds in a cryptocurrency wallet to maintain a
           </p>
         </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -24,30 +17,12 @@
 
   export default {
   name: "v-faq",
-  data(){
-    return{
-      faq: [
-        {question: "What is staking coins?", answer: "Put simply, staking is holding funds in a cryptocurrency wallet to maintain a"},
-        {question: "What is staking coins?", answer: "Put simply, staking is holding funds in a cryptocurrency wallet to maintain a"},
-        {question: "What is staking coins?", answer: "Put simply, staking is holding funds in a cryptocurrency wallet to maintain a"}
-      ]
-    }
-  },
     mixins: [switchFunction]
 }
 </script>
 
 <style scoped>
-  h1{
-    text-align: center;
-  }
-  .faq{
-    width: 60%;
-    padding: 5px;
-    border-bottom: 1px solid #d7d3d3;
-    display: block;
-    margin: 0 auto;
-  }
+
 
   .faq > h3{
     cursor: pointer;

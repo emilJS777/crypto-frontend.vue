@@ -5,45 +5,45 @@
         <h4 class="heading_darkBlue mb-5">Account Settins</h4>
         <div class="buttons_block">
           <button
-              v-bind:class="switchElem === 0 ? 'active':''"
-              @click="show(0)">
+              v-bind:class="tabElem === 0 ? 'active':''"
+              @click="nextTab(0)">
             Profile
           </button>
           <button
-              v-bind:class="switchElem === 1 ? 'active':''"
-              @click="show(1)">
+              v-bind:class="tabElem === 1 ? 'active':''"
+              @click="nextTab(1)">
             Upload
           </button>
           <button
-              v-bind:class="switchElem === 2 ? 'active':''"
-              @click="show(2)">
+              v-bind:class="tabElem === 2 ? 'active':''"
+              @click="nextTab(2)">
             Security
           </button>
           <button
-              v-bind:class="switchElem === 3 ? 'active':''"
-              @click="show(3)">
+              v-bind:class="tabElem === 3 ? 'active':''"
+              @click="nextTab(3)">
             Api
           </button>
           <button
-              v-bind:class="switchElem === 4 ? 'active':''"
-              @click="show(4)">
+              v-bind:class="tabElem === 4 ? 'active':''"
+              @click="nextTab(4)">
             Mobile K7 Crypto
           </button>
         </div>
       </div>
       <div class="col-12 pt-5 content">
-        <v-profile v-if="switchElem === 0"/>
-        <v-upload v-if="switchElem === 1"/>
-        <v-security v-if="switchElem === 2"/>
-        <v-api v-if="switchElem === 3 "/>
-        <v-mobile v-if="switchElem === 4 "/>
+        <v-profile v-if="tabElem === 0"/>
+        <v-upload v-if="tabElem === 1"/>
+        <v-security v-if="tabElem === 2"/>
+        <v-api v-if="tabElem === 3 "/>
+        <v-mobile v-if="tabElem === 4 "/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import {switchFunction} from "@/components/_mixins/switch";
+import {tabsFunction} from '../../_mixins/tabs';
 import VProfile from "./switchable-tabs/v-profile";
 import VUpload from "./switchable-tabs/v-upload";
 import VSecurity from "./switchable-tabs/v-security";
@@ -52,7 +52,7 @@ import VMobile from "./switchable-tabs/v-mobile";
 export default {
 name: "v-content-tabs",
   components: {VMobile, VApi, VSecurity, VUpload, VProfile},
-  mixins: [switchFunction]
+  mixins: [tabsFunction]
 }
 </script>
 

@@ -14,9 +14,9 @@
           <ul>
             <h5>Information</h5>
             <li><router-link to="/limits-commissions">Limit and Commissions</router-link></li>
-            <li>Buy Ethereum</li>
-            <li>Buy DASH</li>
-            <li>BTC to USD</li>
+            <li><router-link to="/account/support/edition">How to buy crypto</router-link></li>
+            <li><router-link to="/bitcoin-halving">Bitcoin Halving</router-link></li>
+            <li><router-link to="/fee-schedule">Fee Schedule</router-link></li>
             <li>Sell Bitcoin</li>
             <li>Bitcoin Trading</li>
           </ul>

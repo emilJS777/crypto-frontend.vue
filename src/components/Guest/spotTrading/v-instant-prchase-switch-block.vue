@@ -2,15 +2,15 @@
   <div class="mt-5 mb-5">
     <div class="buttons_block">
       <button class="switch_btn"
-              v-bind:class="switchElem === 0 ? 'switch_btn_active': ' ' "
-              @click="show(0)">Limit</button>
+              v-bind:class="tabElem === 0 ? 'switch_btn_active': ' ' "
+              @click="nextTab(0)">Limit</button>
       <button class="switch_btn"
-              v-bind:class="switchElem === 1 ? 'switch_btn_active': ' ' "
-              @click="show(1)">Trading</button>
+              v-bind:class="tabElem === 1 ? 'switch_btn_active': ' ' "
+              @click="nextTab(1)">Trading</button>
     </div>
     <div class="content">
       <div id="limit" class="row switchBlock"
-           v-if="switchElem === 0">
+           v-if="tabElem === 0">
         <div class="col-6">
           <div class="form_block">
             <h5 class="heading_darkBlue">Buy BTC: <span class="text_greey">USD balance 0.00</span></h5>
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div id="trading" class="row switchBlock"
-           v-if="switchElem === 1">
+           v-if="tabElem === 1">
         <div class="col-6">
           <div class="form_block">
             <h5 class="heading_darkBlue">Instant buy BTC: <span class="text_greey">USD balance 0.00</span></h5>
@@ -128,10 +128,11 @@
 </template>
 
 <script>
-  import {switchFunction} from "@/components/_mixins/switch";
+import {tabsFunction} from '../../_mixins/tabs';
+
 export default {
   name: "v-instant-prchase",
-  mixins: [switchFunction]
+  mixins: [tabsFunction]
 }
 </script>
 

@@ -4,28 +4,28 @@
         <div class="col-12">
           <div class="buttons_block">
             <button
-                v-bind:class="switchElem === 0 ? 'active':''"
-                @click="show(0)">
+                v-bind:class="tabElem === 0 ? 'active':''"
+                @click="nextTab(0)">
               Balance
             </button>
             <button
-                v-bind:class="switchElem === 1 ? 'active':''"
-                @click="show(1)">
+                v-bind:class="tabElem === 1 ? 'active':''"
+                @click="nextTab(1)">
               Transactions
             </button>
             <button
-                v-bind:class="switchElem === 2 ? 'active':''"
-                @click="show(2)">
+                v-bind:class="tabElem === 2 ? 'active':''"
+                @click="nextTab(2)">
               Payments
             </button>
             <button
-                v-bind:class="switchElem === 3 ? 'active':''"
-                @click="show(3)">
+                v-bind:class="tabElem === 3 ? 'active':''"
+                @click="nextTab(3)">
               Archived orders
             </button>
             <button
-                v-bind:class="switchElem === 4 ? 'active':''"
-                @click="show(4)">
+                v-bind:class="tabElem === 4 ? 'active':''"
+                @click="nextTab(4)">
               Margin trading
             </button>
             <button>
@@ -34,18 +34,18 @@
           </div>
         </div>
         <div class="col-12 pt-5 content">
-          <v-balance v-if="switchElem === 0"/>
-          <v-transactions v-if="switchElem === 1"/>
-          <v-payments v-if="switchElem === 2"/>
-          <v-archived-orders v-if="switchElem === 3"/>
-          <v-margin-trading v-if="switchElem === 4"/>
+          <v-balance v-if="tabElem === 0"/>
+          <v-transactions v-if="tabElem === 1"/>
+          <v-payments v-if="tabElem === 2"/>
+          <v-archived-orders v-if="tabElem === 3"/>
+          <v-margin-trading v-if="tabElem === 4"/>
         </div>
     </div>
   </div>
 </template>
 
 <script>
-import {switchFunction} from "@/components/_mixins/switch";
+import {tabsFunction} from '../../_mixins/tabs';
 import VBalance from "./switchable-pages/v-balance";
 import VTransactions from "./switchable-pages/v-transactions";
 import VPayments from "./switchable-pages/v-payments";
@@ -54,7 +54,7 @@ import VMarginTrading from "./switchable-pages/v-margin-trading";
 export default {
   name: "v-switch-content",
   components: {VMarginTrading, VArchivedOrders, VTransactions, VPayments, VBalance},
-  mixins: [switchFunction]
+  mixins: [tabsFunction]
 }
 </script>
 

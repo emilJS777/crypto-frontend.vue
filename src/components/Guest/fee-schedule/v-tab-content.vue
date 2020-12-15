@@ -3,19 +3,19 @@
     <div class="mt-5 mb-5 row">
       <div class="buttons_block col-12">
         <button class="switch_btn"
-                v-bind:class="switchElem === 0 ? 'switch_btn_active': ' ' "
-                @click="show(0)">Transaction Fees</button>
+                v-bind:class="tabElem === 0 ? 'switch_btn_active': ' ' "
+                @click="nextTab(0)">Transaction Fees</button>
         <button class="switch_btn"
-                v-bind:class="switchElem === 1 ? 'switch_btn_active': ' ' "
-                @click="show(1)">Deposit/Withdrawal Fees</button>
+                v-bind:class="tabElem === 1 ? 'switch_btn_active': ' ' "
+                @click="nextTab(1)">Deposit/Withdrawal Fees</button>
       </div>
       <div class="content col-12">
         <div class="row switchBlock"
-             v-if="switchElem === 0">
+             v-if="tabElem === 0">
           <v-transaction-fees/>
         </div>
         <div class="row switchBlock"
-             v-if="switchElem === 1">
+             v-if="tabElem === 1">
           <v-deposit-fees/>
         </div>
       </div>
@@ -26,12 +26,13 @@
 <script>
 import VDepositFees from "@/components/Guest/fee-schedule/v-deposit-fees";
 import VTransactionFees from "@/components/Guest/fee-schedule/v-transaction-fees";
-import {switchFunction} from "@/components/_mixins/switch";
+import {tabsFunction} from '../../_mixins/tabs';
+
 
 export default {
 name: "v-content",
   components: {VTransactionFees, VDepositFees},
-  mixins: [switchFunction]
+  mixins: [tabsFunction]
 }
 </script>
 

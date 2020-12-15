@@ -106,6 +106,10 @@ export default new Router({
             path: '/bitcoin-calculator',
             component: () => import('./components/Guest/bitcoin-calculator')
         },
+        {
+            path: '/bitcoin-halving',
+            component: () => import('./components/Guest/bitcoin-halving')
+        },
             //    account routes
         {
             path: '/account/trade',

@@ -1,12 +1,12 @@
 export const switchFunction = {
     data(){
         return{
-            switchElem: 0
+            switchElem: false
         }
     },
     methods:{
-        show: function(index){
-            this.switchElem = index;
+        show: function(){
+            this.switchElem = !this.switchElem;
         }
     }
 }

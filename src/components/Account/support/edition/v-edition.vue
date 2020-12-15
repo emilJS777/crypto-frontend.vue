@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
       <div class="col-10 mt-5">
         <div class="header">
-          <h2 class="">editor collecction</h2>
+          <h2 class="">How to buy crypto</h2>
         </div>
         <div class="subheader">
           <div class="img">
@@ -16,24 +16,79 @@
         </div>
         <div class="info_section">
           <p>
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
+            At K7.crypto, you can buy crypto as easily as you shop online. Just select the amount of
+            crypto you want to get and pay directly with your debit/credit card. The whole process takes
+            less than five minutes:
+          </p>
+          <ul>
+            <li>Open the Buy/Sell page</li>
+            <li>Choose a crypto pack and click Buy </li>
+            <li>Enter your card number and card expiry date</li>
+          </ul>
+          <p>
+            You’ll have the crypto you purchased on your K7.crypto balance within minutes.
           </p>
           <p>
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
+            We’ve prepared a detailed guide to help you become a crypto owner without hassle.
           </p>
+          <h4 class="mt-5">1. Register an account</h4>
           <p>
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
-            alskdsldfds alskdmaslkdmasldasl dmasldkmalsk dmaskld aklsdmk asldmaksdm a.sdm
+            You’ll need to provide your email address, country of residence, first and last name, and date of birth. US residents should also pass Identity verification before making a purchase.
           </p>
         </div>
+        <div class="info_section">
+          <p>
+            At K7.crypto, you can buy crypto as easily as you shop online. Just select the amount of
+            crypto you want to get and pay directly with your debit/credit card. The whole process takes
+            less than five minutes:
+          </p>
+          <ul>
+            <li>Open the Buy/Sell page</li>
+            <li>Choose a crypto pack and click Buy </li>
+            <li>Enter your card number and card expiry date</li>
+          </ul>
+          <p>
+            You’ll have the crypto you purchased on your K7.crypto balance within minutes.
+          </p>
+          <p>
+            We’ve prepared a detailed guide to help you become a crypto owner without hassle.
+          </p>
+          <h4 class="mt-5">1. Register an account</h4>
+          <p>
+            You’ll need to provide your email address, country of residence, first and last name, and date of birth. US residents should also pass Identity verification before making a purchase.
+          </p>
+        </div>
+        <div class="info_section">
+          <p>
+            At K7.crypto, you can buy crypto as easily as you shop online. Just select the amount of
+            crypto you want to get and pay directly with your debit/credit card. The whole process takes
+            less than five minutes:
+          </p>
+          <img :src="require('@/assets/img/spot_trading_img.png')" alt="">
+        </div>
+        <div class="info_section">
+          <p>
+            At K7.crypto, you can buy crypto as easily as you shop online. Just select the amount of
+            crypto you want to get and pay directly with your debit/credit card. The whole process takes
+            less than five minutes:
+          </p>
+          <ul>
+            <li>Open the Buy/Sell page</li>
+            <li>Choose a crypto pack and click Buy </li>
+            <li>Enter your card number and card expiry date</li>
+          </ul>
+          <p>
+            You’ll have the crypto you purchased on your K7.crypto balance within minutes.
+          </p>
+          <p>
+            We’ve prepared a detailed guide to help you become a crypto owner without hassle.
+          </p>
+          <h4 class="mt-5">1. Register an account</h4>
+          <p>
+            You’ll need to provide your email address, country of residence, first and last name, and date of birth. US residents should also pass Identity verification before making a purchase.
+          </p>
+        </div>
+
         <div class="appraisal">
           <h6>Question pomog ?</h6>
           <div class="smails">
@@ -88,7 +143,12 @@ export default {
     margin-top: 40px;
     color: #696d6d;
   }
-
+  ul{
+    padding-left: 20px;
+  }
+  ul > li{
+    list-style: initial;
+  }
   .appraisal{
     width: 500px;
     margin: 40px auto;

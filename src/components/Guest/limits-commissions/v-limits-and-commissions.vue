@@ -6,16 +6,16 @@
         <div class="mt-5 mb-5 col-12">
           <div class="buttons_block">
             <button class="switch_btn"
-                    v-bind:class="switchElem === 0 ? 'switch_btn_active': ' ' "
-                    @click="show(0)">Payment Methods</button>
+                    v-bind:class="tabElem === 0 ? 'switch_btn_active': ' ' "
+                    @click="nextTab(0)">Payment Methods</button>
 
             <button class="switch_btn"
-                    v-bind:class="switchElem === 1 ? 'switch_btn_active': ' ' "
-                    @click="show(1)">Cryptocurrencies</button>
+                    v-bind:class="tabElem === 1 ? 'switch_btn_active': ' ' "
+                    @click="nextTab(1)">Cryptocurrencies</button>
           </div>
           <div class="content">
             <div class="switchBlock"
-            v-if="switchElem === 0">
+            v-if="tabElem === 0">
               <div class="">
                 <div class="col-12 table mt-5">
                   <div class="row table_head">
@@ -63,7 +63,7 @@
               </div>
             </div>
             <div  class="switchBlock hidden"
-            v-else-if="switchElem === 1">
+            v-else-if="tabElem === 1">
               <div class="">
                 <div class="col-12 table mt-5">
                   <div class="row table_head">
@@ -99,7 +99,7 @@
 </template>
 
 <script>
-  import {switchFunction} from "@/components/_mixins/switch";
+import {tabsFunction} from '../../_mixins/tabs';
 
 export default {
   name: "v-limits-and-commissions",
@@ -116,7 +116,7 @@ export default {
       ]
     }
   },
-  mixins:[switchFunction]
+  mixins:[tabsFunction]
 }
 </script>
 

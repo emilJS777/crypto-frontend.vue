@@ -4,7 +4,11 @@
     <v-face-section/>
     <v-calculate-earnings/>
     <v-all-available-coins />
-    <v-faq/>
+        <div class="container mt-5">
+          <h1 class="heading_darkBlue">FAQ</h1>
+          <v-faq/>
+          <v-faq/>
+        </div>
     <v-footer-menu/>
   </div>
 </template>
@@ -25,5 +29,14 @@ export default {
 </script>
 
 <style scoped>
-
+h1{
+  text-align: center;
+}
+.faq{
+  width: 60%;
+  padding: 5px;
+  border-bottom: 1px solid #d7d3d3;
+  display: block;
+  margin: 0 auto;
+}
 </style>
