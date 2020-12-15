@@ -1,6 +1,6 @@
 <template>
   <div id="buysell">
-    <v-heading class="mt-5"/>
+    <v-heading class="mt-5 pt-5"/>
     <div class="row">
       <div class="col-12 mt-4">
         <div class="select_block_buy_for">
@@ -17,14 +17,18 @@
     </div>
     <div class="container">
       <div class="row mt-5">
-        <div class="col-4 mt-2">
+        <div class="col-3 mt-2">
           <v-different-purchase-card/>
         </div>
-        <div class="col-4 mt-2">
+        <div class="col-3 mt-2">
+          <v-popular-purchase-card
+              :price="200"/>
+        </div>
+        <div class="col-3 mt-2">
           <v-popular-purchase-card
               :price="500"/>
         </div>
-        <div class="col-4 mt-2">
+        <div class="col-3 mt-2">
           <v-popular-purchase-card
               :price="1000"/>
         </div>

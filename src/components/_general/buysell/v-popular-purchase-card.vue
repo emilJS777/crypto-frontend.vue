@@ -10,7 +10,7 @@
         <p>BTC</p>
       </div>
     </div>
-    <a href="#" class="btn btn_blue">Buy</a>
+    <router-link to="/account/cards"  class="btn btn_blue">Buy</router-link>
   </div>
 </template>
 

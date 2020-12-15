@@ -17,11 +17,13 @@
             <li><router-link to="/account/support/edition">How to buy crypto</router-link></li>
             <li><router-link to="/bitcoin-halving">Bitcoin Halving</router-link></li>
             <li><router-link to="/fee-schedule">Fee Schedule</router-link></li>
-            <li>Sell Bitcoin</li>
-            <li>Bitcoin Trading</li>
+            <li><router-link to="/account/support/edition">Getting Started</router-link></li>
+            <li><router-link to="/account/support/edition">Identity Verification Guite</router-link></li>
+            <li><router-link to="/account/support/edition">Card Verification Guite</router-link></li>
           </ul>
           <ul>
             <h5>Tools</h5>
+            <li><router-link to="/k7-api">Api</router-link></li>
             <li><router-link to="/bitcoin-calculator">Bitcoin Calculator</router-link></li>
             <li>Buy Ethereum</li>
             <li>Buy DASH</li>

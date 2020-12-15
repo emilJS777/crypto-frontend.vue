@@ -110,6 +110,10 @@ export default new Router({
             path: '/bitcoin-halving',
             component: () => import('./components/Guest/bitcoin-halving')
         },
+        {
+            path: '/k7-api',
+            component: () => import('./components/Guest/k7-api')
+        },
             //    account routes
         {
             path: '/account/trade',
@@ -162,6 +166,10 @@ export default new Router({
         {
             path: '/account/deposit-withdraw',
             component: () => import('./components/Account/deposit-withdraw')
+        },
+        {
+            path: '/account/processing-alerts',
+            component: () => import('./components/Account/processing-alerts')
         },
     ]
 })

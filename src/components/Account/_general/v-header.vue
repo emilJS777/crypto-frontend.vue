@@ -38,6 +38,9 @@
                 <router-link to="/account/verification">Verification</router-link>
               </li>
               <li>
+                <router-link to="/account/processing-alerts">Notfication Center</router-link>
+              </li>
+              <li>
                 <a href="#">Exit</a>
               </li>
             </ul>
