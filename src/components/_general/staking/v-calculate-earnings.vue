@@ -6,7 +6,7 @@
         <div class="calculate_block mt-5">
           <div class="top_block">
             <span class="text_big heading_darkBlue">Choose a coin to stake:</span>
-            <v-select/>
+            <v-select :priceTag="['XTZ','ETH']"/>
           </div>
           <div class="progress_block mt-4">
             <div>

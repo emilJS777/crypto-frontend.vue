@@ -18,9 +18,9 @@
   import VHeader from "../_general/v-header";
   import VFaceSection from "./v-face-section";
   import VFooterMenu from "@/components/_general/v-footer-menu";
-  import VCalculateEarnings from "./v-calculate-earnings";
+  import VCalculateEarnings from "../../_general/staking/v-calculate-earnings";
   import VAllAvailableCoins from "./v-all-available-coins";
-  import VFaq from "./v-faq";
+  import VFaq from "../../_general/staking/v-faq";
 
 export default {
   name: "index",

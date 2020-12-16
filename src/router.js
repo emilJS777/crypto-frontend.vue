@@ -128,6 +128,10 @@ export default new Router({
             component: () => import('./components/Account/buysell')
         },
         {
+            path: '/account/staking',
+            component: () => import('./components/Account/staking')
+        },
+        {
             path: '/account/finance',
             component: () => import('./components/Account/finance')
         },
