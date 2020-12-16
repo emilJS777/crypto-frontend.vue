@@ -23,7 +23,7 @@
               <p class="heading_darkBlue">{{ tb.dailyWathdrawal }}</p>
             </div>
             <div class="col-2">
-              <a href="#" class="btn btn_blue">Increase Limit</a>
+              <router-link to="/login" class="btn btn_blue">Increase Limit</router-link>
             </div>
           </div>
         </div>

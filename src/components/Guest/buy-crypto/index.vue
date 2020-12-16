@@ -31,8 +31,8 @@
 </template>
 
 <script>
-import VPopularPurchaseCard from "../buysell/v-popular-purchase-card";
-import VDifferentPurchaseCard from "../buysell/v-different-purchase-card";
+import VPopularPurchaseCard from "../../_general/buysell/v-popular-purchase-card";
+import VDifferentPurchaseCard from "../../_general/buysell/v-different-purchase-card";
 import VDescription from "./v-description";
 import VHeader from "../_general/v-header";
 import VHeading from "@/components/_general/buysell/v-heading";

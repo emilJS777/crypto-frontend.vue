@@ -114,6 +114,10 @@ export default new Router({
             path: '/k7-api',
             component: () => import('./components/Guest/k7-api')
         },
+        {
+            path: '/refund-policy',
+            component: () => import('./components/Guest/refund-policy')
+        },
             //    account routes
         {
             path: '/account/trade',

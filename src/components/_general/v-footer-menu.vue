@@ -24,21 +24,19 @@
           <ul>
             <h5>Tools</h5>
             <li><router-link to="/k7-api">Api</router-link></li>
-            <li><router-link to="/bitcoin-calculator">Bitcoin Calculator</router-link></li>
-            <li>Buy Ethereum</li>
-            <li>Buy DASH</li>
-            <li>BTC to USD</li>
-            <li>Sell Bitcoin</li>
-            <li>Bitcoin Trading</li>
+            <li><router-link to="/bitcoin-calculator">Tools Bitcoin Calculator</router-link></li>
+            <li>Bitcoin Price Widget</li>
+            <li><router-link to="/mobile">Mobile App</router-link></li>
+            <li><router-link to="/affiliate-program">Affiliate Program</router-link></li>
           </ul>
           <ul>
             <h5>About</h5>
-            <li>Buy Bitcoins</li>
-            <li>Buy Ethereum</li>
-            <li>Buy DASH</li>
-            <li>BTC to USD</li>
-            <li>Sell Bitcoin</li>
-            <li>Bitcoin Trading</li>
+            <li><router-link to="/about">About Us</router-link></li>
+            <li><router-link to="/legal-security">Legal and Security</router-link></li>
+            <li>Terms of Use</li>
+            <li><router-link to="/refund-policy">Refund Policy</router-link></li>
+            <li><router-link to="/press">Press</router-link></li>
+            <li><router-link to="/blog">Blog</router-link></li>
           </ul>
           <ul>
             <h5>Follow</h5>
