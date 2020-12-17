@@ -14,8 +14,8 @@
         <li v-bind:class="this.active === 'cards' ? 'active' : ''">
           <router-link to="/account/cards">CARDS</router-link>
         </li>
-        <li>
-          <router-link to="/affiliate-program">AFFILIATE</router-link>
+        <li v-bind:class="this.active === 'affiliate' ? 'active' : ''">
+          <router-link to="/account/affiliate">AFFILIATE</router-link>
         </li>
         <li v-bind:class="this.active === 'staking' ? 'active' : ''">
           <router-link to="/account/staking">STAKING</router-link>

@@ -19,7 +19,7 @@
           <v-right-pricing-informacion-last-day/>
           <v-trading-chart-section/>
           <v-instant-prchase/>
-
+          <v-bar-chart/>
           <div class="row mb-3">
             <div class="col-6">
               <v-orders-table
@@ -55,17 +55,18 @@
 // <!--  connecteds-->
 import VUpperCurrencyLayer from "../../_general/v-upper-currency-layer";
 import VHeaderMin from "../_general/v-header-min";
-import VTopCurrencyMenu from "./v-top-currency-menu";
-import VLeftCurrencySelectBar from "./v-left-currency-select-bar";
-import VRightPricingInformacionLastDay from "./v-right-pricing-informacion-last-day";
-import VTradingChartSection from "./trading-chart/v-trading-chart-section";
-import VInstantPrchase from "./v-instant-prchase-switch-block";
-import VOrdersTable from "@/components/Guest/spotTrading/v-orders-table";
-import VTradeHistoryTable from "@/components/Guest/spotTrading/v-trade-history-table";
+import VTopCurrencyMenu from "../../_general/trade/v-top-currency-menu";
+import VLeftCurrencySelectBar from "../../_general/trade/v-left-currency-select-bar";
+import VRightPricingInformacionLastDay from "../../_general/trade/v-right-pricing-informacion-last-day";
+import VTradingChartSection from "../../_general/trade/trading-chart/v-trading-chart-section";
+import VInstantPrchase from "../../_general/trade/v-instant-prchase-switch-block";
+import VOrdersTable from "@/components/_general/trade/v-orders-table";
+import VTradeHistoryTable from "@/components/_general/trade/v-trade-history-table";
 import VBottomDescription from "@/components/Guest/spotTrading/v-bottom-description";
 import VFooterMenu from "@/components/_general/v-footer-menu";
 import VSignUp from "@/components/Guest/spotTrading/v-sign-up";
 import VModalWindow from "@/components/Guest/spotTrading/v-modal-window";
+import VBarChart from "../../_general/v-bar-chart";
 export default {
   name: "index",
   data(){
@@ -102,6 +103,7 @@ export default {
     }
   },
   components:{
+    VBarChart,
     VModalWindow,
     VSignUp,
     VFooterMenu,

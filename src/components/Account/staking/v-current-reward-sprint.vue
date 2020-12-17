@@ -16,8 +16,8 @@
           <i class="cf cf-ada"></i>
           <a>Cardano</a>
         </div>
-        <div class="col-1"><p>$ 0.152	</p></div>
-        <div class="col-1"><p class="plus">4-5%	</p></div>
+        <div class="col-1"><p>$ 0.152</p></div>
+        <div class="col-1"><p class="plus">4-5%</p></div>
         <div class="col-1"><p>-</p></div>
         <div class="col-2"><p>-</p></div>
         <div class="col-2"><p>-</p></div>

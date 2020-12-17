@@ -5,7 +5,7 @@
       <p class="heading_lightBlue">Earn Money</p>
     </h1>
     <p class="text_greey">with the CEX.IO Affiliate Program</p>
-    <router-link to="#" class="btn btn_blue">Become an Affiliate</router-link>
+    <router-link to="/login" class="btn btn_blue">Become an Affiliate</router-link>
   </div>
 </template>
 

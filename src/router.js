@@ -140,6 +140,10 @@ export default new Router({
             component: () => import('./components/Account/cards')
         },
         {
+            path: '/account/affiliate',
+            component: () => import('./components/Account/affiliate')
+        },
+        {
             path: '/account/profile',
             component: () => import('./components/Account/profile')
         },

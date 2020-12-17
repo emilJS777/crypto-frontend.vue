@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import VBarChart from "./v-bar-chart";
+import VBarChart from "../../_general/v-bar-chart";
 export default {
   name: "v-last-rewards",
   components: {VBarChart}

@@ -1,20 +1,32 @@
 <template>
   <div id="staking">
     <v-header active="staking"/>
+
     <div class="container mt-5">
+
       <v-staking-information/>
+
       <v-current-reward-sprint @viewModal="toggleModal"/>
+
       <div class="mt-5 rewards_portfolio_block">
         <v-last-rewards/>
         <v-portfolio-structure/>
       </div>
+
       <v-tabs-section/>
+
       <v-calculate-earnings class="mt-5"/>
+
       <v-faq/>
+
       <v-faq/>
+
       <v-faq/>
+
     </div>
+
     <v-footer-menu/>
+
     <v-modal-block :show="this.modalView" @viewModal="toggleModal"/>
   </div>
 </template>
@@ -61,5 +73,9 @@ name: "index",
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 1em;
+}
+.faq{
+  border-bottom: 1px solid #d7d7d7;
+  padding-bottom: 15px;
 }
 </style>

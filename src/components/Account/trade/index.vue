@@ -12,6 +12,7 @@
           <v-right-pricing-informacion-last-day/>
           <v-chart-section/>
           <v-instant-prchase/>
+          <v-bar-chart/>
           <div class="row mb-3">
             <div class="col-6">
               <v-orders-table
@@ -37,17 +38,19 @@
 
 import VHeader from "../_general/v-header";
 import VSubHeader from "../_general/v-sub-header";
-import VTopCurrencyMenu from "../../Guest/spotTrading/v-top-currency-menu";
-import VLeftCurrencySelectBar from "../../Guest/spotTrading/v-left-currency-select-bar";
-import VInstantPrchase from "../../Guest/spotTrading/v-instant-prchase-switch-block";
-import VChartSection from "../../Guest/spotTrading/trading-chart/v-trading-chart-section";
-import VRightPricingInformacionLastDay from "../../Guest/spotTrading/v-right-pricing-informacion-last-day";
-import VOrdersTable from "../../Guest/spotTrading/v-orders-table";
-import VTradeHistory from "../../Guest/spotTrading/v-trade-history-table";
+import VTopCurrencyMenu from "../../_general/trade/v-top-currency-menu";
+import VLeftCurrencySelectBar from "../../_general/trade/v-left-currency-select-bar";
+import VInstantPrchase from "../../_general/trade/v-instant-prchase-switch-block";
+import VChartSection from "../../_general/trade/trading-chart/v-trading-chart-section";
+import VRightPricingInformacionLastDay from "../../_general/trade/v-right-pricing-informacion-last-day";
+import VOrdersTable from "../../_general/trade/v-orders-table";
+import VTradeHistory from "../../_general/trade/v-trade-history-table";
 import VFooterMenu from "../../_general/v-footer-menu";
+import VBarChart from "../../_general/v-bar-chart";
 export default {
   name: "index",
   components: {
+    VBarChart,
     VFooterMenu,
     VTradeHistory,
     VOrdersTable,
