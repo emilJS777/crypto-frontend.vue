@@ -108,9 +108,6 @@ name: "v-statistics"
   .table_body > div:last-child{
     text-align: right;
   }
-  .table_body > div:nth-child(2){
-    color: #8298a5;
-  }
   .table_body > div > *{
     display: inline-block;
   }

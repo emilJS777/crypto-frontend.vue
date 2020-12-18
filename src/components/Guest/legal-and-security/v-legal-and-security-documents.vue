@@ -5,7 +5,7 @@
       <div class="row mt-5">
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/terms" class="text_big">
               <img :src="require('@/assets/icons/iconfinder_1-Document_2674100.png')" alt="">
               <p>Term of Use</p>
             </router-link>
@@ -13,7 +13,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/privacy" class="text_big">
               <img :src="require('@/assets/icons/iconfinder_document-content-article-letter-paper_3209352.png')" alt="">
               <p>Anty-Fraud Policy</p>
             </router-link>
@@ -21,7 +21,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/aml-kyc" class="text_big">
               <img :src="require('@/assets/icons/iconfinder_certificate-guarantee-award-document-assurance_3209368.png')" alt="">
               <p>AML/KYC Policy</p>
             </router-link>
@@ -29,7 +29,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/anti-fraud-policy" class="text_big">
               <img :src="require('@/assets/icons/iconfinder_shield-secured-anti-safe-protection_3209241.png')" alt="">
               <p>Anti-Fruad Policy</p>
             </router-link>
@@ -37,7 +37,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/refund-policy" class="text_big">
               <img :src="require('@/assets/icons/iconfinder_fast_money_refunding_4104744.png')" alt="">
               <p>Refund Policy</p>
             </router-link>
@@ -45,7 +45,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/payment-policy" class="text_big">
               <img :src="require('@/assets/icons/iconfinder_08.Credit-Card_290142.png')" alt="">
               <p>Payment Policy & Procedure</p>
             </router-link>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/risk-warning" class="text_big">
               <img :src="require('@/assets/icons/iconfinder_ic_attention_5803959.png')" alt="">
               <p>Risk Warning</p>
             </router-link>
@@ -61,7 +61,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/limits-commissions" class="text_big">
               <img :src="require('@/assets/icons/offer.png')" alt="">
               <p>Limits and Commissions</p>
             </router-link>
@@ -69,7 +69,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/cardholders-agreement" class="text_big">
               <img :src="require('@/assets/icons/credential.png')" alt="">
               <p>Agreement on the Storage of the Cardholder's Credentials</p>
             </router-link>
@@ -77,7 +77,7 @@
         </div>
         <div class="col-4 mt-4">
           <div class="block">
-            <router-link to="/" class="text_big">
+            <router-link to="/listing-policy" class="text_big">
               <img :src="require('@/assets/icons/iconfinder_Cryptocurrency_Bitcoin_BTC_3287282.png')" alt="">
               <p>Listing Policy</p>
             </router-link>

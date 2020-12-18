@@ -33,7 +33,7 @@
             <h5>About</h5>
             <li><router-link to="/about">About Us</router-link></li>
             <li><router-link to="/legal-security">Legal and Security</router-link></li>
-            <li>Terms of Use</li>
+            <li><router-link to="/terms">Terms of Use</router-link></li>
             <li><router-link to="/refund-policy">Refund Policy</router-link></li>
             <li><router-link to="/press">Press</router-link></li>
             <li><router-link to="/blog">Blog</router-link></li>

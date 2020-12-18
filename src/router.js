@@ -118,6 +118,38 @@ export default new Router({
             path: '/refund-policy',
             component: () => import('./components/Guest/refund-policy')
         },
+        {
+            path: '/terms',
+            component: () => import('./components/Guest/legal-and-scurity-docs/terms')
+        },
+        {
+            path: '/privacy',
+            component: () => import('./components/Guest/legal-and-scurity-docs/privacy')
+        },
+        {
+            path: '/aml-kyc',
+            component: () => import('./components/Guest/legal-and-scurity-docs/aml-kyc')
+        },
+        {
+            path: '/anti-fraud-policy',
+            component: () => import('./components/Guest/legal-and-scurity-docs/anti-fraud-policy')
+        },
+        {
+            path: '/payment-policy',
+            component: () => import('./components/Guest/legal-and-scurity-docs/payment-policy')
+        },
+        {
+            path: '/risk-warning',
+            component: () => import('./components/Guest/legal-and-scurity-docs/risk-warning')
+        },
+        {
+            path: '/cardholders-agreement',
+            component: () => import('./components/Guest/legal-and-scurity-docs/cardholders-agreement')
+        },
+        {
+            path: '/listing-policy',
+            component: () => import('./components/Guest/legal-and-scurity-docs/listing-policy')
+        },
             //    account routes
         {
             path: '/account/trade',
