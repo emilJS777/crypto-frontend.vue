@@ -2,19 +2,19 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 auth_block">
-        <form action="" class="auth_form box_shadow">
+        <form action="" class="auth_form box_shadow" @submit="validForm">
           <div class="form_head_block">
             <router-link to="/login">back to login</router-link>
             <h1 class="heading_darkBlue">Reset your password</h1>
             <p class="text_greey text_big">To reset your password, enter the email address you use to sign in to K7.Crypto account</p>
           </div>
           <div class="input_block input_block_login">
-            <input type="text" class="form-control" placeholder="Email Address">
-            <span class="text_small">
+            <input type="text" class="form-control" id="email" placeholder="Email Address">
+            <span class="text_small" v-if="!emailValid">
               Email is incorrect
             </span>
           </div>
-          <button class="btn btn_blue">Submit</button>
+          <input type="submit" class="btn btn_blue" value="Submit">
         </form>
       </div>
     </div>
@@ -22,10 +22,14 @@
 </template>
 
 <script>
+import {validationFunction} from "../form-validation";
 
 export default {
   name: "index",
-  components: {}
+  components: {},
+  mixins:[
+      validationFunction
+  ]
 }
 </script>
 

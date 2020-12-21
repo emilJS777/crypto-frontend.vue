@@ -2,28 +2,28 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 auth_block">
-        <form action="" class="auth_form box_shadow">
+        <form action="" class="auth_form box_shadow" @submit="validForm">
           <div class="form_head_block">
             <router-link to="/">back to main</router-link>
             <h1 class="heading_darkBlue">Sign in to your account</h1>
             <p class="text_greey text_big">Securely buy crypto and start trading on a trusted exchange</p>
           </div>
           <div class="input_block input_block_login">
-            <input type="text" class="form-control" placeholder="Email or username">
-            <span class="text_small">
+            <input type="text" id="email" class="form-control" placeholder="Email or username">
+            <span class="text_small" v-if="!emailValid">
               Email is incorrect
             </span>
           </div>
           <div class="input_block input_block_password">
-            <input type="text" class="form-control" placeholder="Password">
-            <span class="text_small">
+            <input type="password" id="password" class="form-control" placeholder="Password">
+            <span class="text_small" v-if="!passwordValid">
               Password is required
             </span>
           </div>
           <div class="input_block">
             <router-link to="/reset-password">Forgot your password?</router-link>
           </div>
-          <button class="btn btn_blue">Sign in</button>
+          <input class="btn btn_blue" type="submit" value="Sign in">
           <div class="mt-3">
             <p>Don’t have an account?
               <router-link to="/register">Create account</router-link>
@@ -38,17 +38,18 @@
             </div>
           </div>
         </form>
-
-
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
+import {validationFunction} from "../form-validation";
 export default {
-  name: "Login"
+  name: "Login",
+  mixins:[
+      validationFunction
+  ]
 }
 </script>
 
@@ -97,6 +98,13 @@ export default {
   margin-bottom: 120px;
   color: #e22929;
   font-style: italic;
+}
+form input[type=submit]{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  height: 55px;
+  font-weight: bold;
 }
 .auth_form > .input_block > a{
   text-decoration: underline !important;

@@ -2,27 +2,27 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 auth_block">
-        <form action="" class="auth_form  box_shadow">
+        <form action="" class="auth_form  box_shadow" @submit="validForm">
           <div class="form_head_block">
             <router-link to="/">back to main</router-link>
             <h1 class="heading_darkBlue">Create your account</h1>
             <p class="text_greey text_big">Securely buy crypto and start trading on a trusted exchange</p>
           </div>
           <div class="input_block input_block_login">
-            <input type="text" class="form-control" placeholder="Email Address">
-            <span>
+            <input type="text" id="email" class="form-control" placeholder="Email Address">
+            <span v-if="!emailValid">
               Email is incorrect
             </span>
           </div>
           <div class="input_block input_block_password">
-            <input type="text" class="form-control" placeholder="Password">
-            <span class="text_small">
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <span class="text_small" v-if="!passwordValid">
               Password should contain at least 8 characters, only Latin characters, one uppercase and lowercase letter, one number and one special character
             </span>
           </div>
           <div class="input_block input_block_select">
             <select class="custom-select">
-              <option value="1">Country</option>
+              <option value="0">Country</option>
               <option value="1">Afgan</option>
               <option value="1">russia</option>
             </select>
@@ -52,9 +52,13 @@
 </template>
 
 <script>
+import {validationFunction} from "../form-validation";
 
 export default {
-  name: "index"
+  name: "index",
+  mixins:[
+      validationFunction
+  ]
 }
 </script>
 
