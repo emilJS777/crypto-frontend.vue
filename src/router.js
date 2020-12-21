@@ -12,11 +12,11 @@ export default new Router({
         },
         {
             path: '/login',
-            component: () => import('./components/Guest/login')
+            component: () => import('./components/Guest/auth/login')
         },
         {
             path: '/register',
-            component: () => import('./components/Guest/register')
+            component: () => import('./components/Guest/auth/register')
         },
         {
             path: '/buysell',
@@ -153,6 +153,10 @@ export default new Router({
         {
             path: '/prices',
             component: () => import('./components/Guest/prices')
+        },
+        {
+            path: '/reset-password',
+            component: () => import('./components/Guest/auth/reset-password')
         },
             //    account routes
         {

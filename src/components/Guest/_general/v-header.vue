@@ -98,14 +98,11 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="new">
                 <router-link to="/prices">PRICES</router-link>
               </li>
               <li>
                 <router-link to="/affiliate-program">AFFILIATE PROGRAM</router-link>
-              </li>
-              <li class="new">
-                <router-link to="/account/trade">ACCOUNT TRADE</router-link>
               </li>
             </ul>
           </nav>
@@ -160,7 +157,8 @@
   }
   .navigation > ul > li{
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
     font-size: 13px;
     position: relative;
     color: #4a4b4b;

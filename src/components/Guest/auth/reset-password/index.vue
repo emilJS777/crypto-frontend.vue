@@ -1,31 +1,18 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-4 img_block">
-        <img :src="require('@/assets/img/bitcoin.png')" alt="">
-      </div>
-      <div class="col-8 auth_block">
-        <form action="" class="auth_form">
+      <div class="col-12 auth_block">
+        <form action="" class="auth_form box_shadow">
           <div class="form_head_block">
-            <router-link to="/">back to main</router-link>
-            <h1 class="heading_darkBlue">Sign in to your account</h1>
-            <p class="text_greey text_big">Securely buy crypto and start trading on a trusted exchange</p>
+            <router-link to="/login">back to login</router-link>
+            <h1 class="heading_darkBlue">Reset your password</h1>
+            <p class="text_greey text_big">To reset your password, enter the email address you use to sign in to K7.Crypto account</p>
           </div>
           <div class="input_block input_block_login">
-            <input type="text" class="form-control" placeholder="Email or username">
+            <input type="text" class="form-control" placeholder="Email Address">
           </div>
-          <div class="input_block input_block_password">
-            <input type="text" class="form-control" placeholder="Password">
-          </div>
-          <div class="input_block">
-            <a href="#">Forgot your password?</a>
-          </div>
-          <button class="btn btn_blue">Sign in</button>
+          <button class="btn btn_blue">Submit</button>
         </form>
-        <div class="social_sign_block">
-          <a href="#"><img :src="require('@/assets/icons/social/iconfinder_twitter-social-media_765208.png')" alt=""></a>
-          <a href="#"><img :src="require('@/assets/icons/social/iconfinder_facebook-social-media_765252.png')" alt=""></a>
-        </div>
       </div>
     </div>
   </div>
@@ -34,7 +21,8 @@
 <script>
 
 export default {
-  name: "Login"
+  name: "index",
+  components: {}
 }
 </script>
 
@@ -45,12 +33,23 @@ export default {
 }
 .auth_block{
   background-color: #e5e3e3;
+  min-height: 100vh;
 }
 .auth_form{
-  margin-top: 30px;
-  width: 60%;
-  margin: 30px auto;
+  display: table;
+  position: absolute;
+  width: 550px;
+  padding: 40px;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
 }
+.auth_form > *{
+  margin-top: 30px;
+}
+
 .form_head_block > a{
   color: #42a5a5;
   position: relative;
@@ -104,5 +103,4 @@ export default {
   border-radius: 5px;
   border: 1px solid #acaaaa;
 }
-
 </style>

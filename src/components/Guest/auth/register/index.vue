@@ -1,11 +1,8 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-4 img_block">
-        <img :src="require('@/assets/img/bitcoin.png')" alt="">
-      </div>
-      <div class="col-8 auth_block">
-        <form action="" class="auth_form">
+      <div class="col-12 auth_block">
+        <form action="" class="auth_form  box_shadow">
           <div class="form_head_block">
             <router-link to="/">back to main</router-link>
             <h1 class="heading_darkBlue">Create your account</h1>
@@ -33,6 +30,12 @@
             <span class="text_greey">I accept CEX.IO's Terms of Use and Privacy Policy</span>
           </div>
           <button class="btn btn_blue">Create Account</button>
+          <div>
+            <p class="mt-3">
+              Already have an account?
+              <router-link to="/login">Sign in</router-link>
+            </p>
+          </div>
         </form>
       </div>
     </div>
@@ -53,11 +56,13 @@ export default {
 }
 .auth_block{
   background-color: #e5e3e3;
+  min-height: 100vh;
 }
 .auth_form{
   margin-top: 30px;
-  width: 60%;
+  width: 550px;
   margin: 30px auto;
+  padding: 40px;
 }
 .form_head_block > a{
   color: #42a5a5;
@@ -121,5 +126,11 @@ export default {
 .input_block_checkbox > span{
   font-size: 14px;
   vertical-align: top;
+}
+p{
+  font-size: 14px;
+}
+p > a{
+  color: #42a5a5;
 }
 </style>
