@@ -10,6 +10,9 @@
           </div>
           <div class="input_block input_block_login">
             <input type="text" class="form-control" placeholder="Email Address">
+            <span class="text_small">
+              Email is incorrect
+            </span>
           </div>
           <button class="btn btn_blue">Submit</button>
         </form>
@@ -76,6 +79,13 @@ export default {
   font-size: 20px;
   background-color: initial;
 }
+.input_block > span{
+  color: #e22929;
+  font-style: italic;
+  font-size: 12px;
+  display: block;
+  height: initial;
+}
 .auth_form > .input_block > a{
   text-decoration: underline !important;
   color: #42a5a5;
@@ -103,4 +113,5 @@ export default {
   border-radius: 5px;
   border: 1px solid #acaaaa;
 }
+
 </style>

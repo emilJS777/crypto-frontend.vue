@@ -10,9 +10,15 @@
           </div>
           <div class="input_block input_block_login">
             <input type="text" class="form-control" placeholder="Email or username">
+            <span class="text_small">
+              Email is incorrect
+            </span>
           </div>
           <div class="input_block input_block_password">
             <input type="text" class="form-control" placeholder="Password">
+            <span class="text_small">
+              Password is required
+            </span>
           </div>
           <div class="input_block">
             <router-link to="/reset-password">Forgot your password?</router-link>
@@ -80,12 +86,17 @@ export default {
 }
 .input_block{
   margin-top: 20px;
-  height: 60px;
 }
+
 .input_block > input{
-  height: 100%;
   font-size: 20px;
+  height: 60px;
   background-color: initial;
+}
+.input_block > span{
+  margin-bottom: 120px;
+  color: #e22929;
+  font-style: italic;
 }
 .auth_form > .input_block > a{
   text-decoration: underline !important;

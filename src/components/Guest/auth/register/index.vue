@@ -10,9 +10,15 @@
           </div>
           <div class="input_block input_block_login">
             <input type="text" class="form-control" placeholder="Email Address">
+            <span>
+              Email is incorrect
+            </span>
           </div>
           <div class="input_block input_block_password">
             <input type="text" class="form-control" placeholder="Password">
+            <span class="text_small">
+              Password should contain at least 8 characters, only Latin characters, one uppercase and lowercase letter, one number and one special character
+            </span>
           </div>
           <div class="input_block input_block_select">
             <select class="custom-select">
@@ -23,11 +29,14 @@
           </div>
           <div class="input_block input_block_checkbox">
             <input type="checkbox" class="">
-            <span class="text_greey">I agree to receive occasional emails and newsletters from CEX.IO.</span>
+            <p class="text_greey">I agree to receive occasional emails and newsletters from CEX.IO.</p>
           </div>
           <div class="input_block input_block_checkbox">
             <input type="checkbox" class="">
-            <span class="text_greey">I accept CEX.IO's Terms of Use and Privacy Policy</span>
+            <p class="text_greey">I accept CEX.IO's Terms of Use and Privacy Policy</p>
+            <span class="text_small">
+              This checkbox is required
+            </span>
           </div>
           <button class="btn btn_blue">Create Account</button>
           <div>
@@ -83,10 +92,10 @@ export default {
 }
 .input_block{
   margin-top: 20px;
-  height: 60px;
+
 }
-.input_block > input{
-  height: 100%;
+.input_block > *{
+  height: 60px;
   font-size: 20px;
   background-color: initial;
 }
@@ -103,7 +112,6 @@ export default {
 }
 .input_block_select > select{
   width: 100%;
-  height: 100%;
   background-color: initial;
   border: 1px solid #ced4da;
   font-size: 18px;
@@ -120,12 +128,19 @@ export default {
   margin-right: 10px;
 }
 .input_block_checkbox{
-  height: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
-.input_block_checkbox > span{
+.input_block_checkbox > p{
   font-size: 14px;
   vertical-align: top;
+  margin: 0;
+}
+.input_block > span{
+  color: #e22929;
+  font-style: italic;
+  font-size: 12px;
+  display: block;
+  height: initial;
 }
 p{
   font-size: 14px;
