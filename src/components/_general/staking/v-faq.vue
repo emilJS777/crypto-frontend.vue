@@ -1,15 +1,15 @@
 <template>
-        <div class="faq mt-5">
-          <h3 class="heading_darkBlue question"
-              @click="show"
-              v-bind:class="switchElem ? 'minus' : ''">
-            What is staking coins?
-          </h3>
-          <p class="text_greey text_big answer "
-          v-if="switchElem">
-            Put simply, staking is holding funds in a cryptocurrency wallet to maintain a
-          </p>
-        </div>
+    <div class="faq mt-5">
+      <h3 class="heading_darkBlue question"
+          @click="show"
+          v-bind:class="switchElem ? 'minus' : ''">
+        {{ question }}
+      </h3>
+      <p class="text_greey text_big answer"
+         v-if="switchElem">
+        {{ answer }}
+      </p>
+    </div>
 </template>
 
 <script>
@@ -17,7 +17,8 @@
 
   export default {
   name: "v-faq",
-    mixins: [switchFunction]
+    mixins: [switchFunction],
+    props:['question', 'answer']
 }
 </script>
 

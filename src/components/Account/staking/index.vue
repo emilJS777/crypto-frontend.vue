@@ -17,11 +17,18 @@
 
       <v-calculate-earnings class="mt-5"/>
 
-      <v-faq/>
-
-      <v-faq/>
-
-      <v-faq/>
+      <v-faq
+          question="Faq faq faq?"
+          answer="answer answer answer!"
+      />
+      <v-faq
+          question="Faq faq faq?"
+          answer="answer answer answer!"
+      />
+      <v-faq
+          question="Faq faq faq?"
+          answer="answer answer answer!"
+      />
 
     </div>
 

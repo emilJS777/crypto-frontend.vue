@@ -6,8 +6,18 @@
     <v-all-available-coins />
         <div class="container mt-5">
           <h1 class="heading_darkBlue">FAQ</h1>
-          <v-faq/>
-          <v-faq/>
+          <v-faq
+            question="Faq faq faq?"
+            answer="answer answer answer!"
+          />
+          <v-faq
+              question="Faq faq faq?"
+              answer="answer answer answer!"
+          />
+          <v-faq
+              question="Faq faq faq?"
+              answer="answer answer answer!"
+          />
         </div>
     <v-footer-menu/>
   </div>

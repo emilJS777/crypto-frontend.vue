@@ -2,7 +2,7 @@
   <div class="cards_content container mt-5">
     <div class="row">
       <div class="col-12">
-        <a href="#" class="btn btn_blue">Verification help</a>
+        <router-link to="/account/verification" class="btn btn_blue">Verification</router-link>
       </div>
     </div>
     <div class="row justify-content-center">

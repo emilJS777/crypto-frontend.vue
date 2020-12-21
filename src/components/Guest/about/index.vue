@@ -32,7 +32,14 @@ name: "index",
     VOurHistory,
     VOurProductsSlider,
     VFooterMenu,
-    VOurValuesSection, VImgInfoSectionTre, VImgInfoSectionTwo, VAboutUs, VImgInfoSection, VHeading, VHeader}
+    VOurValuesSection,
+    VImgInfoSectionTre,
+    VImgInfoSectionTwo,
+    VAboutUs,
+    VImgInfoSection,
+    VHeading,
+    VHeader
+  }
 }
 </script>
 

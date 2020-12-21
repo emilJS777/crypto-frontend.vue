@@ -150,6 +150,10 @@ export default new Router({
             path: '/listing-policy',
             component: () => import('./components/Guest/legal-and-scurity-docs/listing-policy')
         },
+        {
+            path: '/prices',
+            component: () => import('./components/Guest/prices')
+        },
             //    account routes
         {
             path: '/account/trade',

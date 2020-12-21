@@ -99,6 +99,9 @@
                 </ul>
               </li>
               <li>
+                <router-link to="/prices">PRICES</router-link>
+              </li>
+              <li>
                 <router-link to="/affiliate-program">AFFILIATE PROGRAM</router-link>
               </li>
               <li class="new">
