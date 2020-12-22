@@ -72,7 +72,6 @@ export default {
   border: 1px solid #eeeeee;
   height: 100%;
   position: relative;
-  border-radius: 4px;
   line-height: 1;
   background-color: #efefef;
 }

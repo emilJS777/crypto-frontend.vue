@@ -17,7 +17,7 @@
               <div class="box_shadow">
                 <h5 class="heading_darkBlue">{{ info.title }}</h5>
                 <p class="text_greey">{{ info.description }}</p>
-                <router-link to="/buysell" href="#">buy now</router-link>
+                <router-link :to=info.to href="#">{{ info.hrefName }}</router-link>
               </div>
             </div>
           </div>
@@ -33,10 +33,10 @@ export default {
   data(){
     return{
       cardsInfo:[
-        {title: 'Cheaper GBP deposits', description: '50% off for GBP deposits with the UK-issued cards'},
-        {title: 'Margin trading', description: 'Trade with leverage as high as 100x'},
-        {title: 'K7.Crypto Staking', description: 'Earn by simply holding coins on K7.Crypto'},
-        {title: 'Buy crypto witch a card', description: 'Own Crypto in minutes using your card'}
+        {title: 'Cheaper GBP deposits', description: '50% off for GBP deposits with the UK-issued cards', to: '/login', hrefName: 'Deposit now'},
+        {title: 'Margin trading', description: 'Trade with leverage as high as 100x', to:'/spot-trading', hrefName: 'Trade now'},
+        {title: 'K7.Crypto Staking', description: 'Earn by simply holding coins on K7.Crypto', to:'/staking', hrefName: 'Learn more'},
+        {title: 'Buy crypto witch a card', description: 'Own Crypto in minutes using your card', to:'/buysell', hrefName: 'Deposit now'}
       ]
     }
   },
