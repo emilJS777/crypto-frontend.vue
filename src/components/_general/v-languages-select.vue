@@ -5,7 +5,7 @@
       <span class="text_normal">{{langs[activeLang].name}}</span>
     </div>
     <div class="toggle_block" v-if="isVisible">
-      <div class="lang_block" v-for="(lang, index) in langs" :key="index" @click="toggleLang(index)">
+      <div class="lang_block" v-for="(lang, index) in langs"  :key="index" @click="toggleLang(index)">
         <img :src="lang.img" alt="">
         <span class="text_normal" >{{lang.name}}</span>
       </div>

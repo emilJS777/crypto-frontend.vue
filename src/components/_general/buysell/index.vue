@@ -41,7 +41,7 @@
 <script>
 import VBottomAboutUs from "./v-bottom-about-us";
 import vHeading from "./v-heading";
-import vSelect from "../../_general/v-select"
+import vSelect from "../v-select"
 import vPopularPurchaseCard from "./v-popular-purchase-card"
 import vDifferentPurchaseCard from "./v-different-purchase-card"
 
