@@ -67,6 +67,7 @@ export default {
   width: 550px;
   margin: 30px auto;
   padding: 40px;
+  background-color: #fff;
 }
 .form_head_block > a{
   color: #42a5a5;

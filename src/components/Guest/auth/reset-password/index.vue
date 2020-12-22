@@ -52,6 +52,8 @@ export default {
   left: 50%;
   right: 50%;
   transform: translate(-50%,-50%);
+  background-color: #fff;
+
 }
 .auth_form > *{
   margin-top: 30px;

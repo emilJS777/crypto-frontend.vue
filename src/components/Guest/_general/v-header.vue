@@ -3,11 +3,11 @@
     <div class="container">
       <div class="row">
 <!--        col-2 logo-->
-        <div class="col-2">
+        <div class="col-1">
           <v-logo/>
         </div>
 <!--        col-6 navbar-->
-        <div class="col-7 pl-5 navigation_block">
+        <div class="col-8 pl-5 navigation_block">
           <nav class="navigation">
             <ul>
               <li>PRODUCTS
@@ -113,6 +113,7 @@
             <li><router-link to="/login" class="btn btn_blue">Sign in</router-link></li>
             <li><router-link to="/register" class="btn">Create Account</router-link></li>
           </ul>
+          <v-languages-select/>
         </div>
       </div>
     </div>
@@ -121,10 +122,12 @@
 
 <script>
   import vLogo from "../../_general/v-logo"
+  import VLanguagesSelect from "../../_general/v-languages-select";
 
   export default {
     name: "v-header",
     components: {
+      VLanguagesSelect,
       vLogo
     }
   }
@@ -148,12 +151,12 @@
     position: relative;
     z-index: 9;
     font-weight: bold;
+    display: flex;
+    align-items: center;
   }
   .navigation_block > nav > ul{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    display: table;
+    margin: 0 auto;
   }
   .navigation > ul > li{
     display: inline-block;
@@ -247,6 +250,7 @@
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
+    width: 350px;
   }
   .auth_block > .auth > li{
     display: inline-block;

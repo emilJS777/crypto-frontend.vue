@@ -50,14 +50,18 @@
             </ul>
           </div>
         </li>
+        <v-languages-select/>
+
       </ul>
     </nav>
   </div>
 </template>
 
 <script>
+import VLanguagesSelect from "../../_general/v-languages-select";
 export default {
   name: "v-header",
+  components: {VLanguagesSelect},
   props:['active']
 }
 </script>
@@ -94,6 +98,9 @@ export default {
   }
   ul.right_menu{
     float: right;
+    margin: 0;
+    display: flex;
+    align-items: center;
   }
   ul.right_menu > li{
     border: 1px solid #888;

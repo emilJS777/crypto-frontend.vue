@@ -19,10 +19,12 @@
         </div>
         <!--        col-4 auth-->
         <div class="col-3 auth_block">
+
           <ul class="auth">
             <li><router-link to="/login" class="btn btn_blue">Sign in</router-link></li>
             <li><router-link to="/register" class="btn">Create Account</router-link></li>
           </ul>
+          <v-languages-select/>
         </div>
       </div>
     </div>
@@ -31,10 +33,12 @@
 
 <script>
 import vLogo from "../../_general/v-logo"
+import VLanguagesSelect from "../../_general/v-languages-select";
 
 export default {
   name: "v-header",
   components: {
+    VLanguagesSelect,
     vLogo
   }
 }
@@ -86,6 +90,7 @@ export default {
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
+  width: 350px;
 }
 .auth_block > .auth > li{
   display: inline-block;

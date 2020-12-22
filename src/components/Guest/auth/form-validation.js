@@ -3,7 +3,9 @@ export const validationFunction = {
         return{
             emailValid: true,
             passwordValid: true,
-            regionValid: true
+            regionValid: true,
+
+            router: true
         }
     },
     methods:{
@@ -11,13 +13,22 @@ export const validationFunction = {
             let email = document.getElementById('email');
             let password = document.getElementById('password');
 
+
             if(email.value === ''){
                 this.emailValid = false
+                this.router = false
+            }
+            if(email.value !== ''){
+                this.emailValid = true
             }
             if(password.value === ''){
                 this.passwordValid = false
+                this.router = false
             }
-            e.preventDefault();
+
+
+            if(!this.router)
+                e.preventDefault()
         }
     }
 }
