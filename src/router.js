@@ -158,6 +158,14 @@ export default new Router({
             path: '/reset-password',
             component: () => import('./components/Guest/auth/reset-password')
         },
+        {
+            path: '/affiliate-program/faq',
+            component: () => import('./components/Guest/affiliate-program/faq')
+        },
+        {
+            path: '/affiliate-program/terms',
+            component: () => import('./components/Guest/affiliate-program/terms')
+        },
             //    account routes
         {
             path: '/account/trade',

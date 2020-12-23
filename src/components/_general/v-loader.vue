@@ -24,7 +24,7 @@ name: "v-loader",
 
 <style scoped>
 .loader{
-  background-color: #f3f3f3;
+  background-color: #e9e8e8;
   position: fixed;
   top: 0;
   left: 0;

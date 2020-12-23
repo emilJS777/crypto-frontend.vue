@@ -7,7 +7,7 @@
           <p class="text_big text_greey">
             You’re minutes away from starting to earn money with K7
           </p>
-          <a href="#" class="btn btn_blue">Start Earning now</a>
+          <router-link to="/register" class="btn btn_blue">Start Earning now</router-link>
         </div>
         <div class="col-5 offset-2">
           <div class="info_block"

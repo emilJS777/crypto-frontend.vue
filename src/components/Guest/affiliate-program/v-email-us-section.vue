@@ -8,8 +8,8 @@
         <div class="info_block">
           <h1 class="heading_lightBlue">Email us anytime</h1>
           <a href="#" class="btn btn_blue">affilites@cex.io</a>
-          <a href="#" class="text_big">Frequently Asked Questions</a>
-          <a href="#" class="text_big">Affiliate Program Terms of Use</a>
+          <router-link to="/affiliate-program/faq"  class="text_big">Frequently Asked Questions</router-link>
+          <router-link to="/affiliate-program/terms" class="text_big">Affiliate Program Terms of Use</router-link>
         </div>
       </div>
     </div>
