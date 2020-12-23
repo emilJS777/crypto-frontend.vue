@@ -9,6 +9,7 @@ s<template>
     <v-description-section/>
     <v-in-the-community/>
     <v-footer-menu/>
+    <v-loader/>
   </div>
 </template>
 
@@ -23,10 +24,12 @@ import vAboutUsSection from "./v-about-us-section"
 import vDescriptionSection from "./v-description-section"
 import vInTheCommunity from "./v-inThe-community"
 import vFooterMenu from "../../_general/v-footer-menu"
+import VLoader from "../../_general/v-loader";
 
 export default {
   name: "index",
   components:{
+    VLoader,
     vHeader,
     vFaceSection,
     vTopCryptoSection,
