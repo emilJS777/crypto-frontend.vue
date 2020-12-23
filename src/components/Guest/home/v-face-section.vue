@@ -8,7 +8,7 @@
           <router-link to="register" class="btn btn-lg btn_blue">Get Started</router-link>
         </div>
         <div class="col-6">
-          <img :src="require('@/assets/img/main.png')" alt="">
+          <img :src="require('@/assets/img/main1.png')" alt="">
         </div>
         <div class="col-12 bottom_section">
           <div class="row">
@@ -48,7 +48,7 @@ export default {
   .face_section{
     margin-top: 20px;
     background-color: #f5f7fa;
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
   }
   .bottom_section{

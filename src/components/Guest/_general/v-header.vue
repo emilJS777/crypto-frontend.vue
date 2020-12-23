@@ -37,20 +37,6 @@
                       <router-link to="/spot-trading">SPOT Trading</router-link>
                       <span class="text_greey">Buy, sell, earn and exchange crypto anywhere and anytime.</span>
                     </li>
-                    <li>Margin Trading Beta
-                      <span class="text_greey">Buy, sell, earn and exchange crypto anywhere and anytime.</span>
-                    </li>
-                  </ul>
-                  <ul>
-                    <h4 class="text_greey">For Businesses</h4>
-                    <li>
-                      CEX.IO Aggregator
-                      <span class="text_greey">Buy, sell, earn and exchange crypto anywhere and anytime.</span>
-                    </li>
-                    <li>CEX Direct
-                      <span class="text_greey">Buy, sell, earn and exchange crypto anywhere and anytime.</span>
-                    </li>
-                    <li>Custody</li>
                   </ul>
                 </ul>
               </li>

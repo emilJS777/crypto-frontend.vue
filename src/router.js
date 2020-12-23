@@ -166,6 +166,10 @@ export default new Router({
             path: '/affiliate-program/terms',
             component: () => import('./components/Guest/affiliate-program/terms')
         },
+        {
+            path: '/status',
+            component: () => import('./components/Guest/status')
+        },
             //    account routes
         {
             path: '/account/trade',
