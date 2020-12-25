@@ -28,7 +28,7 @@
           <p class="text_greey text_big">Multiple payment methods: Visa, Mastercard, bank transfer (SWIFT, SEPA, ACH, Faster Payments), cryptocurrency</p>
         </div>
       </div>
-      <button class="btn btn_blue">Start trading</button>
+      <router-link to="/register" class="btn btn_blue">Start trading</router-link>
     </div>
   </div>
 </template>
@@ -62,8 +62,8 @@ export default {
   p{
     font-size: 18px;
   }
-  button{
-    display: block;
+  a{
+    display: table;
     margin: 0 auto;
     padding: 15px 25px;
     font-weight: bold;

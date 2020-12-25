@@ -1,12 +1,14 @@
 <template>
   <div id="status">
-    status
+    <v-head/>
   </div>
 </template>
 
 <script>
+import VHead from "./head/v-head";
 export default {
-name: "index"
+name: "index",
+  components: {VHead}
 }
 </script>
 
