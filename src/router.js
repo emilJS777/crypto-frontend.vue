@@ -209,11 +209,23 @@ export default new Router({
         },
         {
             path: '/account/verification',
-            component: () => import('./components/Account/verification')
+            component: () => import('./components/Account/verification/home')
         },
         {
             path: '/account/verification/identity',
             component: () => import('./components/Account/verification/identity')
+        },
+        {
+            path: '/account/verification/identity/contry-of-residence',
+            component: () => import('./components/Account/verification/identity/v-contry-of-residence')
+        },
+        {
+            path: '/account/verification/identity/phone-verification',
+            component: () => import('./components/Account/verification/identity/phone-verification')
+        },
+        {
+            path: '/account/verification/identity/proof-of-identity-document',
+            component: () => import('./components/Account/verification/identity/proof-of-identity-document')
         },
         {
             path: '/account/support',

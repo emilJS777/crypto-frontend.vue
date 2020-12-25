@@ -21,7 +21,7 @@
         </span>
       </div>
       <div>
-        <router-link to="/account/verification/identity" class="btn btn_darkBlue"
+        <router-link to="/account/verification/identity/contry-of-residence" class="btn btn_darkBlue"
         v-if="unlock">
           Start
         </router-link>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import {switchFunction} from "../../_mixins/switch";
+import {switchFunction} from "../../../_mixins/switch";
 
 export default {
 name: "v-verification-info-block",
@@ -160,7 +160,7 @@ div.hidden{
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url('../../../assets/icons/iconfinder_11_-_Valid_1815560.png');
+  background-image: url('../../../../assets/icons/iconfinder_11_-_Valid_1815560.png');
   background-size: 15px 20px;
   background-repeat: no-repeat;
   left: 0;

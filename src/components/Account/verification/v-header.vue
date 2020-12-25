@@ -69,6 +69,9 @@ name: "v-header",
   .progress >div[datatype="1"]{
     width: 25%;
   }
+  .progress >div[datatype="2"]{
+    width: 50%;
+  }
   .exit a{
     padding: 3px 10px;
     vertical-align: bottom;
