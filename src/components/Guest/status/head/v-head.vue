@@ -27,14 +27,14 @@ name: "v-head",
 <style scoped>
 .head_block{
   height: 100px;
-  width: 60%;
+  width: 80%;
   position: relative;
 }
 .sub_head_block{
   width: 100%;
   padding: 15px;
-  background-color: #cfcfcf;
-  border-radius: 0 0 10px 10px;
+  background-color: #e2e2e2;
+  border-radius: 0 0 6px 6px;
 }
 .sub_head_block >*{
   display: inline-block;

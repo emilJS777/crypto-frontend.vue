@@ -71,6 +71,7 @@ name: "v-loader",
     padding: 20px;
     border-top-right-radius: 10px 15px;
     border-bottom-left-radius: 10px 15px;
+    color: #ccc;
   }
   100%{
     border-radius: 50%;

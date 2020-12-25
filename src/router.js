@@ -168,7 +168,7 @@ export default new Router({
         },
         {
             path: '/status',
-            component: () => import('./components/Guest/status')
+            component: () => import('./components/Guest/status/home')
         },
             //    account routes
         {
