@@ -43,6 +43,9 @@
    .text_greey{
      color: #acaaaa;
    }
+   .hidden{
+     display: none;
+   }
    .heading_lightBlue{
      color: #42a5a5;
      font-weight: bold;

@@ -33,8 +33,9 @@ name: "v-head",
 .sub_head_block{
   width: 100%;
   padding: 15px;
+  padding-top: 20px;
   background-color: #e2e2e2;
-  border-radius: 0 0 6px 6px;
+  border-radius:6px;
 }
 .sub_head_block >*{
   display: inline-block;

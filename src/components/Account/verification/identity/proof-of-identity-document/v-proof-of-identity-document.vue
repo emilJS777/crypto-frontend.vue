@@ -24,12 +24,12 @@
     <div class="upload_btn_block">
       <hr>
       <span class="text_big text_greey">or</span>
-      <button disabled="disabled" class="btn btn_blue">Upload File</button>
+      <router-link to="/account/verification/identity/proof-of-identity-document-upload" class="btn btn_blue">Upload File</router-link>
     </div>
   </form>
   <div class="next_prev_routes">
-    <router-link to="/account/verification/identity/contry-of-residence" class="btn btn_darkBlue">Prev</router-link>
-    <a href="#" class="btn btn_blue">Next</a>
+    <router-link to="/account/verification/identity/phone-verification" class="btn btn_darkBlue">Prev</router-link>
+    <router-link to="/account/verification/identity/proof-of-identity-document-upload" class="btn btn_blue">Next</router-link>
   </div>
 </div>
 </template>
@@ -70,7 +70,7 @@ name: "v-proof-of-identity-document"
     padding: 5px 10px;
     background-color: #f1f1f1;
   }
-  .upload_btn_block > button{
+  .upload_btn_block > a{
     display: table;
     margin: 0 auto;
   }

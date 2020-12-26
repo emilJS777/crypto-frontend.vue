@@ -1,7 +1,7 @@
 <template>
   <div class="service_board mt-4">
     <div class="head">
-      <router-link to="/">
+      <router-link to="/status/incident">
         <h6>LTC withdrawals are under maintenance</h6>
       </router-link>
       <router-link to="/">

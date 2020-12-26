@@ -170,6 +170,14 @@ export default new Router({
             path: '/status',
             component: () => import('./components/Guest/status/home')
         },
+        {
+            path: '/status/incident',
+            component: () => import('./components/Guest/status/incident')
+        },
+        {
+            path: '/status/incident-history',
+            component: () => import('./components/Guest/status/incident-history')
+        },
             //    account routes
         {
             path: '/account/trade',
@@ -212,10 +220,6 @@ export default new Router({
             component: () => import('./components/Account/verification/home')
         },
         {
-            path: '/account/verification/identity',
-            component: () => import('./components/Account/verification/identity')
-        },
-        {
             path: '/account/verification/identity/contry-of-residence',
             component: () => import('./components/Account/verification/identity/v-contry-of-residence')
         },
@@ -226,6 +230,10 @@ export default new Router({
         {
             path: '/account/verification/identity/proof-of-identity-document',
             component: () => import('./components/Account/verification/identity/proof-of-identity-document')
+        },
+        {
+            path: '/account/verification/identity/proof-of-identity-document-upload',
+            component: () => import('./components/Account/verification/identity/proof-of-identity-document-upload')
         },
         {
             path: '/account/support',

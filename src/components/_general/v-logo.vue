@@ -29,10 +29,8 @@ name: "v-logo"
     color: #fff;
     padding: 1px 5px;
     font-weight: bold;
-    border-top-right-radius: 10px 20px;
-    border-bottom-left-radius: 10px 20px;
+    border-radius: 5px 30%;
     font-style: italic;
-    border: 1px solid #fff;
 
   }
   span:last-child{
