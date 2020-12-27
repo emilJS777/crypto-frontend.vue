@@ -29,7 +29,7 @@ name: "v-logo"
     color: #fff;
     padding: 1px 5px;
     font-weight: bold;
-    border-radius: 5px 30%;
+    border-radius: 40% 5px;
     font-style: italic;
 
   }

@@ -20,8 +20,8 @@
             <div class="col-3"><p class="heading_darkBlue">10 ADA</p></div>
             <div class="col-3"><p class="heading_darkBlue">ADA</p></div>
             <div class="col-2">
-              <button class="btn btn_darkBlue">Deposit</button>
-              <button class="btn btn_blue">Buy</button>
+              <router-link to="/account/staking" class="btn btn_darkBlue">Deposit</router-link>
+              <router-link to="/buysell" class="btn btn_blue">Buy</router-link>
             </div>
           </div>
           <div class="row table_body">
@@ -33,8 +33,8 @@
             <div class="col-3"><p class="heading_darkBlue">10 ADA</p></div>
             <div class="col-3"><p class="heading_darkBlue">ADA</p></div>
             <div class="col-2">
-              <button class="btn btn_darkBlue">Deposit</button>
-              <button class="btn btn_blue">Buy</button>
+              <router-link to="/account/staking" class="btn btn_darkBlue">Deposit</router-link>
+              <router-link to="/buysell" class="btn btn_blue">Buy</router-link>
             </div>
           </div>
           <div class="row table_body">
@@ -46,8 +46,8 @@
             <div class="col-3"><p class="heading_darkBlue">10 ADA</p></div>
             <div class="col-3"><p class="heading_darkBlue">ADA</p></div>
             <div class="col-2">
-              <button class="btn btn_darkBlue">Deposit</button>
-              <button class="btn btn_blue">Buy</button>
+              <router-link to="/account/staking" class="btn btn_darkBlue">Deposit</router-link>
+              <router-link to="/buysell" class="btn btn_blue">Buy</router-link>
             </div>
           </div>
           <div class="row table_body">
@@ -59,8 +59,8 @@
             <div class="col-3"><p class="heading_darkBlue">10 ADA</p></div>
             <div class="col-3"><p class="heading_darkBlue">ADA</p></div>
             <div class="col-2">
-              <button class="btn btn_darkBlue">Deposit</button>
-              <button class="btn btn_blue">Buy</button>
+              <router-link to="/account/staking" class="btn btn_darkBlue">Deposit</router-link>
+              <router-link to="/buysell" class="btn btn_blue">Buy</router-link>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default {
 .table_body > div > *{
   display: inline-block;
 }
-.table_body > div > button{
+.table_body > div > a{
   margin-right: 5px;
 }
 .table_body > div > p{

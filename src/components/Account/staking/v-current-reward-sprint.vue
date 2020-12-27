@@ -28,6 +28,57 @@
           <router-link to="/buysell" class="btn btn_blue">Buy</router-link>
         </div>
       </div>
+      <div class="row table_body">
+        <div class="col-2">
+          <i class="cf cf-zil"></i>
+          <a>Zilliqa</a>
+        </div>
+        <div class="col-1"><p>$ 0.152</p></div>
+        <div class="col-1"><p class="plus">4-5%</p></div>
+        <div class="col-1"><p>-</p></div>
+        <div class="col-2"><p>-</p></div>
+        <div class="col-2"><p>-</p></div>
+        <div class="col-3">
+          <a class="btn btn_darkBlue" @click="this.viewModal">
+            Add Funds
+          </a>
+          <router-link to="/buysell" class="btn btn_blue">Buy</router-link>
+        </div>
+      </div>
+      <div class="row table_body">
+        <div class="col-2">
+          <i class="cf cf-neo"></i>
+          <a>Neo</a>
+        </div>
+        <div class="col-1"><p>$ 0.152</p></div>
+        <div class="col-1"><p class="plus">4-5%</p></div>
+        <div class="col-1"><p>-</p></div>
+        <div class="col-2"><p>-</p></div>
+        <div class="col-2"><p>-</p></div>
+        <div class="col-3">
+          <a class="btn btn_darkBlue" @click="this.viewModal">
+            Add Funds
+          </a>
+          <router-link to="/buysell" class="btn btn_blue">Buy</router-link>
+        </div>
+      </div>
+      <div class="row table_body">
+        <div class="col-2">
+          <i class="cf cf-ont"></i>
+          <a>Ontology</a>
+        </div>
+        <div class="col-1"><p>$ 0.152</p></div>
+        <div class="col-1"><p class="plus">4-5%</p></div>
+        <div class="col-1"><p>-</p></div>
+        <div class="col-2"><p>-</p></div>
+        <div class="col-2"><p>-</p></div>
+        <div class="col-3">
+          <a class="btn btn_darkBlue" @click="this.viewModal">
+            Add Funds
+          </a>
+          <router-link to="/buysell" class="btn btn_blue">Buy</router-link>
+        </div>
+      </div>
     </div>
     <span class="text_greey text_small">*All rewards will be funded on your account next day after end of reward sprint</span>
   </div>
