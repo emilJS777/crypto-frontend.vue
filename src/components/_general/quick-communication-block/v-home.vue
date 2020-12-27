@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "v-main"
+  name: "v-home"
 }
 </script>
 

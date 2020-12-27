@@ -3,8 +3,8 @@
     <div>
       <div class="quick_communication_content box_shadow" v-bind:class="switchElem ? 'show' : ''">
         <div class="content">
-          <v-main v-if="tabElem === 0" @changePage="nextTab(1)"/>
-          <v-messanger-block @changePage="nextTab(0)" v-if="tabElem === 1"/>
+          <v-home v-if="tabElem === 0" @changePage="nextTab(1)"/>
+          <v-messanger @changePage="nextTab(0)" v-if="tabElem === 1"/>
         </div>
       </div>
       <div  @click="show" class="icon_block">
@@ -18,14 +18,14 @@
 <script>
 import {switchFunction} from "../../_mixins/switch";
 import {tabsFunction} from "../../_mixins/tabs";
-import VMain from "./v-main";
-import VMessangerBlock from "./v-messanger-block";
+import VHome from "./v-home";
+import VMessanger from "./v-messanger";
 export default {
-name: "v-quick-communication-block",
+name: "index",
   mixins:[switchFunction, tabsFunction],
   components:{
-    VMessangerBlock,
-    VMain
+    VMessanger,
+    VHome
   },
   methods:{
     tabMessaPage(index){

@@ -59,7 +59,7 @@
 
 <script>
 export default {
-  name: "v-messanger-block",
+  name: "v-messanger",
 }
 </script>
 

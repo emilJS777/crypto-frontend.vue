@@ -26,7 +26,7 @@ import vDescriptionSection from "./v-description-section"
 import vInTheCommunity from "./v-inThe-community"
 import vFooterMenu from "../../_general/v-footer-menu"
 import VLoader from "../../_general/v-loader";
-import VQuickCommunicationBlock from "../../_general/quick-communication-block/v-quick-communication-block";
+import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 
 export default {
   name: "index",
