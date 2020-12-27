@@ -6,6 +6,7 @@
           <img src="https://rnug.ru/wp-content/uploads/2020/11/emptyuserphoto.png" alt="">
         </div>
         <div class="info_block">
+          <p class="">Zakaryan Robert</p>
           <span class="text_small text_greey">1 days ago</span>
           <p>
             hello how are you
@@ -20,6 +21,7 @@
           <img src="https://rnug.ru/wp-content/uploads/2020/11/emptyuserphoto.png" alt="">
         </div>
         <div class="info_block">
+          <p class="">Zakaryan Robert</p>
           <span class="text_small text_greey">1 days ago</span>
           <p>
             hello how are you
@@ -34,6 +36,7 @@
           <img src="https://rnug.ru/wp-content/uploads/2020/11/emptyuserphoto.png" alt="">
         </div>
         <div class="info_block">
+          <p class="">Zakaryan Robert</p>
           <span class="text_small text_greey">1 days ago</span>
           <p>
             hello how are you
@@ -45,7 +48,7 @@
       </div>
     </div>
     <div class="write_send_block">
-      <input type="text" class="form-control" placeholder="text message...">
+      <input type="text" class="form-control" placeholder="Your message...">
       <button class="btn btn_blue">
         Send
       </button>
