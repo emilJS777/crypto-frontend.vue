@@ -73,6 +73,7 @@ form{
   padding: 15px;
   padding-top: 35px;
   overflow-y: auto;
+  background-color: #fafafa;
 }
 .board::-webkit-scrollbar {
   width: 8px;
@@ -94,10 +95,11 @@ form{
   cursor: pointer;
   z-index: 99;
   display: block;
-  width: 95%;
+  width: 97%;
   font-size: 20px;
   font-weight: bold;
-  background-color: #fff;
+  border-bottom: 1px solid #e9e9e9;
+  background-color: #f6f5f5;
 }
 
 .message_block{
@@ -137,6 +139,10 @@ form{
   padding: 10px;
   grid-template-columns: 8fr 1fr;
   grid-gap: 5px;
+  background-color: #f6f5f5;
+}
+.write_send_block input{
+  background-color: #f1f1f1;
 }
 .write_send_block button{
   display: block;

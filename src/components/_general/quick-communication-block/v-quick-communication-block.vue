@@ -3,7 +3,6 @@
     <div>
       <div class="quick_communication_content box_shadow" v-bind:class="switchElem ? 'show' : ''">
         <div class="content">
-          <v-top-description  v-if="tabElem === 0"/>
           <v-main v-if="tabElem === 0" @changePage="nextTab(1)"/>
           <v-messanger-block @changePage="nextTab(0)" v-if="tabElem === 1"/>
         </div>
@@ -20,14 +19,12 @@
 import {switchFunction} from "../../_mixins/switch";
 import {tabsFunction} from "../../_mixins/tabs";
 import VMain from "./v-main";
-import VTopDescription from "./v-top-description";
 import VMessangerBlock from "./v-messanger-block";
 export default {
 name: "v-quick-communication-block",
   mixins:[switchFunction, tabsFunction],
   components:{
     VMessangerBlock,
-    VTopDescription,
     VMain
   },
   methods:{
@@ -80,8 +77,8 @@ name: "v-quick-communication-block",
   width: 150px;
   visibility: hidden;
   min-height: 100%;
-  bottom: 150%;
-  right: 0;
+  bottom: 130%;
+  right: 0px;
   border-radius: 8px;
   opacity: 0;
   transition: .3s;
@@ -92,15 +89,6 @@ name: "v-quick-communication-block",
   height: 400px;
   width: 300px;
   visibility: visible;
-}
-.quick_communication_content::after{
-  content: '🔼';
-  position: absolute;
-  bottom: -34px;
-  right: 10px;
-  font-size: 35px;
-  color: #fff;
-  transform: rotate(180deg);
 }
 .content{
   height: 100%;
