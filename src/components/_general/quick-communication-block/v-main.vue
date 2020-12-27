@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <button class="btn btn_blue">Ask a question →</button>
+    <button class="btn btn_blue" @click="$emit('changePage')">Ask a question →</button>
     <button class="btn btn_blue">Ask a question →</button>
     <button class="btn btn_blue">Ask a question →</button>
   </div>

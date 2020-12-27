@@ -1,6 +1,7 @@
 <template>
   <form action="">
     <div class="board">
+      <p class="text_greey" @click="$emit('changePage')">⟵</p>
       <div class="message_block">
         <div class="img_block">
           <img src="https://rnug.ru/wp-content/uploads/2020/11/emptyuserphoto.png" alt="">
@@ -49,8 +50,8 @@
     </div>
     <div class="write_send_block">
       <input type="text" class="form-control" placeholder="Your message...">
-      <button class="btn btn_blue">
-        Send
+      <button class="">
+        <img src="https://cdn4.iconfinder.com/data/icons/flat-circle-content/800/circle-content-send-64.png" alt="">
       </button>
     </div>
   </form>
@@ -58,7 +59,7 @@
 
 <script>
 export default {
-  name: "v-messanger-block"
+  name: "v-messanger-block",
 }
 </script>
 
@@ -70,6 +71,7 @@ form{
 .board{
   height: 86%;
   padding: 15px;
+  padding-top: 35px;
   overflow-y: auto;
 }
 .board::-webkit-scrollbar {
@@ -83,15 +85,21 @@ form{
 .board::-webkit-scrollbar-thumb {
   background-color: #97c2c2;
 }
-
-.write_send_block{
+.board > p{
   position: absolute;
-  bottom: 0;
-  display: grid;
-  padding: 10px;
-  grid-template-columns: 4fr 1fr;
-  grid-gap: 5px;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  padding-left: 15px;
+  cursor: pointer;
+  z-index: 99;
+  display: block;
+  width: 95%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
 }
+
 .message_block{
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -121,5 +129,27 @@ form{
   font-size: 13px;
   margin: 0;
   font-style: italic;
+}
+.write_send_block{
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 8fr 1fr;
+  grid-gap: 5px;
+}
+.write_send_block button{
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: #4db6ac;
+  border-radius: 4px;
+}
+.write_send_block button:focus{
+  outline: 0;
+}
+.write_send_block button img{
+  width: 32px;
+  height: auto;
 }
 </style>

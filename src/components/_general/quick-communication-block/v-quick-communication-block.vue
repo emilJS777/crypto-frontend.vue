@@ -3,18 +3,14 @@
     <div>
       <div class="quick_communication_content box_shadow" v-bind:class="switchElem ? 'show' : ''">
         <div class="content">
-<!--          <v-top-description/>-->
-<!--          <v-main/>-->
-          <v-messanger-block/>
+          <v-top-description  v-if="tabElem === 0"/>
+          <v-main v-if="tabElem === 0" @changePage="nextTab(1)"/>
+          <v-messanger-block @changePage="nextTab(0)" v-if="tabElem === 1"/>
         </div>
       </div>
       <div  @click="show" class="icon_block">
-        <img :src="require('@/assets/icons/message-24.png')" alt=""
-          v-if="!switchElem"
-        >
-        <span v-if="switchElem">
-          ⬇
-        </span>
+        <img :src="require('@/assets/icons/message-24.png')" alt="" v-if="!switchElem">
+        <span v-if="switchElem">⬇</span>
       </div>
     </div>
   </div>
@@ -22,16 +18,22 @@
 
 <script>
 import {switchFunction} from "../../_mixins/switch";
-// import VMain from "./v-main";
-// import VTopDescription from "./v-top-description";
+import {tabsFunction} from "../../_mixins/tabs";
+import VMain from "./v-main";
+import VTopDescription from "./v-top-description";
 import VMessangerBlock from "./v-messanger-block";
 export default {
 name: "v-quick-communication-block",
-  mixins:[switchFunction],
+  mixins:[switchFunction, tabsFunction],
   components:{
     VMessangerBlock,
-    // VTopDescription,
-    // VMain
+    VTopDescription,
+    VMain
+  },
+  methods:{
+    tabMessaPage(index){
+      this.tabElem = index;
+    }
   }
 }
 </script>
@@ -74,19 +76,22 @@ name: "v-quick-communication-block",
 .quick_communication_content{
   position: absolute;
   background-color: #fff;
-  height: 0;
+  height: 80px;
   width: 150px;
+  visibility: hidden;
   min-height: 100%;
   bottom: 150%;
   right: 0;
   border-radius: 8px;
   opacity: 0;
-  transition: .4s;
+  transition: .3s;
+  overflow: hidden;
 }
 .show{
   opacity: 1;
   height: 400px;
   width: 300px;
+  visibility: visible;
 }
 .quick_communication_content::after{
   content: '🔼';
