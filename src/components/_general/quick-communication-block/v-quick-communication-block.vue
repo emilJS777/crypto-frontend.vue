@@ -3,8 +3,9 @@
     <div>
       <div class="quick_communication_content box_shadow" v-bind:class="switchElem ? 'show' : ''">
         <div class="content">
-          <v-top-description/>
-          <v-main/>
+<!--          <v-top-description/>-->
+<!--          <v-main/>-->
+          <v-messanger-block/>
         </div>
       </div>
       <div  @click="show" class="icon_block">
@@ -21,14 +22,16 @@
 
 <script>
 import {switchFunction} from "../../_mixins/switch";
-import VMain from "./v-main";
-import VTopDescription from "./v-top-description";
+// import VMain from "./v-main";
+// import VTopDescription from "./v-top-description";
+import VMessangerBlock from "./v-messanger-block";
 export default {
 name: "v-quick-communication-block",
   mixins:[switchFunction],
   components:{
-    VTopDescription,
-    VMain
+    VMessangerBlock,
+    // VTopDescription,
+    // VMain
   }
 }
 </script>
@@ -37,7 +40,7 @@ name: "v-quick-communication-block",
 .quick_communication_block{
   background-color: #42a5a5;
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 30px;
   width: 50px;
   height: 50px;
@@ -56,6 +59,12 @@ name: "v-quick-communication-block",
   cursor: pointer;
   padding: 13px 10px 10px 10px;
 }
+.quick_communication_block > div > .icon_block > img{
+  width: 24px;
+  height: auto;
+  display: table;
+  margin: 2px auto;
+}
 .quick_communication_block > div > .icon_block > span{
   color: #fff;
   display: table;
@@ -67,6 +76,7 @@ name: "v-quick-communication-block",
   background-color: #fff;
   height: 0;
   width: 150px;
+  min-height: 100%;
   bottom: 150%;
   right: 0;
   border-radius: 8px;
@@ -88,18 +98,7 @@ name: "v-quick-communication-block",
   transform: rotate(180deg);
 }
 .content{
-  overflow-y: scroll;
   height: 100%;
 }
-.content::-webkit-scrollbar {
-  width: 8px;
-}
 
-.content::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.content::-webkit-scrollbar-thumb {
-  background-color: #97c2c2;
-}
 </style>
