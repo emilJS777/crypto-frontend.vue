@@ -3,8 +3,16 @@
     <div>
       <div class="quick_communication_content box_shadow" v-bind:class="switchElem ? 'show' : ''">
         <div class="content">
-          <v-home v-if="tabElem === 0" @changePage="nextTab(1)"/>
-          <v-messanger @changePage="nextTab(0)" v-if="tabElem === 1"/>
+          <v-home @changeToMessange="nextTab(1)"
+                  @changeToAnswers="nextTab(2)"
+                  v-bind:class="tabElem === 0 ? 'home_show' : ''"
+                  class="home_page"/>
+          <v-messanger @changePage="nextTab(0)"
+                       v-bind:class="tabElem === 1 ? 'messenger_show' : ''"
+                       class="messenger_page"/>
+          <v-ready-answers @changePage="nextTab(0)"
+                           v-bind:class="tabElem === 2 ? 'ready_answers_show' : ''"
+                           class="ready_answers"/>
         </div>
       </div>
       <div  @click="show" class="icon_block">
@@ -20,10 +28,12 @@ import {switchFunction} from "../../_mixins/switch";
 import {tabsFunction} from "../../_mixins/tabs";
 import VHome from "./v-home";
 import VMessanger from "./v-messanger";
+import VReadyAnswers from "./v-ready-answers";
 export default {
 name: "index",
   mixins:[switchFunction, tabsFunction],
   components:{
+    VReadyAnswers,
     VMessanger,
     VHome
   },
@@ -73,8 +83,8 @@ name: "index",
 .quick_communication_content{
   position: absolute;
   background-color: #fff;
-  height: 80px;
-  width: 150px;
+  height: 0;
+  width: 50px;
   visibility: hidden;
   min-height: 100%;
   bottom: 130%;
@@ -92,6 +102,26 @@ name: "index",
 }
 .content{
   height: 100%;
+}
+.messenger_page,
+.home_page,
+.ready_answers{
+  opacity: 0;
+  width: 0;
+  visibility: hidden;
+  transition: .3s;
+  float: right;
+  min-height: 100%;
+}
+.home_page{
+  float: left;
+}
+.messenger_show,
+.home_show,
+.ready_answers_show{
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
 }
 
 </style>

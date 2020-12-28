@@ -9,8 +9,8 @@
       </p>
     </div>
     <div class="btns_block">
-      <button class="btn btn_blue" @click="$emit('changePage')">Ask a question →</button>
-      <button class="btn btn_blue">---</button>
+      <button class="btn btn_blue" @click="$emit('changeToMessange')">Ask a question →</button>
+      <button class="btn btn_blue" @click="$emit('changeToAnswers')">Ready answers →</button>
       <button class="btn btn_blue">---</button>
     </div>
   </div>
