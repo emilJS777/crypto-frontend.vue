@@ -12,17 +12,19 @@
       </div>
     </div>
     <v-footer-menu/>
+    <v-quick-communication-block/>
   </div>
 </template>
 
 <script>
+import VQuickCommunicationBlock from "../../../_general/quick-communication-block";
 import VHeader from "../_general/v-header";
 import VLeftSidebar from "../_general/v-sidebar";
 import VBlog from "./v-blog";
 import VFooterMenu from "../_general/v-footer-menu";
 export default {
   name: "index",
-  components: {VFooterMenu, VBlog, VLeftSidebar, VHeader}
+  components: {VFooterMenu, VBlog, VLeftSidebar, VHeader,VQuickCommunicationBlock}
 }
 </script>
 

@@ -9,10 +9,12 @@
     <v-email-us-anytime/>
     <v-description-section/>
     <v-footer-menu/>
+    <v-quick-communication-block/>
   </div>
 </template>
 
 <script>
+import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VHeader from "../_general/v-header";
 import VFaceSection from "@/components/Guest/affiliate-program/v-face-section";
 import VRecommendationsAndRewards from "@/components/Guest/affiliate-program/v-recommendations-and-rewards";
@@ -25,6 +27,7 @@ import VSliderSection from "@/components/Guest/affiliate-program/v-slider-sectio
 export default {
   name: "index",
   components: {
+    VQuickCommunicationBlock,
     VSliderSection,
     VDescriptionSection,
     VEmailUsAnytime,

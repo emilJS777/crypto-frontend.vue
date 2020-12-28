@@ -91,7 +91,7 @@ name: "index",
   right: 0px;
   border-radius: 8px;
   opacity: 0;
-  transition: .3s;
+  transition: .2s;
   overflow: hidden;
 }
 .show{

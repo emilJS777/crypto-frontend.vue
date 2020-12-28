@@ -23,10 +23,12 @@
       </div>
     </div>
     <v-footer-menu/>
+    <v-quick-communication-block/>
   </div>
 </template>
 
 <script>
+import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VUpperCurrencyLayer from "../../_general/v-upper-currency-layer";
 import VHeaderMin from "../_general/v-header-min";
 import VFooterMenu from "../../_general/v-footer-menu";
@@ -34,7 +36,7 @@ import VInfoSection from "./v-info-section";
 import VColInfoSection from "./v-col-info-section";
 export default {
   name: "index",
-  components: {VColInfoSection, VInfoSection, VFooterMenu, VUpperCurrencyLayer, VHeaderMin}
+  components: {VColInfoSection, VInfoSection, VFooterMenu, VUpperCurrencyLayer, VHeaderMin, VQuickCommunicationBlock}
 }
 </script>
 

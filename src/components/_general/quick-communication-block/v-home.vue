@@ -30,8 +30,7 @@ export default {
   .top_description{
     background-color: #42a5a5;
     color: #fff;
-    padding: 20px;
-    margin-bottom: -30px;
+    padding: 10px;
   }
   .top_description > h2{
     text-align: center;

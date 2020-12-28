@@ -11,11 +11,13 @@
       <v-our-values-section/>
       <v-our-history/>
       <v-footer-menu/>
+      <v-quick-communication-block/>
     </div>
   </div>
 </template>
 
 <script>
+import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VHeader from "../_general/v-header";
 import VHeading from "./v-heading";
 import VImgInfoSection from "@/components/Guest/about/v-img-info-section";
@@ -29,6 +31,7 @@ import VOurHistory from "@/components/Guest/about/v-our-history-section";
 export default {
 name: "index",
   components: {
+    VQuickCommunicationBlock,
     VOurHistory,
     VOurProductsSlider,
     VFooterMenu,

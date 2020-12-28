@@ -4,11 +4,13 @@
     <v-header-min/>
     <v-content/>
     <v-footer-menu/>
+    <v-quick-communication-block/>
   </div>
 </template>
 
 <script>
-  import VHeaderMin from "../_general/v-header-min";
+import VQuickCommunicationBlock from "../../_general/quick-communication-block";
+import VHeaderMin from "../_general/v-header-min";
   import VUpperCurrencyLayer from "@/components/_general/v-upper-currency-layer";
   import VContent from "./v-tab-content";
   import VFooterMenu from "@/components/_general/v-footer-menu";
@@ -18,7 +20,8 @@ export default {
     VFooterMenu,
     VUpperCurrencyLayer,
     VHeaderMin,
-    VContent
+    VContent,
+    VQuickCommunicationBlock
   }
 }
 </script>

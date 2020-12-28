@@ -46,13 +46,17 @@
     </div>
 <!--    footer menu-->
     <v-footer-menu/>
+
 <!--    modal window-->
     <v-modal-window/>
+<!--    messanger -->
+    <VQuickCommunicationBlock/>
   </div>
 </template>
 
 <script>
 // <!--  connecteds-->
+import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VUpperCurrencyLayer from "../../_general/v-upper-currency-layer";
 import VHeaderMin from "../_general/v-header-min";
 import VTopCurrencyMenu from "../../_general/trade/v-top-currency-menu";
@@ -116,7 +120,8 @@ export default {
     VTopCurrencyMenu,
     VUpperCurrencyLayer,
     VHeaderMin,
-    VTradeHistoryTable
+    VTradeHistoryTable,
+    VQuickCommunicationBlock
   }
 }
 </script>

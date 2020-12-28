@@ -6,10 +6,12 @@
     <v-slider-section/>
     <v-features-benefits-section/>
     <v-footer-menu/>
+    <v-quick-communication-block/>
   </div>
 </template>
 
 <script>
+  import VQuickCommunicationBlock from "../../_general/quick-communication-block";
   import VHeader from "../_general/v-header";
   import VFaceSection from "@/components/Guest/mobile/v-face-section";
   import VFaqSection from "@/components/Guest/mobile/v-faq-section";
@@ -19,7 +21,7 @@
 
   export default {
   name: "index",
-    components: {VFeaturesBenefitsSection, VSliderSection, VFooterMenu, VFaqSection, VFaceSection, VHeader}
+    components: {VFeaturesBenefitsSection, VSliderSection, VFooterMenu, VFaqSection, VFaceSection, VHeader, VQuickCommunicationBlock}
   }
 </script>
 

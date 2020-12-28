@@ -4,17 +4,19 @@
       <v-upper-section/>
       <v-bottom-section/>
       <v-footer-menu/>
+    <v-quick-communication-block/>
   </div>
 </template>
 
 <script>
+import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VUpperSection from "@/components/Guest/contacts/v-upper-section";
 import VHeader from "../_general/v-header";
 import VBottomSection from "@/components/Guest/contacts/v-bottom-section";
 import VFooterMenu from "@/components/_general/v-footer-menu";
 export default {
   name: "index",
-  components: {VFooterMenu, VBottomSection, VHeader, VUpperSection}
+  components: {VFooterMenu, VBottomSection, VHeader, VUpperSection,VQuickCommunicationBlock}
 }
 </script>
 

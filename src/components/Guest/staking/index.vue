@@ -20,11 +20,12 @@
           />
         </div>
     <v-footer-menu/>
+    <v-quick-communication-block/>
   </div>
 </template>
 
 <script>
-
+  import VQuickCommunicationBlock from "../../_general/quick-communication-block";
   import VHeader from "../_general/v-header";
   import VFaceSection from "./v-face-section";
   import VFooterMenu from "@/components/_general/v-footer-menu";
@@ -34,7 +35,7 @@
 
 export default {
   name: "index",
-  components: {VCalculateEarnings, VFooterMenu, VFaceSection, VHeader, VAllAvailableCoins, VFaq}
+  components: {VCalculateEarnings, VFooterMenu, VFaceSection, VHeader, VAllAvailableCoins, VFaq,VQuickCommunicationBlock}
 }
 </script>
 
