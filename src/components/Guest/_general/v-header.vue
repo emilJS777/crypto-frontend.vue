@@ -3,11 +3,11 @@
     <div class="container">
       <div class="row">
 <!--        col-2 logo-->
-        <div class="col-1">
+        <div class="">
           <v-logo/>
         </div>
 <!--        col-6 navbar-->
-        <div class="col-8 pl-5 navigation_block">
+        <div class=" pl-5 navigation_block">
           <nav class="navigation">
             <ul>
               <li>PRODUCTS
@@ -94,9 +94,9 @@
           </nav>
         </div>
 <!--        col-4 auth-->
-        <div class="col-3 auth_block">
+        <div class=" auth_block">
           <ul class="auth">
-            <li><router-link to="/login" class="btn btn_blue">Sign in</router-link></li>
+            <li><router-link to="/login" class="btn">Sign in</router-link></li>
             <li><router-link to="/register" class="btn">Create Account</router-link></li>
           </ul>
           <v-languages-select/>
@@ -132,6 +132,10 @@
   .container{
     padding: 0;
   }
+  .container > .row{
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr;
+  }
   .navigation_block > nav{
     height: 100%;
     position: relative;
@@ -142,7 +146,7 @@
   }
   .navigation_block > nav > ul{
     display: table;
-    margin: 0 auto;
+    margin: 0;
   }
   .navigation > ul > li{
     display: inline-block;
@@ -241,15 +245,23 @@
   .auth_block > .auth > li{
     display: inline-block;
     margin-left: 15px;
+    transition: .3s;
   }
   .auth_block > .auth > li:first-child > a{
     border-radius: 0 !important;
-    background-color: #fff !important;
+    background-color: #fff;
     color: #444 !important;
     border: 1px solid #42a5a5;
   }
+  .auth_block > .auth > li:first-child:hover a{
+    background-color: #ececec;
+    border: 1px solid #ececec;
+  }
   .auth_block > .auth > li:last-child{
     background-color: #42a5a5;
+  }
+  .auth_block > .auth > li:last-child:hover{
+    background-color: #268080;
   }
 
 </style>

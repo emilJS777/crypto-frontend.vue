@@ -1,6 +1,6 @@
 <template>
   <div class="lading_page_block">
-    <router-link to="/" class="img_block">
+    <router-link to="/buy-crypto" class="img_block">
       <img src="https://cex.io/rl/landing-0.jpg" alt="">
     </router-link>
     <div class="bottom_block">

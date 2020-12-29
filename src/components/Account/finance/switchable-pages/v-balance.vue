@@ -49,10 +49,10 @@
               <span>{{item.total}}</span>
             </div>
             <div class="col-2">
-              <a href="#">Deposit</a>
+              <router-link to="/account/deposit-withdraw">Deposit</router-link>
             </div>
             <div class="col-2">
-              <a href="#">Withdraw</a>
+              <router-link to="/account/deposit-withdraw">Withdraw</router-link>
             </div>
           </div>
         </div>
@@ -91,10 +91,10 @@
               <span>{{item.total}}</span>
             </div>
             <div class="col-2">
-              <a href="#">Deposit</a>
+              <router-link to="/account/deposit-withdraw">Deposit</router-link>
             </div>
             <div class="col-2">
-              <a href="#">Withdraw</a>
+              <router-link to="/account/deposit-withdraw">Withdraw</router-link>
             </div>
           </div>
         </div>

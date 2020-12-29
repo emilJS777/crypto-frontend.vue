@@ -2,6 +2,7 @@
   <div class="ready_answers">
     <p class="text_greey" @click="$emit('changePage')">⟵</p>
     <div class="answers_block">
+      <p class="text_normal text_greey">if you didn't find what you were looking for, ask a question</p>
       <router-link to="/account/support/edition" class="btn btn_blue">How to buy Bitcoin?</router-link>
       <router-link to="/account/support/edition" class="btn btn_blue">How to buy Bitcoin?</router-link>
       <router-link to="/account/support/edition" class="btn btn_blue">How to buy Bitcoin?</router-link>
@@ -21,7 +22,7 @@ export default {
   width: 100px;
   height: 100px;
 }
-p{
+.ready_answers > p{
   cursor: pointer;
   border-bottom: 1px solid #e9e9e9;
   padding: 8px 15px;
@@ -32,6 +33,9 @@ p{
 .answers_block{
   padding: 0 15px;
   overflow-y: auto;
+}
+.answers_block p{
+  text-align: center;
 }
 .answers_block a{
   color: #42a5a5;

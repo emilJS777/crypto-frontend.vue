@@ -42,7 +42,7 @@
             <li><img :src="require('@/assets/icons/social/iconfinder_twitter-social-media_765208.png')" alt=""></li>
             <li><img :src="require('@/assets/icons/social/iconfinder_facebook-social-media_765252.png')" alt=""></li>
             <li><img :src="require('@/assets/icons/social/iconfinder_linkedin-social-media_765228.png')" alt=""></li>
-            <router-link to="/status" class="btn btn_blue">K7.Crypto Status</router-link>
+            <router-link to="/status" class="btn btn_blue">K7 Status</router-link>
             <div>
               <img :src="require('@/assets/img/Visa.png')" alt="">
               <img :src="require('@/assets/img/creditcards.png')" alt="">
