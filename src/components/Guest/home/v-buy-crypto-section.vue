@@ -10,7 +10,7 @@
               </div>
               <div class="col-4">
                 <v-select
-                    :priceTag="['BTC', 'ETH', 'ELC']"/>
+                    :priceTag="['BTC', 'ETH', 'LTC']"/>
               </div>
             </div>
             <div class="row mb-5">
@@ -19,7 +19,7 @@
               </div>
               <div class="col-4">
                 <v-select
-                    :priceTag="['USD', 'EUR']"/>
+                    :priceTag="['USD', 'EUR', 'RUR']"/>
               </div>
             </div>
             <div class="row">
@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import vSelect from "../../_general/v-select"
+import vSelect from "../../_general/currency-select"
 
 export default {
   name: "v-buy-crypto-section",

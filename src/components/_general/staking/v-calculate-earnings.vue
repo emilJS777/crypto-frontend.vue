@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import VSelect from "@/components/_general/v-select";
+import VSelect from "@/components/_general/currency-select";
 export default {
 name: "v-calculate-earnings",
   components: {VSelect}

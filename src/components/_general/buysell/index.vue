@@ -6,11 +6,11 @@
         <div class="select_block_buy_for">
           <div class="buy">
             <span class="text_greey text_big">Buy</span>
-            <v-select :priceTag='["BTC","ETH","ELC"]'/>
+            <v-select :priceTag='["BTC","ETH","LTC"]'/>
           </div>
           <div class="for">
             <span class="text_greey text_big">For</span>
-            <v-select :priceTag='["USD","EUR","FTS"]'/>
+            <v-select :priceTag='["USD","EUR","RUR"]'/>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
 <script>
 import VBottomAboutUs from "./v-bottom-about-us";
 import vHeading from "./v-heading";
-import vSelect from "../v-select"
+import vSelect from "../currency-select"
 import vPopularPurchaseCard from "./v-popular-purchase-card"
 import vDifferentPurchaseCard from "./v-different-purchase-card"
 

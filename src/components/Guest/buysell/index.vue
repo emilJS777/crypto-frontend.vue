@@ -8,7 +8,6 @@
 
 <script>
 import VQuickCommunicationBlock from "../../_general/quick-communication-block";
-
 import VHeader from "../_general/v-header";
 import VBuySell from "../../_general/buysell";
 export default {

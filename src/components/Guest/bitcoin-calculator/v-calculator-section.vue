@@ -11,7 +11,7 @@
         <div class="input_section">
           <input type="number" class="form-control">
           <div class="select mt-1">
-            <v-select :priceTag="['BTC','ETH']" border="0"/>
+            <v-select :priceTag="['BTC','ETH','LTC']" border="0"/>
           </div>
         </div>
         <span>
@@ -20,7 +20,7 @@
         <div class="input_section">
           <input type="number" class="form-control">
           <div class="select mt-1">
-            <v-select :priceTag="['USD','EUR']" border="0"/>
+            <v-select :priceTag="['USD','EUR','RUR']" border="0"/>
           </div>
         </div>
         <div class="input_section">
@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import VSelect from "../../_general/v-select";
+import VSelect from "../../_general/currency-select";
 export default {
 name: "v-calculator-section",
   components:{
