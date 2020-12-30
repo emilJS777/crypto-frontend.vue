@@ -14,7 +14,7 @@
 <script>
 import VLadingPageBlock from "./v-lading-page-block";
 export default {
-name: "v-lading-pages",
+name: "index",
   components: {VLadingPageBlock}
 }
 </script>

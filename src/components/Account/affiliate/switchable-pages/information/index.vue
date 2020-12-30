@@ -38,7 +38,7 @@
 
 <script>
 export default {
-name: "v-information"
+name: "index"
 }
 </script>
 

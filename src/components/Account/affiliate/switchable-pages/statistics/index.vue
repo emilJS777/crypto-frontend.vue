@@ -50,7 +50,7 @@
 
 <script>
 export default {
-name: "v-statistics"
+name: "index"
 }
 </script>
 

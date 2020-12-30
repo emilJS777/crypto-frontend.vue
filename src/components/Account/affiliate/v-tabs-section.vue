@@ -18,6 +18,7 @@
       <v-referral-link/>
       <v-information v-if="tabElem === 0"/>
       <v-lading-pages v-if="tabElem === 1"/>
+      <v-banners v-if="tabElem === 2"/>
       <v-statistics v-if="tabElem === 3"/>
     </div>
   </div>
@@ -26,13 +27,14 @@
 <script>
 import {tabsFunction} from "../../_mixins/tabs";
 import VReferralLink from "./v-referral-link";
-import VInformation from "./switchable-pages/information/v-information";
-import VLadingPages from "./switchable-pages/lading-pages/v-lading-pages";
-import VStatistics from "./switchable-pages/statistics/v-statistics";
+import VInformation from "./switchable-pages/information";
+import VLadingPages from "./switchable-pages/lading-pages";
+import VStatistics from "./switchable-pages/statistics";
+import VBanners from "./switchable-pages/banners";
 
 export default {
   name: "v-tabs-section",
-  components: {VStatistics, VLadingPages, VInformation, VReferralLink},
+  components: {VStatistics, VLadingPages, VInformation, VReferralLink, VBanners},
   mixins:[tabsFunction]
 }
 </script>
