@@ -13,7 +13,7 @@
         <form action="">
           <div class="input_block">
             <input type="number" class="form-control">
-            <v-select :price-tag="['BTC', 'ELC']"/>
+            <v-select :price-tag="['BTC', 'LTC']"/>
           </div>
           <div class="input_block">
             <input type="number" class="form-control">

@@ -70,7 +70,7 @@ import VBottomDescription from "@/components/Guest/spotTrading/v-bottom-descript
 import VFooterMenu from "@/components/_general/v-footer-menu";
 import VSignUp from "@/components/Guest/spotTrading/v-sign-up";
 import VModalWindow from "@/components/Guest/spotTrading/v-modal-window";
-import VBarChart from "../../_general/v-bar-chart";
+import VBarChart from "../../_general/bar-chart";
 export default {
   name: "index",
   data(){

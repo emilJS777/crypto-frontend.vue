@@ -46,7 +46,7 @@ import VRightPricingInformacionLastDay from "../../_general/trade/v-right-pricin
 import VOrdersTable from "../../_general/trade/v-orders-table";
 import VTradeHistory from "../../_general/trade/v-trade-history-table";
 import VFooterMenu from "../../_general/v-footer-menu";
-import VBarChart from "../../_general/v-bar-chart";
+import VBarChart from "../../_general/bar-chart";
 export default {
   name: "index",
   components: {
