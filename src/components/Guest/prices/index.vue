@@ -10,7 +10,7 @@
 <script>
 import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VHeader from "../_general/v-header";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 import VCryptoCurrencyPrices from "./v-crypto-currency-prices";
 export default {
 name: "index",

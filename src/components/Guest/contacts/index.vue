@@ -13,7 +13,7 @@ import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VUpperSection from "@/components/Guest/contacts/v-upper-section";
 import VHeader from "../_general/v-header";
 import VBottomSection from "@/components/Guest/contacts/v-bottom-section";
-import VFooterMenu from "@/components/_general/v-footer-menu";
+import VFooterMenu from "@/components/_general/footer-menu/index";
 export default {
   name: "index",
   components: {VFooterMenu, VBottomSection, VHeader, VUpperSection,VQuickCommunicationBlock}

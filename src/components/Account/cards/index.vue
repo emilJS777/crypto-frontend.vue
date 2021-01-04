@@ -12,7 +12,7 @@
 import VHeader from "../_general/v-header";
 import VSubHeader from "../_general/v-sub-header";
 import VCardsContent from "./v-cards-content";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 import VCardSection from "./v-card-section";
 export default {
   name: "index",

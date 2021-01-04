@@ -16,7 +16,7 @@
   import VFaceSection from "@/components/Guest/mobile/v-face-section";
   import VFaqSection from "@/components/Guest/mobile/v-faq-section";
   import VSliderSection from "@/components/Guest/mobile/v-slider-section";
-  import VFooterMenu from "@/components/_general/v-footer-menu";
+  import VFooterMenu from "@/components/_general/footer-menu/index";
   import VFeaturesBenefitsSection from "@/components/Guest/mobile/v-features-benefits-section";
 
   export default {

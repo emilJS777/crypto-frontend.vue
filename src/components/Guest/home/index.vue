@@ -24,7 +24,7 @@ import vTradingInfoSection from "./v-trading-info-section"
 import vAboutUsSection from "./v-about-us-section"
 import vDescriptionSection from "./v-description-section"
 import vInTheCommunity from "./v-inThe-community"
-import vFooterMenu from "../../_general/v-footer-menu"
+import vFooterMenu from "../../_general/footer-menu"
 import VLoader from "../../_general/v-loader";
 import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 

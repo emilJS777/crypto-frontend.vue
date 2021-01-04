@@ -13,7 +13,7 @@ import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VHeader from "../_general/v-header";
 import VTotalAccountLimits from "@/components/Guest/limits-commissions/v-total-account-limits";
 import VLimitsAndCommissions from "@/components/Guest/limits-commissions/v-limits-and-commissions";
-import VFooterMenu from "@/components/_general/v-footer-menu";
+import VFooterMenu from "@/components/_general/footer-menu/index";
 export default {
 name: "index",
   components: {VFooterMenu, VLimitsAndCommissions, VTotalAccountLimits, VHeader, VQuickCommunicationBlock}

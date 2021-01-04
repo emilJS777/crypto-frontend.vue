@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import VLanguagesSelect from "../../_general/v-languages-select";
+import VLanguagesSelect from "../../_general/languages-select";
 export default {
   name: "v-header",
   components: {VLanguagesSelect},

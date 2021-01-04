@@ -12,7 +12,7 @@
 import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VFaceSection from "@/components/Guest/press/v-face-section";
 import VHeader from "../_general/v-header";
-import VFooterMenu from "@/components/_general/v-footer-menu";
+import VFooterMenu from "@/components/_general/footer-menu/index";
 import VEditions from "@/components/Guest/press/v-editor-and-editorial-select";
 export default {
 name: "index",

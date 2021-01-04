@@ -10,8 +10,8 @@
 
 <script>
   import VQuickCommunicationBlock from "../../_general/quick-communication-block";
-  import VUpperCurrencyLayer from "../../_general/v-upper-currency-layer";
-  import VFooterMenu from "../../_general/v-footer-menu";
+  import VUpperCurrencyLayer from "../../_general/upper-currency-layer";
+  import VFooterMenu from "../../_general/footer-menu";
   import VHeaderMin from "../_general/v-header-min";
   import VCalculatorSection from "./v-calculator-section";
 

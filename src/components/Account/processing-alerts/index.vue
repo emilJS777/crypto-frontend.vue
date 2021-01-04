@@ -11,7 +11,7 @@
 import VHeader from "../_general/v-header";
 import VSubHeader from "../_general/v-sub-header";
 import VContent from "./v-content";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 export default {
 name: "index",
   components: {VFooterMenu, VSubHeader, VHeader, VContent}

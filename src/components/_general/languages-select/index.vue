@@ -17,7 +17,7 @@
 
 
 export default {
-  name: "v-languages-select",
+  name: "index",
 
   data() {
     return {

@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import VQuickCommunicationBlock from "../../_general/quick-communication-block";
-import VHeaderMin from "../_general/v-header-min";
-  import VUpperCurrencyLayer from "@/components/_general/v-upper-currency-layer";
+  import VQuickCommunicationBlock from "../../_general/quick-communication-block";
+  import VHeaderMin from "../_general/v-header-min";
+  import VUpperCurrencyLayer from "../../_general/upper-currency-layer";
   import VContent from "./v-tab-content";
-  import VFooterMenu from "@/components/_general/v-footer-menu";
+  import VFooterMenu from "@/components/_general/footer-menu";
 export default {
   name: "index",
   components:{

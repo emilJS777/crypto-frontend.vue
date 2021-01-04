@@ -33,7 +33,7 @@
 <script>
 import VHeader from "../_general/v-header";
 import VToggleSelectSection from "../_general/v-toggle-select-section";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 export default {
 name: "index",
   components: {VFooterMenu, VToggleSelectSection, VHeader}

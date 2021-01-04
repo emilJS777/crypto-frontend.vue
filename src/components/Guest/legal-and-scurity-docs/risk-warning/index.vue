@@ -36,7 +36,7 @@
 
 <script>
 import VHeader from "../../_general/v-header";
-import VFooterMenu from "../../../_general/v-footer-menu";
+import VFooterMenu from "../../../_general/footer-menu";
 import VDocument from "../../../_general/legal-security-doc/v-document";
 export default {
   name: "index",

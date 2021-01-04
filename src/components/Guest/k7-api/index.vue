@@ -29,9 +29,9 @@
 
 <script>
 import VQuickCommunicationBlock from "../../_general/quick-communication-block";
-import VUpperCurrencyLayer from "../../_general/v-upper-currency-layer";
+import VUpperCurrencyLayer from "../../_general/upper-currency-layer";
 import VHeaderMin from "../_general/v-header-min";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 import VInfoSection from "./v-info-section";
 import VColInfoSection from "./v-col-info-section";
 export default {

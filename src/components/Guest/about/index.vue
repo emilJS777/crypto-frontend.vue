@@ -25,7 +25,7 @@ import VAboutUs from "@/components/Guest/home/v-about-us-section";
 import VImgInfoSectionTwo from "@/components/Guest/about/v-img-info-section-two";
 import VImgInfoSectionTre from "@/components/Guest/about/v-img-info-section-tre";
 import VOurValuesSection from "@/components/Guest/about/v-our-values-section";
-import VFooterMenu from "@/components/_general/v-footer-menu";
+import VFooterMenu from "@/components/_general/footer-menu/index";
 import VOurProductsSlider from "@/components/Guest/about/v-our-products-slider";
 import VOurHistory from "@/components/Guest/about/v-our-history-section";
 export default {

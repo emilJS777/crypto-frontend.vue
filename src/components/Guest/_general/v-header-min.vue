@@ -33,7 +33,7 @@
 
 <script>
 import vLogo from "../../_general/v-logo"
-import VLanguagesSelect from "../../_general/v-languages-select";
+import VLanguagesSelect from "../../_general/languages-select";
 
 export default {
   name: "v-header",

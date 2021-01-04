@@ -9,8 +9,8 @@
 
 <script>
 import VHeaderMin from "../_general/v-header-min";
-import VUpperCurrencyLayer from "../../_general/v-upper-currency-layer";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VUpperCurrencyLayer from "../../_general/upper-currency-layer";
+import VFooterMenu from "../../_general/footer-menu";
 import VContent from "./v-content";
 
 export default {

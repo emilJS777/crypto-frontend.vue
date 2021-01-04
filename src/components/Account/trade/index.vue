@@ -45,7 +45,7 @@ import VChartSection from "../../_general/trade/trading-chart/v-trading-chart-se
 import VRightPricingInformacionLastDay from "../../_general/trade/v-right-pricing-informacion-last-day";
 import VOrdersTable from "../../_general/trade/v-orders-table";
 import VTradeHistory from "../../_general/trade/v-trade-history-table";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 import VBarChart from "../../_general/bar-chart";
 export default {
   name: "index",

@@ -57,7 +57,7 @@
 <script>
 // <!--  connecteds-->
 import VQuickCommunicationBlock from "../../_general/quick-communication-block";
-import VUpperCurrencyLayer from "../../_general/v-upper-currency-layer";
+import VUpperCurrencyLayer from "../../_general/upper-currency-layer";
 import VHeaderMin from "../_general/v-header-min";
 import VTopCurrencyMenu from "../../_general/trade/v-top-currency-menu";
 import VLeftCurrencySelectBar from "../../_general/trade/v-left-currency-select-bar";
@@ -67,7 +67,7 @@ import VInstantPrchase from "../../_general/trade/v-instant-prchase-switch-block
 import VOrdersTable from "@/components/_general/trade/v-orders-table";
 import VTradeHistoryTable from "@/components/_general/trade/v-trade-history-table";
 import VBottomDescription from "@/components/Guest/spotTrading/v-bottom-description";
-import VFooterMenu from "@/components/_general/v-footer-menu";
+import VFooterMenu from "@/components/_general/footer-menu/index";
 import VSignUp from "@/components/Guest/spotTrading/v-sign-up";
 import VModalWindow from "@/components/Guest/spotTrading/v-modal-window";
 import VBarChart from "../../_general/bar-chart";

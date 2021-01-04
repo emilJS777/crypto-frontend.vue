@@ -18,7 +18,7 @@ import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VHeader from "../_general/v-header";
 import VFaceSection from "@/components/Guest/affiliate-program/v-face-section";
 import VRecommendationsAndRewards from "@/components/Guest/affiliate-program/v-recommendations-and-rewards";
-import VFooterMenu from "@/components/_general/v-footer-menu";
+import VFooterMenu from "@/components/_general/footer-menu/index";
 import VJoinAffiliates from "@/components/Guest/affiliate-program/v-join-affiliates";
 import VWhyJoinAffiliateProgram from "@/components/Guest/affiliate-program/v-why-join-affiliate-program";
 import VEmailUsAnytime from "@/components/Guest/affiliate-program/v-email-us-section";

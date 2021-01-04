@@ -38,7 +38,7 @@
 import VQuickCommunicationBlock from "../../_general/quick-communication-block";
 import VHeader from "../_general/v-header";
 import VFaceSection from "./v-face-section";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 import VToggleSelectSection from "../_general/v-toggle-select-section";
 export default {
 name: "index",

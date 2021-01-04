@@ -28,7 +28,7 @@
   import VQuickCommunicationBlock from "../../_general/quick-communication-block";
   import VHeader from "../_general/v-header";
   import VFaceSection from "./v-face-section";
-  import VFooterMenu from "@/components/_general/v-footer-menu";
+  import VFooterMenu from "@/components/_general/footer-menu/index";
   import VCalculateEarnings from "../../_general/staking/v-calculate-earnings";
   import VAllAvailableCoins from "./v-all-available-coins";
   import VFaq from "../../_general/staking/v-faq";

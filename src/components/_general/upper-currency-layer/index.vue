@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "v-upper-currency-layer",
+  name: "index",
   data(){
     return{
       currency:[

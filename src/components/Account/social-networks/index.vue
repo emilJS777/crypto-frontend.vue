@@ -12,7 +12,7 @@
 <script>
 import VHeader from "../_general/v-header";
 import VSubHeader from "../_general/v-sub-header";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 import VEmailSection from "./v-email-section";
 import VSocialNetworksSection from "./v-social-networks-section";
 import VUserId from "./v-user-id";

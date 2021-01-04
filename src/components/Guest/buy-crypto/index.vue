@@ -36,7 +36,7 @@ import VDifferentPurchaseCard from "../../_general/buysell/v-different-purchase-
 import VDescription from "./v-description";
 import VHeader from "../_general/v-header";
 import VHeading from "@/components/_general/buysell/v-heading";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 export default {
 name: "index",
   components: {VFooterMenu, VHeading, VHeader, VDescription, VDifferentPurchaseCard, VPopularPurchaseCard}

@@ -11,7 +11,7 @@
 import VContentTabs from "./v-content-tabs";
 import VHeader from "../_general/v-header";
 import VSubHeader from "../_general/v-sub-header";
-import VFooterMenu from "../../_general/v-footer-menu";
+import VFooterMenu from "../../_general/footer-menu";
 export default {
 name: "index",
   components: {VFooterMenu, VSubHeader, VHeader, VContentTabs}
