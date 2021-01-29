@@ -3,31 +3,36 @@
     <router-link to="/">Back to Main</router-link>
     <div class="form box_shadow">
       <div class="heading">
-        <h2>Sign in to your account</h2>
-        <span class="text_normal text_greey">Securely buy crypto and start trading on a trusted exchange</span>
+        <h2>Complete your account setup</h2>
+        <span class="text_normal text_greey">To start, provide basic info about yourself.</span>
       </div>
       <div class="body">
-        <input v-model="login.email" class="form-control" type="email" placeholder="Email">
-        <input v-model="login.password" class="form-control" type="password" placeholder="Password">
-        <router-link to="/reset-password">Forgot your password?</router-link>
+        <input v-model="completeAccountSetup.firstName" class="form-control" type="text" placeholder="First Name">
+        <input v-model="completeAccountSetup.lastName" class="form-control" type="text" placeholder="Last Name">
+        <div class="date">
+          <span class="text_greey text_normal">Date birth</span>
+          <date-dropdown default="1995.01.10" min="1950" max="2020" v-model="completeAccountSetup.date"/>
+        </div>
       </div>
-      <router-link @click.native="sendLogin" to="/">Sign in</router-link>
-      <p class="text_normal mt-1">Don’t have an account? <router-link to="/register">Create account</router-link></p>
+      <router-link  @click.native="sendCompleteAccountSetup" to="/">Next</router-link>
     </div>
   </div>
 </template>
 
 <script>
+import  dateDropdown from "vue-date-dropdown";
+
 export default {
-  name: "index",
+name: "index",
+  components: {dateDropdown},
   data(){
-    return{
-      login: this.$store.getters['auth/login/getState']
-    }
+  return{
+    completeAccountSetup: this.$store.getters['auth/completeAccountSetup/getState']
+   }
   },
-  methods:{
-    sendLogin(){
-      this.$store.commit('auth/login/setState', this.login)
+  methods: {
+    sendCompleteAccountSetup(){
+      this.$store.commit('auth/completeAccountSetup/setState', this.completeAccountSetup);
     }
   }
 }
@@ -93,4 +98,5 @@ export default {
 .form > p > a, .form > .body > p > a{
   color: #42a5a5;
 }
+
 </style>

@@ -30,7 +30,7 @@
     </form>
     <div class="next_prev_routes">
       <router-link to="/account/verification/identity/proof-of-identity-document" class="btn btn_darkBlue">Prev</router-link>
-      <router-link to="/account/verification/identity/proof-of-identity-document-upload" class="btn btn_blue">Next</router-link>
+      <router-link to="/account/verification/identity/personal-information" class="btn btn_blue">Next</router-link>
     </div>
   </div>
 </template>

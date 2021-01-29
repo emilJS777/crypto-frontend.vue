@@ -1,156 +1,105 @@
 <template>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 auth_block">
-        <form action="" class="auth_form  box_shadow" @submit="validForm">
-          <div class="form_head_block">
-            <router-link to="/">back to main</router-link>
-            <h1 class="heading_darkBlue">Create your account</h1>
-            <p class="text_greey text_big">Securely buy crypto and start trading on a trusted exchange</p>
+    <div class="container-fluid">
+      <router-link to="/">Back to Main</router-link>
+      <div class="form box_shadow">
+          <div class="heading">
+            <h2>Create your account</h2>
+            <span class="text_normal text_greey">Securely buy crypto and start trading on a trusted exchange</span>
           </div>
-          <div class="input_block input_block_login">
-            <input type="text" id="email" class="form-control" placeholder="Email Address">
-            <span v-if="!emailValid">
-              Email is incorrect
-            </span>
+          <div class="body">
+            <input v-model="register.email" class="form-control" type="email" placeholder="Email">
+            <input v-model="register.password" class="form-control" type="password" placeholder="Password">
+            <input v-model="register.confirmPassword" class="form-control" type="password" placeholder="Confirm Password">
+            <country-select v-model="register.country" class="custom-select"  topCountry="US" />
+            <div class="checkbox_block">
+              <input type="checkbox">
+              <span class="text_small text_greey">I agree to receive occasional emails and newsletters from K7.Crypto.</span>
+            </div>
+            <div class="checkbox_block">
+              <input type="checkbox">
+              <span class="text_small text_greey">I accept K7.crypto's Terms of Use and Privacy Policy.</span>
+            </div>
           </div>
-          <div class="input_block input_block_password">
-            <input type="password" class="form-control" id="password" placeholder="Password">
-            <span class="text_small" v-if="!passwordValid">
-              Password should contain at least 8 characters, only Latin characters, one uppercase and lowercase letter, one number and one special character
-            </span>
-          </div>
-          <div class="input_block input_block_select">
-            <select class="custom-select">
-              <option value="0">Country</option>
-              <option value="1">Afgan</option>
-              <option value="1">russia</option>
-            </select>
-          </div>
-          <div class="input_block input_block_checkbox">
-            <input type="checkbox" class="">
-            <p class="text_greey">I agree to receive occasional emails and newsletters from CEX.IO.</p>
-          </div>
-          <div class="input_block input_block_checkbox">
-            <input type="checkbox" class="">
-            <p class="text_greey">I accept CEX.IO's Terms of Use and Privacy Policy</p>
-            <span class="text_small">
-              This checkbox is required
-            </span>
-          </div>
-          <button class="btn btn_blue">Create Account</button>
-          <div>
-            <p class="mt-3">
-              Already have an account?
-              <router-link to="/login">Sign in</router-link>
-            </p>
-          </div>
-        </form>
+        <router-link @click.native="sendRegister" to="/confirm-email">Create Account</router-link>
+        <p class="text_normal mt-1">Already have an account? <router-link to="/login">Sign in</router-link></p>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
-import {validationFunction} from "../form-validation";
-
 export default {
   name: "index",
-  mixins:[
-      validationFunction
-  ]
+  data(){
+    return{
+      register: this.$store.getters['auth/register/getState']
+    }
+  },
+  methods:{
+    sendRegister(){
+      this.$store.commit('auth/register/setState', this.register)
+    },
+  }
 }
 </script>
 
 <style scoped>
-.img_block{
-  padding: 0;
-  height: 100vh;
-}
-.auth_block{
-  background-color: #e5e3e3;
+.container-fluid {
+  background-color: #efefef;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.auth_form{
-  margin-top: 30px;
-  width: 550px;
-  margin: 30px auto;
-  padding: 40px;
+.container-fluid > a{
+  color: #42a5a5;
+  font-weight: bold;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+.form{
   background-color: #fff;
+  width: 450px;
+  padding: 20px;
 }
-.form_head_block > a{
-  color: #42a5a5;
-  position: relative;
-  margin: 20px;
-  font-weight: bold;
-  font-style: italic;
+.form >.heading > h2{
+  color: #164764;
+  text-align: center;
 }
-.form_head_block > a:before{
-  content: "\27A4";
-  position: absolute;
-  left: -18px;
-  transform: rotate(180deg);
-  transition: .2s;
-}
-.form_head_block > a:hover::before{
-  left: -22px;
-}
-.input_block{
-  margin-top: 20px;
-
-}
-.input_block > *{
-  height: 60px;
+.form > .body > input,.form > .body > select{
+  width: 100%;
   font-size: 20px;
-  background-color: initial;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1;
+  display: block;
 }
-.auth_form > .input_block > a{
-  text-decoration: underline !important;
+.form > .body > input:focus, .form > .body > select{
+  outline: 0;
+}
+.form > .body > .checkbox_block > *{
+  margin: 5px;
+  vertical-align: middle;
+}
+.form > .body > a{
   color: #42a5a5;
-}
-.auth_form > button{
-  display: block;
-  width: 100%;
-  height: 50px;
   font-weight: bold;
-  font-size: 25px;
+  text-decoration: underline !important;
 }
-.input_block_select > select{
+.form > a{
   width: 100%;
-  background-color: initial;
-  border: 1px solid #ced4da;
-  font-size: 18px;
-  padding: 5px;
-  color: #929090;
-  font-weight: bold;
-}
-.input_block_select > select:focus{
-  outline: none;
-}
-.input_block_checkbox > *{
-  display: inline-block;
-  height: initial !important;
-  margin-right: 10px;
-}
-.input_block_checkbox{
-  margin-bottom: 10px;
-}
-.input_block_checkbox > p{
-  font-size: 14px;
-  vertical-align: top;
-  margin: 0;
-}
-.input_block > span{
-  color: #e22929;
-  font-style: italic;
-  font-size: 12px;
   display: block;
-  height: initial;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #42a5a5;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
 }
-p{
-  font-size: 14px;
-}
-p > a{
+.form > p > a, .form > .body > p > a{
   color: #42a5a5;
 }
 </style>

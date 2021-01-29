@@ -3,31 +3,26 @@
     <router-link to="/">Back to Main</router-link>
     <div class="form box_shadow">
       <div class="heading">
-        <h2>Sign in to your account</h2>
+        <h2>Confirm your email</h2>
         <span class="text_normal text_greey">Securely buy crypto and start trading on a trusted exchange</span>
       </div>
       <div class="body">
-        <input v-model="login.email" class="form-control" type="email" placeholder="Email">
-        <input v-model="login.password" class="form-control" type="password" placeholder="Password">
-        <router-link to="/reset-password">Forgot your password?</router-link>
+        <p class="text_greey text_big">To be in control of your account activity.</p>
+        <p class="text_greey text_big">We sent confirmation email to {{ email }} Please check your email for activation</p>
+        <p class="text_greey text_big">Haven't received the email? Make sure to check your spam folder.</p>
+        <p class="text_greey text_big">Still not there? Then try this:</p>
+        <p class="text_big"><a href="#">Resend Email</a> or <router-link to="/register">Change email</router-link></p>
       </div>
-      <router-link @click.native="sendLogin" to="/">Sign in</router-link>
-      <p class="text_normal mt-1">Don’t have an account? <router-link to="/register">Create account</router-link></p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "index",
+name: "index",
   data(){
     return{
-      login: this.$store.getters['auth/login/getState']
-    }
-  },
-  methods:{
-    sendLogin(){
-      this.$store.commit('auth/login/setState', this.login)
+      email: this.$store.getters['auth/register/getState'].email
     }
   }
 }

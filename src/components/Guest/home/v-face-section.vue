@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h1 class="heading_lightBlue">A trusted and secure bitcoin exchange</h1>
-          <p class="text_greey text_big">Your guide to the world of an open financial system. Get started with the easiest and most secure platform to buy and trade cryptocurrency.</p>
+          <h1 class="heading_lightBlue">{{ this.title }}</h1>
+          <p class="text_greey text_big" >{{this.description }}</p>
           <router-link to="register" class="btn btn-lg btn_blue">Get Started</router-link>
         </div>
         <div class="col-6">
@@ -28,10 +28,18 @@
 </template>
 
 <script>
+// import { HubConnectionBuilder, LogLevel } from '@aspnet/signalr';
+// const connection = new HubConnectionBuilder()
+//     .withUrl("https://localhost:5001/edit/home/face")
+//     .configureLogging(LogLevel.Information)
+//     .build()
 export default {
   name: "v-face_section",
   data(){
     return{
+        title: "A trusted and secure bitcoin exchange",
+        description: "Your guide to the world of an open financial system. Get started with the easiest and most secure platform to buy and trade cryptocurrency.",
+
       cardsInfo:[
         {title: 'Cheaper GBP deposits', description: '50% off for GBP deposits with the UK-issued cards', to: '/login', hrefName: 'Deposit now'},
         {title: 'Margin trading', description: 'Trade with leverage as high as 100x', to:'/spot-trading', hrefName: 'Trade now'},
@@ -40,7 +48,15 @@ export default {
       ]
     }
   },
-  components: {}
+  // mounted(){
+  //   connection.on("GetEdit", function (title, description){
+  //       this.title=title;
+  //       this.description=description;
+  //   })
+  // },
+  // created() {
+  //   connection.start();
+  // }
 }
 </script>
 

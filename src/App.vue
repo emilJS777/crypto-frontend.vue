@@ -141,4 +141,7 @@
    .datepicker_block .activator-wrapper{
      height: 100%;
    }
+   select:focus{
+     outline: 0;
+   }
 </style>

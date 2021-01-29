@@ -1,0 +1,56 @@
+h4{
+    text-align: center;
+}
+form{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+.input_block{
+    position: relative;
+}
+.input_block > button{
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    z-index: 9;
+    border: 0;
+    background-color: initial;
+    color: #42a5a5;
+}
+.input_block > button:focus{
+    outline: 0;
+}
+.qr_code_block{
+    padding: 10px;
+    text-align: center;
+}
+.qr_code_block > img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+}
+.qr_code_block > p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.upload_btn_block > span{
+    display: table;
+    margin: 0 auto;
+    margin-top: -37px;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+}
+.upload_btn_block > a{
+    display: table;
+    margin: 0 auto;
+}
+.next_prev_routes{
+    display: table;
+    margin: 15px auto;
+}
+.next_prev_routes > a{
+    margin: 10px;
+    padding: 6px 25px;
+}

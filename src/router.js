@@ -22,6 +22,14 @@ export default new Router({
             component: () => import('./components/Guest/auth/register')
         },
         {
+            path: '/confirm-email',
+            component: () => import('./components/Guest/auth/confirm-email')
+        },
+        {
+            path: '/complete-account-setup',
+            component: () => import('./components/Guest/auth/complete-account-setup')
+        },
+        {
             path: '/buysell',
             component: () => import('./components/Guest/buysell')
         },
@@ -237,6 +245,14 @@ export default new Router({
         {
             path: '/account/verification/identity/proof-of-identity-document-upload',
             component: () => import('./components/Account/verification/identity/proof-of-identity-document-upload')
+        },
+        {
+            path: '/account/verification/identity/personal-information',
+            component: () => import('./components/Account/verification/identity/personal-information')
+        },
+        {
+            path: '/account/verification/identity/international-passport-information',
+            component: () => import('./components/Account/verification/identity/international-passport-information')
         },
         {
             path: '/account/support',

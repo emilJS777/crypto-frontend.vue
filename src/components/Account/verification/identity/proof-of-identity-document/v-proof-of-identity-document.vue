@@ -12,10 +12,8 @@
     </div>
     <div class="input_block mt-4">
       <span class="text_greey text_normal">Issuing country</span>
-      <select class="form-control custom-select" >
-        <option value="">Armenia</option>
-        <option value="">new zeland</option>
-      </select>
+      <country-select v-model="country" class="custom-select form-control" topCountry="US" />
+
     </div>
     <div class="qr_code_block">
       <img :src="require('@/assets/img/qrcode.png')" alt="">
@@ -36,7 +34,12 @@
 
 <script>
 export default {
-name: "v-proof-of-identity-document"
+name: "v-proof-of-identity-document",
+  data(){
+  return{
+    country: "",
+  }
+  }
 }
 </script>
 
