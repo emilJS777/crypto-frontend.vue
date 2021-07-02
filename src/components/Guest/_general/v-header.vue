@@ -90,6 +90,9 @@
               <li>
                 <router-link to="/affiliate-program">AFFILIATE PROGRAM</router-link>
               </li>
+              <li>
+                <router-link to="/account/trade">Trade</router-link>
+              </li>
             </ul>
           </nav>
         </div>
